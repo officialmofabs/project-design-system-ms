@@ -1,0 +1,22 @@
+{
+	"name": "Puppet Development Kit (Community)",
+	"dockerFile": "Dockerfile",
+
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"puppet.puppet-vscode",
+				"rebornix.Ruby"
+			]
+		}
+	}
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "pdk --version",
+}
