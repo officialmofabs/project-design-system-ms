@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\workspaces.git\\projects.git\\microsoft-cloud-development\\containers\\dotnet-postgres\\test-project\\aspnetapp.csproj": {}
+    "f:\\Users\\igewebs\\source\\repos\\myprojectdesign-system\\src\\dotnet-postgres\\test-project\\aspnetapp.csproj": {}
   },
   "projects": {
-    "D:\\workspaces.git\\projects.git\\microsoft-cloud-development\\containers\\dotnet-postgres\\test-project\\aspnetapp.csproj": {
+    "f:\\Users\\igewebs\\source\\repos\\myprojectdesign-system\\src\\dotnet-postgres\\test-project\\aspnetapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\workspaces.git\\projects.git\\microsoft-cloud-development\\containers\\dotnet-postgres\\test-project\\aspnetapp.csproj",
+        "projectUniqueName": "f:\\Users\\igewebs\\source\\repos\\myprojectdesign-system\\src\\dotnet-postgres\\test-project\\aspnetapp.csproj",
         "projectName": "aspnetapp",
-        "projectPath": "D:\\workspaces.git\\projects.git\\microsoft-cloud-development\\containers\\dotnet-postgres\\test-project\\aspnetapp.csproj",
+        "projectPath": "f:\\Users\\igewebs\\source\\repos\\myprojectdesign-system\\src\\dotnet-postgres\\test-project\\aspnetapp.csproj",
         "packagesPath": "C:\\Users\\igewe\\.nuget\\packages\\",
-        "outputPath": "D:\\workspaces.git\\projects.git\\microsoft-cloud-development\\containers\\dotnet-postgres\\test-project\\obj\\",
+        "outputPath": "f:\\Users\\igewebs\\source\\repos\\myprojectdesign-system\\src\\dotnet-postgres\\test-project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\igewe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,7 +22,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {}
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -87,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14\\RuntimeIdentifierGraph.json"
         }
       }
     }
