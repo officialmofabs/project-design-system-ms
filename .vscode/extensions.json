@@ -1,0 +1,34 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=827846 to learn about workspace recommendations.
+	// Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+
+	// List of extensions which should be recommended for users of this workspace.
+	"recommendations": [
+"vscode-icons-team.vscode-icons"
+"folke.vscode-monorepo-workspace"
+"emmanuelbeziat.vscode-great-icons"
+"bajdzis.vscode-database"
+"bajdzis.vscode-database"
+"formulahendry.docker-explorer"
+"zim.vsc-docker"
+"ms-azuretools.vscode-docker"
+"ms-vscode-remote.remote-containers"
+"TqrHsn.vscode-docker-registry-explorer"
+"haranjackson.vscode-docker-ipython"
+"QuentinGruber.dockerfiletemplate"
+"delgee.sld-docker-builder"
+"ms-vscode-remote.vscode-remote-extensionpack"
+"BharathDevalla.gh-deploy"
+"XuangeAha.vsmarketplace-badges"
+"bobmagicii.dashyeah"
+"TqrHsn.vscode-docker-registry-explorer"
+"raits.shared-extensions"
+"johnstoncode.svn-scm"
+
+		
+	],
+	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
+	"unwantedRecommendations": [
+		
+	]
+}
