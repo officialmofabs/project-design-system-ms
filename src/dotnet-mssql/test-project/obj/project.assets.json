@@ -10,19 +10,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\igewe\\.nuget\\packages\\": {}
+    "D:\\packages\\NuGet\\cache": {},
+    "I:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\workspaces.git\\projects.git\\microsoft-cloud-development\\containers\\dotnet-mssql\\test-project\\aspnetapp.csproj",
+      "projectUniqueName": "D:\\project-design-system-ms\\src\\dotnet-mssql\\test-project\\aspnetapp.csproj",
       "projectName": "aspnetapp",
-      "projectPath": "D:\\workspaces.git\\projects.git\\microsoft-cloud-development\\containers\\dotnet-mssql\\test-project\\aspnetapp.csproj",
-      "packagesPath": "C:\\Users\\igewe\\.nuget\\packages\\",
-      "outputPath": "D:\\workspaces.git\\projects.git\\microsoft-cloud-development\\containers\\dotnet-mssql\\test-project\\obj\\",
+      "projectPath": "D:\\project-design-system-ms\\src\\dotnet-mssql\\test-project\\aspnetapp.csproj",
+      "packagesPath": "D:\\packages\\NuGet\\cache",
+      "outputPath": "D:\\project-design-system-ms\\src\\dotnet-mssql\\test-project\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "I:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\igewe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DevSupport\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -30,7 +35,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {}
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
@@ -95,55 +101,40 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
       }
     }
   },
   "logs": [
     {
-      "code": "NU1101",
+      "code": "NU1301",
       "level": "Error",
-      "message": "Unable to find package Microsoft.Data.SqlClient. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
-      "libraryId": "Microsoft.Data.SqlClient",
-      "targetGraphs": [
-        "net5.0"
-      ]
+      "message": "The local source 'I:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages' doesn't exist.",
+      "libraryId": "Microsoft.Data.SqlClient"
     },
     {
-      "code": "NU1101",
+      "code": "NU1301",
       "level": "Error",
-      "message": "Unable to find package Microsoft.NETCore.App.Ref. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
-      "libraryId": "Microsoft.NETCore.App.Ref",
-      "targetGraphs": [
-        "net5.0"
-      ]
+      "message": "The local source 'I:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages' doesn't exist.",
+      "libraryId": "Microsoft.Data.SqlClient.SNI.runtime"
     },
     {
-      "code": "NU1101",
+      "code": "NU1301",
       "level": "Error",
-      "message": "Unable to find package Microsoft.WindowsDesktop.App.Ref. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
-      "libraryId": "Microsoft.WindowsDesktop.App.Ref",
-      "targetGraphs": [
-        "net5.0"
-      ]
+      "message": "The local source 'I:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages' doesn't exist.",
+      "libraryId": "System.Security.Principal.Windows"
     },
     {
-      "code": "NU1101",
+      "code": "NU1301",
       "level": "Error",
-      "message": "Unable to find package Microsoft.AspNetCore.App.Ref. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
-      "libraryId": "Microsoft.AspNetCore.App.Ref",
-      "targetGraphs": [
-        "net5.0"
-      ]
+      "message": "The local source 'I:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages' doesn't exist.",
+      "libraryId": "Microsoft.Win32.Registry"
     },
     {
-      "code": "NU1101",
+      "code": "NU1301",
       "level": "Error",
-      "message": "Unable to find package Microsoft.NETCore.App.Host.win-x64. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
-      "libraryId": "Microsoft.NETCore.App.Host.win-x64",
-      "targetGraphs": [
-        "net5.0"
-      ]
+      "message": "The local source 'I:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages' doesn't exist.",
+      "libraryId": "Microsoft.NETCore.Platforms"
     }
   ]
 }

@@ -1,0 +1,1976 @@
+{
+  "source": {
+    "type": "image",
+    "image": {
+      "name": "registry.k8s.io/coredns/coredns",
+      "digest": "sha256:1eeb4c7316bacb1d4c8ead65571cd92dd21e27359f0d4917f1a5822a73b75db1",
+      "tags": [
+        "v1.11.1"
+      ],
+      "manifest": {
+        "schemaVersion": 2,
+        "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+        "config": {
+          "mediaType": "application/vnd.docker.container.image.v1+json",
+          "size": 2773,
+          "digest": "sha256:cbb01a7bd410dc08ba382018ab909a674fb0e48687f0c00797ed5bc34fcc6bb4"
+        },
+        "layers": [
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 83932,
+            "digest": "sha256:dd5ad9c9c29f04b41a0155c720cf5ccab28ef6d353f1fe17a06c579c70054f0a"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 20322,
+            "digest": "sha256:960043b8858c3c30f1d79dcc49adb2804fd35c2510729e67685b298b2ca746b7"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 599551,
+            "digest": "sha256:b4ca4c215f483111b64ec6919f1659ff475d7080a649d6acd78a6ade562a4a63"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 284,
+            "digest": "sha256:eebb06941f3e57b2e40a0e9cbd798dacef9b04d89ebaa8896be5f17c976f8666"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 188,
+            "digest": "sha256:02cd68c0cbf64abe9738767877756b33f50fff5d88583fdc74b66beffa77694b"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 112,
+            "digest": "sha256:d3c894b5b2b0fa857549aeb6cbc38b038b5b2828736be37b6d9fff0b886f12fd"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 382,
+            "digest": "sha256:b40161cd83fc5d470d6abe50e87aa288481b6b89137012881d74187cfbf9f502"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 345,
+            "digest": "sha256:46ba3f23f1d3fb1440deeb279716e4377e79e61736ec2227270349b9618a0fdd"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 122108,
+            "digest": "sha256:4fa131a1b726b2d6468d461e7d8867a2157d5671f712461d8abd126155fdf9ce"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 122688,
+            "digest": "sha256:860aeecad37138b467a6c41d5278c647ed77350db18b56364c29a4770e271fca"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 17225655,
+            "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641"
+          }
+        ]
+      },
+      "config": {
+        "architecture": "amd64",
+        "created": "2023-08-15T20:01:02.3372035Z",
+        "history": [
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "2023-08-15T20:01:02.194452928Z",
+            "created_by": "COPY /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          },
+          {
+            "created": "2023-08-15T20:01:02.3372035Z",
+            "created_by": "COPY /coredns /coredns # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          },
+          {
+            "created": "2023-08-15T20:01:02.3372035Z",
+            "created_by": "USER nonroot:nonroot",
+            "comment": "buildkit.dockerfile.v0",
+            "empty_layer": true
+          },
+          {
+            "created": "2023-08-15T20:01:02.3372035Z",
+            "created_by": "EXPOSE map[53/tcp:{} 53/udp:{}]",
+            "comment": "buildkit.dockerfile.v0",
+            "empty_layer": true
+          },
+          {
+            "created": "2023-08-15T20:01:02.3372035Z",
+            "created_by": "ENTRYPOINT [\"/coredns\"]",
+            "comment": "buildkit.dockerfile.v0",
+            "empty_layer": true
+          }
+        ],
+        "os": "linux",
+        "rootfs": {
+          "type": "layers",
+          "diff_ids": [
+            "sha256:e023e0e48e6e29e90e519f4dd356d058ff2bffbd16e28b802f3b8f93aa4ccb17",
+            "sha256:6fbdf253bbc2490dcfede5bdb58ca0db63ee8aff565f6ea9f918f3bce9e2d5aa",
+            "sha256:7bea6b893187b14fc0a759fe5f8972d1292a9c0554c87cbf485f0947c26b8a05",
+            "sha256:ff5700ec54186528cbae40f54c24b1a34fb7c01527beaa1232868c16e2353f52",
+            "sha256:d52f02c6501c9c4410568f0bf6ff30d30d8290f57794c308fe36ea78393afac2",
+            "sha256:e624a5370eca2b8266e74d179326e2a8767d361db14d13edd9fb57e408731784",
+            "sha256:1a73b54f556b477f0a8b939d13c504a3b4f4db71f7a09c63afbc10acb3de5849",
+            "sha256:d2d7ec0f6756eb51cf1602c6f8ac4dd811d3d052661142e0110357bf0b581457",
+            "sha256:4cb10dd2545bd173858450b80853b850e49608260f1a0789e0d0b39edf12f500",
+            "sha256:aec96fc6d10ead124cd5ccc7fad43034ed788a160f7b0dacedbc3fa4104c1005",
+            "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+          ]
+        },
+        "config": {
+          "Entrypoint": [
+            "/coredns"
+          ],
+          "Env": [
+            "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt"
+          ],
+          "User": "nonroot:nonroot",
+          "WorkingDir": "/home/nonroot",
+          "ExposedPorts": {
+            "53/tcp": {},
+            "53/udp": {}
+          }
+        }
+      },
+      "raw_manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjoyNzczLCJkaWdlc3QiOiJzaGEyNTY6Y2JiMDFhN2JkNDEwZGMwOGJhMzgyMDE4YWI5MDlhNjc0ZmIwZTQ4Njg3ZjBjMDA3OTdlZDViYzM0ZmNjNmJiNCJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo4MzkzMiwiZGlnZXN0Ijoic2hhMjU2OmRkNWFkOWM5YzI5ZjA0YjQxYTAxNTVjNzIwY2Y1Y2NhYjI4ZWY2ZDM1M2YxZmUxN2EwNmM1NzljNzAwNTRmMGEifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoyMDMyMiwiZGlnZXN0Ijoic2hhMjU2Ojk2MDA0M2I4ODU4YzNjMzBmMWQ3OWRjYzQ5YWRiMjgwNGZkMzVjMjUxMDcyOWU2NzY4NWIyOThiMmNhNzQ2YjcifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo1OTk1NTEsImRpZ2VzdCI6InNoYTI1NjpiNGNhNGMyMTVmNDgzMTExYjY0ZWM2OTE5ZjE2NTlmZjQ3NWQ3MDgwYTY0OWQ2YWNkNzhhNmFkZTU2MmE0YTYzIn0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6Mjg0LCJkaWdlc3QiOiJzaGEyNTY6ZWViYjA2OTQxZjNlNTdiMmU0MGEwZTljYmQ3OThkYWNlZjliMDRkODllYmFhODg5NmJlNWYxN2M5NzZmODY2NiJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjE4OCwiZGlnZXN0Ijoic2hhMjU2OjAyY2Q2OGMwY2JmNjRhYmU5NzM4NzY3ODc3NzU2YjMzZjUwZmZmNWQ4ODU4M2ZkYzc0YjY2YmVmZmE3NzY5NGIifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxMTIsImRpZ2VzdCI6InNoYTI1NjpkM2M4OTRiNWIyYjBmYTg1NzU0OWFlYjZjYmMzOGIwMzhiNWIyODI4NzM2YmUzN2I2ZDlmZmYwYjg4NmYxMmZkIn0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MzgyLCJkaWdlc3QiOiJzaGEyNTY6YjQwMTYxY2Q4M2ZjNWQ0NzBkNmFiZTUwZTg3YWEyODg0ODFiNmI4OTEzNzAxMjg4MWQ3NDE4N2NmYmY5ZjUwMiJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjM0NSwiZGlnZXN0Ijoic2hhMjU2OjQ2YmEzZjIzZjFkM2ZiMTQ0MGRlZWIyNzk3MTZlNDM3N2U3OWU2MTczNmVjMjIyNzI3MDM0OWI5NjE4YTBmZGQifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxMjIxMDgsImRpZ2VzdCI6InNoYTI1Njo0ZmExMzFhMWI3MjZiMmQ2NDY4ZDQ2MWU3ZDg4NjdhMjE1N2Q1NjcxZjcxMjQ2MWQ4YWJkMTI2MTU1ZmRmOWNlIn0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MTIyNjg4LCJkaWdlc3QiOiJzaGEyNTY6ODYwYWVlY2FkMzcxMzhiNDY3YTZjNDFkNTI3OGM2NDdlZDc3MzUwZGIxOGI1NjM2NGMyOWE0NzcwZTI3MWZjYSJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjE3MjI1NjU1LCJkaWdlc3QiOiJzaGEyNTY6YzU0ZDg5NWMxOTc1ZjY5NDllOGI2ZDE0NTc0NzhmNzQ5ZjgwMWY0NjIyYWZhMTMzNjA4MWI5NWIwYmRhNTY0MSJ9XX0=",
+      "raw_config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJVc2VyIjoibm9ucm9vdDpub25yb290IiwiRXhwb3NlZFBvcnRzIjp7IjUzL3RjcCI6e30sIjUzL3VkcCI6e319LCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iLCJTU0xfQ0VSVF9GSUxFPS9ldGMvc3NsL2NlcnRzL2NhLWNlcnRpZmljYXRlcy5jcnQiXSwiRW50cnlwb2ludCI6WyIvY29yZWRucyJdLCJXb3JraW5nRGlyIjoiL2hvbWUvbm9ucm9vdCIsIk9uQnVpbGQiOm51bGx9LCJjcmVhdGVkIjoiMjAyMy0wOC0xNVQyMDowMTowMi4zMzcyMDM1WiIsImhpc3RvcnkiOlt7ImNyZWF0ZWQiOiIwMDAxLTAxLTAxVDAwOjAwOjAwWiJ9LHsiY3JlYXRlZCI6IjAwMDEtMDEtMDFUMDA6MDA6MDBaIn0seyJjcmVhdGVkIjoiMDAwMS0wMS0wMVQwMDowMDowMFoifSx7ImNyZWF0ZWQiOiIwMDAxLTAxLTAxVDAwOjAwOjAwWiJ9LHsiY3JlYXRlZCI6IjAwMDEtMDEtMDFUMDA6MDA6MDBaIn0seyJjcmVhdGVkIjoiMDAwMS0wMS0wMVQwMDowMDowMFoifSx7ImNyZWF0ZWQiOiIwMDAxLTAxLTAxVDAwOjAwOjAwWiJ9LHsiY3JlYXRlZCI6IjAwMDEtMDEtMDFUMDA6MDA6MDBaIn0seyJjcmVhdGVkIjoiMDAwMS0wMS0wMVQwMDowMDowMFoifSx7ImNyZWF0ZWQiOiIyMDIzLTA4LTE1VDIwOjAxOjAyLjE5NDQ1MjkyOFoiLCJjcmVhdGVkX2J5IjoiQ09QWSAvZXRjL3NzbC9jZXJ0cy9jYS1jZXJ0aWZpY2F0ZXMuY3J0IC9ldGMvc3NsL2NlcnRzLyAjIGJ1aWxka2l0IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAifSx7ImNyZWF0ZWQiOiIyMDIzLTA4LTE1VDIwOjAxOjAyLjMzNzIwMzVaIiwiY3JlYXRlZF9ieSI6IkNPUFkgL2NvcmVkbnMgL2NvcmVkbnMgIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyMy0wOC0xNVQyMDowMTowMi4zMzcyMDM1WiIsImNyZWF0ZWRfYnkiOiJVU0VSIG5vbnJvb3Q6bm9ucm9vdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDgtMTVUMjA6MDE6MDIuMzM3MjAzNVoiLCJjcmVhdGVkX2J5IjoiRVhQT1NFIG1hcFs1My90Y3A6e30gNTMvdWRwOnt9XSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDgtMTVUMjA6MDE6MDIuMzM3MjAzNVoiLCJjcmVhdGVkX2J5IjoiRU5UUllQT0lOVCBbXCIvY29yZWRuc1wiXSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9XSwibW9ieS5idWlsZGtpdC5idWlsZGluZm8udjEiOiJleUptY205dWRHVnVaQ0k2SW1SdlkydGxjbVpwYkdVdWRqQWlMQ0poZEhSeWN5STZleUptYVd4bGJtRnRaU0k2SWtSdlkydGxjbVpwYkdVaWZTd2ljMjkxY21ObGN5STZXM3NpZEhsd1pTSTZJbVJ2WTJ0bGNpMXBiV0ZuWlNJc0luSmxaaUk2SW1SdlkydGxjaTVwYnk5c2FXSnlZWEo1TDJSbFltbGhianB6ZEdGaWJHVXRjMnhwYlNJc0luQnBiaUk2SW5Ob1lUSTFOanBqT1dVNE5qQmlOMkUyWkRVeFlUVm1PVEJtTkdaallqWTBOV1EzT0Rsak1EYzRaamRpT1dReVkyTTJaV0ptWkRRNE56a3laVEJtWldFMU56TTVZekEwSW4wc2V5SjBlWEJsSWpvaVpHOWphMlZ5TFdsdFlXZGxJaXdpY21WbUlqb2laMk55TG1sdkwyUnBjM1J5YjJ4bGMzTXZjM1JoZEdsakxXUmxZbWxoYmpFeE9tNXZibkp2YjNRaUxDSndhVzRpT2lKemFHRXlOVFk2T1dWall6VXpZekkyT1RVd09XWTJNMk0yT1dFeU5qWXhOamhsTkdFMk9EZGpOMlZpT0dNd1kyWmtOelV6WW1RNFltWmpZV0UwWmpVNFlUa3dPRGMyWmlKOVhYMD0iLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6ZTAyM2UwZTQ4ZTZlMjllOTBlNTE5ZjRkZDM1NmQwNThmZjJiZmZiZDE2ZTI4YjgwMmYzYjhmOTNhYTRjY2IxNyIsInNoYTI1Njo2ZmJkZjI1M2JiYzI0OTBkY2ZlZGU1YmRiNThjYTBkYjYzZWU4YWZmNTY1ZjZlYTlmOTE4ZjNiY2U5ZTJkNWFhIiwic2hhMjU2OjdiZWE2Yjg5MzE4N2IxNGZjMGE3NTlmZTVmODk3MmQxMjkyYTljMDU1NGM4N2NiZjQ4NWYwOTQ3YzI2YjhhMDUiLCJzaGEyNTY6ZmY1NzAwZWM1NDE4NjUyOGNiYWU0MGY1NGMyNGIxYTM0ZmI3YzAxNTI3YmVhYTEyMzI4NjhjMTZlMjM1M2Y1MiIsInNoYTI1NjpkNTJmMDJjNjUwMWM5YzQ0MTA1NjhmMGJmNmZmMzBkMzBkODI5MGY1Nzc5NGMzMDhmZTM2ZWE3ODM5M2FmYWMyIiwic2hhMjU2OmU2MjRhNTM3MGVjYTJiODI2NmU3NGQxNzkzMjZlMmE4NzY3ZDM2MWRiMTRkMTNlZGQ5ZmI1N2U0MDg3MzE3ODQiLCJzaGEyNTY6MWE3M2I1NGY1NTZiNDc3ZjBhOGI5MzlkMTNjNTA0YTNiNGY0ZGI3MWY3YTA5YzYzYWZiYzEwYWNiM2RlNTg0OSIsInNoYTI1NjpkMmQ3ZWMwZjY3NTZlYjUxY2YxNjAyYzZmOGFjNGRkODExZDNkMDUyNjYxMTQyZTAxMTAzNTdiZjBiNTgxNDU3Iiwic2hhMjU2OjRjYjEwZGQyNTQ1YmQxNzM4NTg0NTBiODA4NTNiODUwZTQ5NjA4MjYwZjFhMDc4OWUwZDBiMzllZGYxMmY1MDAiLCJzaGEyNTY6YWVjOTZmYzZkMTBlYWQxMjRjZDVjY2M3ZmFkNDMwMzRlZDc4OGExNjBmN2IwZGFjZWRiYzNmYTQxMDRjMTAwNSIsInNoYTI1Njo1NDVhNjhkNTFiYzQ5ZjI1ODJkNTM0NDFjNjliZmFlODA2NWQ4OGJlZTE0ODY0YzkwYmRiMzg0ZGUwODY4ODEzIl19fQ==",
+      "distro": {
+        "os_name": "debian",
+        "os_version": "Debian"
+      },
+      "platform": {
+        "os": "linux",
+        "architecture": "amd64"
+      },
+      "size": 18175567
+    }
+  },
+  "attestations": [],
+  "artifacts": [
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "base-files",
+      "version": "11.1+deb11u7",
+      "purl": "pkg:deb/debian/base-files@11.1%2Bdeb11u7?os_name=debian&os_version=Debian",
+      "author": "Santiago Vila <sanvila@debian.org>",
+      "description": "Debian base system miscellaneous files\n This package contains the basic filesystem hierarchy of a Debian system, and\n several important miscellaneous files, such as /etc/debian_version,\n /etc/host.conf, /etc/issue, /etc/motd, /etc/profile, and others,\n and the text of several common licenses in use on Debian systems.",
+      "licenses": [
+        "GPL"
+      ],
+      "installed_size": 341,
+      "locations": [
+        {
+          "path": "/usr/share/doc/base-files/copyright",
+          "digest": "sha256:dd5ad9c9c29f04b41a0155c720cf5ccab28ef6d353f1fe17a06c579c70054f0a",
+          "diff_id": "sha256:e023e0e48e6e29e90e519f4dd356d058ff2bffbd16e28b802f3b8f93aa4ccb17"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/base-files",
+          "digest": "sha256:dd5ad9c9c29f04b41a0155c720cf5ccab28ef6d353f1fe17a06c579c70054f0a",
+          "diff_id": "sha256:e023e0e48e6e29e90e519f4dd356d058ff2bffbd16e28b802f3b8f93aa4ccb17"
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "netbase",
+      "version": "6.3",
+      "purl": "pkg:deb/debian/netbase@6.3?os_name=debian&os_version=Debian",
+      "author": "Marco d'Itri <md@linux.it>",
+      "description": "Basic TCP/IP networking system\n This package provides the necessary infrastructure for basic TCP/IP based\n networking.\n .\n In particular, it supplies common name-to-number mappings in /etc/services,\n /etc/rpc, /etc/protocols and /etc/ethertypes.",
+      "licenses": [
+        "GPL-2"
+      ],
+      "installed_size": 41,
+      "locations": [
+        {
+          "path": "/usr/share/doc/netbase/copyright",
+          "ordinal": 1,
+          "digest": "sha256:960043b8858c3c30f1d79dcc49adb2804fd35c2510729e67685b298b2ca746b7",
+          "diff_id": "sha256:6fbdf253bbc2490dcfede5bdb58ca0db63ee8aff565f6ea9f918f3bce9e2d5aa"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/netbase",
+          "ordinal": 1,
+          "digest": "sha256:960043b8858c3c30f1d79dcc49adb2804fd35c2510729e67685b298b2ca746b7",
+          "diff_id": "sha256:6fbdf253bbc2490dcfede5bdb58ca0db63ee8aff565f6ea9f918f3bce9e2d5aa"
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "tzdata",
+      "version": "2021a-1+deb11u10",
+      "purl": "pkg:deb/debian/tzdata@2021a-1%2Bdeb11u10?os_name=debian&os_version=Debian",
+      "author": "GNU Libc Maintainers <debian-glibc@lists.debian.org>",
+      "description": "time zone and daylight-saving time data\n This package contains data required for the implementation of\n standard local time for many representative locations around the\n globe. It is updated periodically to reflect changes made by\n political bodies to time zone boundaries, UTC offsets, and\n daylight-saving rules.",
+      "installed_size": 3413,
+      "locations": [
+        {
+          "path": "/usr/share/doc/tzdata/copyright",
+          "ordinal": 2,
+          "digest": "sha256:b4ca4c215f483111b64ec6919f1659ff475d7080a649d6acd78a6ade562a4a63",
+          "diff_id": "sha256:7bea6b893187b14fc0a759fe5f8972d1292a9c0554c87cbf485f0947c26b8a05"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/tzdata",
+          "ordinal": 2,
+          "digest": "sha256:b4ca4c215f483111b64ec6919f1659ff475d7080a649d6acd78a6ade562a4a63",
+          "diff_id": "sha256:7bea6b893187b14fc0a759fe5f8972d1292a9c0554c87cbf485f0947c26b8a05"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "cloud.google.com/go",
+      "name": "compute",
+      "version": "0.2.3",
+      "purl": "pkg:golang/cloud.google.com/go/compute@0.2.3#metadata",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/antonmedv",
+      "name": "expr",
+      "version": "1.13.0",
+      "purl": "pkg:golang/github.com/antonmedv/expr@1.13.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/apparentlymart",
+      "name": "go-cidr",
+      "version": "1.1.0",
+      "purl": "pkg:golang/github.com/apparentlymart/go-cidr@1.1.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/aws",
+      "name": "aws-sdk-go",
+      "version": "1.44.322",
+      "purl": "pkg:golang/github.com/aws/aws-sdk-go@1.44.322",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/azure",
+      "name": "azure-sdk-for-go",
+      "version": "68.0.0+incompatible",
+      "purl": "pkg:golang/github.com/azure/azure-sdk-for-go@68.0.0%2Bincompatible",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/azure",
+      "name": "go-autorest",
+      "version": "0.11.29",
+      "purl": "pkg:golang/github.com/azure/go-autorest@0.11.29#autorest",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/azure",
+      "name": "go-autorest",
+      "version": "0.2.0",
+      "purl": "pkg:golang/github.com/azure/go-autorest@0.2.0#autorest/to",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/azure",
+      "name": "go-autorest",
+      "version": "0.2.1",
+      "purl": "pkg:golang/github.com/azure/go-autorest@0.2.1#logger",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/azure",
+      "name": "go-autorest",
+      "version": "0.3.0",
+      "purl": "pkg:golang/github.com/azure/go-autorest@0.3.0#autorest/date",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/azure",
+      "name": "go-autorest",
+      "version": "0.4.5",
+      "purl": "pkg:golang/github.com/azure/go-autorest@0.4.5#autorest/azure/cli",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/azure",
+      "name": "go-autorest",
+      "version": "0.5.12",
+      "purl": "pkg:golang/github.com/azure/go-autorest@0.5.12#autorest/azure/auth",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/azure",
+      "name": "go-autorest",
+      "version": "0.6.0",
+      "purl": "pkg:golang/github.com/azure/go-autorest@0.6.0#tracing",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/azure",
+      "name": "go-autorest",
+      "version": "0.9.22",
+      "purl": "pkg:golang/github.com/azure/go-autorest@0.9.22#autorest/adal",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/beorn7",
+      "name": "perks",
+      "version": "1.0.1",
+      "purl": "pkg:golang/github.com/beorn7/perks@1.0.1",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/cespare",
+      "name": "xxhash",
+      "version": "2.2.0",
+      "purl": "pkg:golang/github.com/cespare/xxhash@2.2.0#v2",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/coredns",
+      "name": "caddy",
+      "version": "1.1.1",
+      "purl": "pkg:golang/github.com/coredns/caddy@1.1.1",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/coredns",
+      "name": "coredns",
+      "version": "(devel)",
+      "purl": "pkg:golang/github.com/coredns/coredns@(devel)",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/coreos",
+      "name": "go-semver",
+      "version": "0.3.0",
+      "purl": "pkg:golang/github.com/coreos/go-semver@0.3.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/coreos",
+      "name": "go-systemd",
+      "version": "22.3.2",
+      "purl": "pkg:golang/github.com/coreos/go-systemd@22.3.2#v22",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/datadog",
+      "name": "datadog-agent",
+      "version": "0.45.0-rc.1",
+      "purl": "pkg:golang/github.com/datadog/datadog-agent@0.45.0-rc.1#pkg/obfuscate",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/datadog",
+      "name": "datadog-agent",
+      "version": "0.48.0-devel.0.20230725154044-2549ba9058df",
+      "purl": "pkg:golang/github.com/datadog/datadog-agent@0.48.0-devel.0.20230725154044-2549ba9058df#pkg/remoteconfig/state",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/datadog",
+      "name": "datadog-go",
+      "version": "5.1.1",
+      "purl": "pkg:golang/github.com/datadog/datadog-go@5.1.1#v5",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/datadog",
+      "name": "go-tuf",
+      "version": "1.0.1-0.5.2",
+      "purl": "pkg:golang/github.com/datadog/go-tuf@1.0.1-0.5.2",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/datadog",
+      "name": "sketches-go",
+      "version": "1.2.1",
+      "purl": "pkg:golang/github.com/datadog/sketches-go@1.2.1",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/davecgh",
+      "name": "go-spew",
+      "version": "1.1.1",
+      "purl": "pkg:golang/github.com/davecgh/go-spew@1.1.1",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/dimchansky",
+      "name": "utfbom",
+      "version": "1.1.1",
+      "purl": "pkg:golang/github.com/dimchansky/utfbom@1.1.1",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/dnstap",
+      "name": "golang-dnstap",
+      "version": "0.4.0",
+      "purl": "pkg:golang/github.com/dnstap/golang-dnstap@0.4.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/dustin",
+      "name": "go-humanize",
+      "version": "1.0.1",
+      "purl": "pkg:golang/github.com/dustin/go-humanize@1.0.1",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/emicklei",
+      "name": "go-restful",
+      "version": "3.10.2",
+      "purl": "pkg:golang/github.com/emicklei/go-restful@3.10.2#v3",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/farsightsec",
+      "name": "golang-framestream",
+      "version": "0.3.0",
+      "purl": "pkg:golang/github.com/farsightsec/golang-framestream@0.3.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/flynn",
+      "name": "go-shlex",
+      "version": "0.0.0-20150515145356-3f9db97f8568",
+      "purl": "pkg:golang/github.com/flynn/go-shlex@0.0.0-20150515145356-3f9db97f8568",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/go-logr",
+      "name": "logr",
+      "version": "1.2.4",
+      "purl": "pkg:golang/github.com/go-logr/logr@1.2.4",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/go-openapi",
+      "name": "jsonpointer",
+      "version": "0.19.6",
+      "purl": "pkg:golang/github.com/go-openapi/jsonpointer@0.19.6",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/go-openapi",
+      "name": "jsonreference",
+      "version": "0.20.1",
+      "purl": "pkg:golang/github.com/go-openapi/jsonreference@0.20.1",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/go-openapi",
+      "name": "swag",
+      "version": "0.22.3",
+      "purl": "pkg:golang/github.com/go-openapi/swag@0.22.3",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/gogo",
+      "name": "protobuf",
+      "version": "1.3.2",
+      "purl": "pkg:golang/github.com/gogo/protobuf@1.3.2",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/golang-jwt",
+      "name": "jwt",
+      "version": "4.5.0",
+      "purl": "pkg:golang/github.com/golang-jwt/jwt@4.5.0#v4",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/golang",
+      "name": "groupcache",
+      "version": "0.0.0-20210331224755-41bb18bfe9da",
+      "purl": "pkg:golang/github.com/golang/groupcache@0.0.0-20210331224755-41bb18bfe9da",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/golang",
+      "name": "protobuf",
+      "version": "1.5.3",
+      "purl": "pkg:golang/github.com/golang/protobuf@1.5.3",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/google",
+      "name": "gnostic",
+      "version": "0.5.7-v3refs",
+      "purl": "pkg:golang/github.com/google/gnostic@0.5.7-v3refs",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/google",
+      "name": "go-cmp",
+      "version": "0.5.9",
+      "purl": "pkg:golang/github.com/google/go-cmp@0.5.9",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/google",
+      "name": "gofuzz",
+      "version": "1.2.0",
+      "purl": "pkg:golang/github.com/google/gofuzz@1.2.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/google",
+      "name": "s2a-go",
+      "version": "0.1.4",
+      "purl": "pkg:golang/github.com/google/s2a-go@0.1.4",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/google",
+      "name": "uuid",
+      "version": "1.3.0",
+      "purl": "pkg:golang/github.com/google/uuid@1.3.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/googleapis",
+      "name": "enterprise-certificate-proxy",
+      "version": "0.2.5",
+      "purl": "pkg:golang/github.com/googleapis/enterprise-certificate-proxy@0.2.5",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/googleapis",
+      "name": "gax-go",
+      "version": "2.12.0",
+      "purl": "pkg:golang/github.com/googleapis/gax-go@2.12.0#v2",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/grpc-ecosystem",
+      "name": "grpc-opentracing",
+      "version": "0.0.0-20180507213350-8e809c8a8645",
+      "purl": "pkg:golang/github.com/grpc-ecosystem/grpc-opentracing@0.0.0-20180507213350-8e809c8a8645",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/imdario",
+      "name": "mergo",
+      "version": "0.3.12",
+      "purl": "pkg:golang/github.com/imdario/mergo@0.3.12",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/infobloxopen",
+      "name": "go-trees",
+      "version": "0.0.0-20200715205103-96a057b8dfb9",
+      "purl": "pkg:golang/github.com/infobloxopen/go-trees@0.0.0-20200715205103-96a057b8dfb9",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/jmespath",
+      "name": "go-jmespath",
+      "version": "0.4.0",
+      "purl": "pkg:golang/github.com/jmespath/go-jmespath@0.4.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/josharian",
+      "name": "intern",
+      "version": "1.0.0",
+      "purl": "pkg:golang/github.com/josharian/intern@1.0.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/json-iterator",
+      "name": "go",
+      "version": "1.1.12",
+      "purl": "pkg:golang/github.com/json-iterator/go@1.1.12",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/mailru",
+      "name": "easyjson",
+      "version": "0.7.7",
+      "purl": "pkg:golang/github.com/mailru/easyjson@0.7.7",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/matttproud",
+      "name": "golang_protobuf_extensions",
+      "version": "1.0.4",
+      "purl": "pkg:golang/github.com/matttproud/golang_protobuf_extensions@1.0.4",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/miekg",
+      "name": "dns",
+      "version": "1.1.55",
+      "purl": "pkg:golang/github.com/miekg/dns@1.1.55",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/mitchellh",
+      "name": "go-homedir",
+      "version": "1.1.0",
+      "purl": "pkg:golang/github.com/mitchellh/go-homedir@1.1.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/modern-go",
+      "name": "concurrent",
+      "version": "0.0.0-20180306012644-bacd9c7ef1dd",
+      "purl": "pkg:golang/github.com/modern-go/concurrent@0.0.0-20180306012644-bacd9c7ef1dd",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/modern-go",
+      "name": "reflect2",
+      "version": "1.0.2",
+      "purl": "pkg:golang/github.com/modern-go/reflect2@1.0.2",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/munnerz",
+      "name": "goautoneg",
+      "version": "0.0.0-20191010083416-a7dc8b61c822",
+      "purl": "pkg:golang/github.com/munnerz/goautoneg@0.0.0-20191010083416-a7dc8b61c822",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/opentracing-contrib",
+      "name": "go-observer",
+      "version": "0.0.0-20170622124052-a52f23424492",
+      "purl": "pkg:golang/github.com/opentracing-contrib/go-observer@0.0.0-20170622124052-a52f23424492",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/opentracing",
+      "name": "opentracing-go",
+      "version": "1.2.0",
+      "purl": "pkg:golang/github.com/opentracing/opentracing-go@1.2.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/openzipkin-contrib",
+      "name": "zipkin-go-opentracing",
+      "version": "0.5.0",
+      "purl": "pkg:golang/github.com/openzipkin-contrib/zipkin-go-opentracing@0.5.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/openzipkin",
+      "name": "zipkin-go",
+      "version": "0.4.2",
+      "purl": "pkg:golang/github.com/openzipkin/zipkin-go@0.4.2",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/oschwald",
+      "name": "geoip2-golang",
+      "version": "1.9.0",
+      "purl": "pkg:golang/github.com/oschwald/geoip2-golang@1.9.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/oschwald",
+      "name": "maxminddb-golang",
+      "version": "1.11.0",
+      "purl": "pkg:golang/github.com/oschwald/maxminddb-golang@1.11.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/outcaste-io",
+      "name": "ristretto",
+      "version": "0.2.1",
+      "purl": "pkg:golang/github.com/outcaste-io/ristretto@0.2.1",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/philhofer",
+      "name": "fwd",
+      "version": "1.1.2",
+      "purl": "pkg:golang/github.com/philhofer/fwd@1.1.2",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/pkg",
+      "name": "errors",
+      "version": "0.9.1",
+      "purl": "pkg:golang/github.com/pkg/errors@0.9.1",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/prometheus",
+      "name": "client_golang",
+      "version": "1.16.0",
+      "purl": "pkg:golang/github.com/prometheus/client_golang@1.16.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/prometheus",
+      "name": "client_model",
+      "version": "0.4.0",
+      "purl": "pkg:golang/github.com/prometheus/client_model@0.4.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/prometheus",
+      "name": "common",
+      "version": "0.44.0",
+      "purl": "pkg:golang/github.com/prometheus/common@0.44.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/prometheus",
+      "name": "procfs",
+      "version": "0.10.1",
+      "purl": "pkg:golang/github.com/prometheus/procfs@0.10.1",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/quic-go",
+      "name": "qtls-go1-20",
+      "version": "0.3.1",
+      "purl": "pkg:golang/github.com/quic-go/qtls-go1-20@0.3.1",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/quic-go",
+      "name": "quic-go",
+      "version": "0.37.4",
+      "purl": "pkg:golang/github.com/quic-go/quic-go@0.37.4",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/secure-systems-lab",
+      "name": "go-securesystemslib",
+      "version": "0.7.0",
+      "purl": "pkg:golang/github.com/secure-systems-lab/go-securesystemslib@0.7.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/spf13",
+      "name": "pflag",
+      "version": "1.0.5",
+      "purl": "pkg:golang/github.com/spf13/pflag@1.0.5",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/tinylib",
+      "name": "msgp",
+      "version": "1.1.8",
+      "purl": "pkg:golang/github.com/tinylib/msgp@1.1.8",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.etcd.io/etcd",
+      "name": "api",
+      "version": "3.5.9",
+      "purl": "pkg:golang/go.etcd.io/etcd/api@3.5.9#v3",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.etcd.io/etcd",
+      "name": "client",
+      "version": "3.5.9",
+      "purl": "pkg:golang/go.etcd.io/etcd/client@3.5.9#pkg/v3",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.etcd.io/etcd",
+      "name": "client",
+      "version": "3.5.9",
+      "purl": "pkg:golang/go.etcd.io/etcd/client@3.5.9#v3",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "name": "go.opencensus.io",
+      "version": "0.24.0",
+      "purl": "pkg:golang/go.opencensus.io@0.24.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.uber.org",
+      "name": "atomic",
+      "version": "1.11.0",
+      "purl": "pkg:golang/go.uber.org/atomic@1.11.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.uber.org",
+      "name": "multierr",
+      "version": "1.6.0",
+      "purl": "pkg:golang/go.uber.org/multierr@1.6.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.uber.org",
+      "name": "zap",
+      "version": "1.17.0",
+      "purl": "pkg:golang/go.uber.org/zap@1.17.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "crypto",
+      "version": "0.12.0",
+      "purl": "pkg:golang/golang.org/x/crypto@0.12.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "exp",
+      "version": "0.0.0-20221205204356-47842c84f3db",
+      "purl": "pkg:golang/golang.org/x/exp@0.0.0-20221205204356-47842c84f3db",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "net",
+      "version": "0.14.0",
+      "purl": "pkg:golang/golang.org/x/net@0.14.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "oauth2",
+      "version": "0.11.0",
+      "purl": "pkg:golang/golang.org/x/oauth2@0.11.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "sys",
+      "version": "0.11.0",
+      "purl": "pkg:golang/golang.org/x/sys@0.11.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "term",
+      "version": "0.11.0",
+      "purl": "pkg:golang/golang.org/x/term@0.11.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "text",
+      "version": "0.12.0",
+      "purl": "pkg:golang/golang.org/x/text@0.12.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "time",
+      "version": "0.3.0",
+      "purl": "pkg:golang/golang.org/x/time@0.3.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "xerrors",
+      "version": "0.0.0-20220907171357-04be3eba64a2",
+      "purl": "pkg:golang/golang.org/x/xerrors@0.0.0-20220907171357-04be3eba64a2",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "google.golang.org",
+      "name": "api",
+      "version": "0.136.0",
+      "purl": "pkg:golang/google.golang.org/api@0.136.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "google.golang.org",
+      "name": "appengine",
+      "version": "1.6.7",
+      "purl": "pkg:golang/google.golang.org/appengine@1.6.7",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "google.golang.org/genproto",
+      "name": "googleapis",
+      "version": "0.0.0-20230803162519-f966b187b2e5",
+      "purl": "pkg:golang/google.golang.org/genproto/googleapis@0.0.0-20230803162519-f966b187b2e5#api",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "google.golang.org/genproto",
+      "name": "googleapis",
+      "version": "0.0.0-20230807174057-1744710a1577",
+      "purl": "pkg:golang/google.golang.org/genproto/googleapis@0.0.0-20230807174057-1744710a1577#rpc",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "google.golang.org",
+      "name": "grpc",
+      "version": "1.57.0",
+      "purl": "pkg:golang/google.golang.org/grpc@1.57.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "google.golang.org",
+      "name": "protobuf",
+      "version": "1.31.0",
+      "purl": "pkg:golang/google.golang.org/protobuf@1.31.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "gopkg.in/datadog",
+      "name": "dd-trace-go.v1",
+      "version": "1.54.0",
+      "purl": "pkg:golang/gopkg.in/datadog/dd-trace-go.v1@1.54.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "gopkg.in",
+      "name": "inf.v0",
+      "version": "0.9.1",
+      "purl": "pkg:golang/gopkg.in/inf.v0@0.9.1",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "gopkg.in",
+      "name": "yaml.v2",
+      "version": "2.4.0",
+      "purl": "pkg:golang/gopkg.in/yaml.v2@2.4.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "gopkg.in",
+      "name": "yaml.v3",
+      "version": "3.0.1",
+      "purl": "pkg:golang/gopkg.in/yaml.v3@3.0.1",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "k8s.io",
+      "name": "api",
+      "version": "0.27.4",
+      "purl": "pkg:golang/k8s.io/api@0.27.4",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "k8s.io",
+      "name": "apimachinery",
+      "version": "0.27.4",
+      "purl": "pkg:golang/k8s.io/apimachinery@0.27.4",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "k8s.io",
+      "name": "client-go",
+      "version": "0.27.4",
+      "purl": "pkg:golang/k8s.io/client-go@0.27.4",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "k8s.io/klog",
+      "name": "v2",
+      "version": "2.100.1",
+      "purl": "pkg:golang/k8s.io/klog/v2@2.100.1",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "k8s.io",
+      "name": "kube-openapi",
+      "version": "0.0.0-20230501164219-8b0f38b5fd1f",
+      "purl": "pkg:golang/k8s.io/kube-openapi@0.0.0-20230501164219-8b0f38b5fd1f",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "k8s.io",
+      "name": "utils",
+      "version": "0.0.0-20230209194617-a36077c30491",
+      "purl": "pkg:golang/k8s.io/utils@0.0.0-20230209194617-a36077c30491",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "sigs.k8s.io",
+      "name": "json",
+      "version": "0.0.0-20221116044647-bc3834ca7abd",
+      "purl": "pkg:golang/sigs.k8s.io/json@0.0.0-20221116044647-bc3834ca7abd",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "sigs.k8s.io/structured-merge-diff",
+      "name": "v4",
+      "version": "4.2.3",
+      "purl": "pkg:golang/sigs.k8s.io/structured-merge-diff/v4@4.2.3",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "sigs.k8s.io",
+      "name": "yaml",
+      "version": "1.3.0",
+      "purl": "pkg:golang/sigs.k8s.io/yaml@1.3.0",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "name": "stdlib",
+      "version": "1.20.7",
+      "purl": "pkg:golang/stdlib@1.20.7",
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "name": "stdlib",
+      "version": "go1.20.7",
+      "purl": "pkg:golang/stdlib@go1.20.7",
+      "licenses": [
+        "BSD-3-Clause"
+      ],
+      "locations": [
+        {
+          "path": "/coredns",
+          "ordinal": 10,
+          "digest": "sha256:c54d895c1975f6949e8b6d1457478f749f801f4622afa1336081b95b0bda5641",
+          "diff_id": "sha256:545a68d51bc49f2582d53441c69bfae8065d88bee14864c90bdb384de0868813"
+        }
+      ]
+    }
+  ],
+  "descriptor": {
+    "name": "docker-scout",
+    "version": "1.10.0",
+    "sbom_version": "11"
+  }
+}

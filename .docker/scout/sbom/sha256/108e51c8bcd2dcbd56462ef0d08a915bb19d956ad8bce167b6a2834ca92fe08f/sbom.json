@@ -1,0 +1,1923 @@
+{
+  "source": {
+    "type": "image",
+    "image": {
+      "name": "registry.k8s.io/kube-scheduler",
+      "digest": "sha256:108e51c8bcd2dcbd56462ef0d08a915bb19d956ad8bce167b6a2834ca92fe08f",
+      "tags": [
+        "v1.29.2"
+      ],
+      "manifest": {
+        "schemaVersion": 2,
+        "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+        "config": {
+          "mediaType": "application/vnd.docker.container.image.v1+json",
+          "size": 2425,
+          "digest": "sha256:6fc5e6b7218c753ea7ebbd0320957218bad762c27a60319c6f4d8136b0840893"
+        },
+        "layers": [
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 84572,
+            "digest": "sha256:aba5379b9c6dc7c095628fe6598183d680b134c7f99748649dddf07ff1422846"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 12594,
+            "digest": "sha256:e5dbef90bae3c9df1dfd4ae7048c56226f6209d538c91f987aff4f54e888f566"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 452856,
+            "digest": "sha256:fbe9343cb4af98ca5a60b6517bf45a5a4d7f7172fb4793d4b55c950196089cda"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 317,
+            "digest": "sha256:fcb6f6d2c9986d9cd6a2ea3cc2936e5fc613e09f1af9042329011e43057f3265"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 198,
+            "digest": "sha256:e8c73c638ae9ec5ad70c49df7e484040d889cca6b4a9af056579c3d058ea93f0"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 113,
+            "digest": "sha256:1e3d9b7d145208fa8fa3ee1c9612d0adaac7255f1bbc9ddea7e461e0b317805c"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 385,
+            "digest": "sha256:4aa0ea1413d37a58615488592a0b827ea4b2e48fa5a77cf707d0e35f025e613f"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 343,
+            "digest": "sha256:65efb1cabba44ca8eefa2058ebdc19b7f76bbb48400ff9e32b809be25f0cdefa"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 129151,
+            "digest": "sha256:13547472c521121fc04c8fa473757115ef8abe698cc9fa67e828371feeff40e7"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 735382,
+            "digest": "sha256:0ff23cbdb4f0f381098a9890391cbf7c01bfa0be99bf935a3efcdb166e175b3c"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 17100199,
+            "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a"
+          }
+        ]
+      },
+      "config": {
+        "architecture": "amd64",
+        "created": "2024-02-14T10:56:40.266712184Z",
+        "history": [
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "2024-02-07T15:56:17.423770626Z",
+            "created_by": "LABEL maintainers=Kubernetes Authors",
+            "comment": "buildkit.dockerfile.v0",
+            "empty_layer": true
+          },
+          {
+            "created": "2024-02-07T15:56:17.423770626Z",
+            "created_by": "LABEL description=go based runner for distroless scenarios",
+            "comment": "buildkit.dockerfile.v0",
+            "empty_layer": true
+          },
+          {
+            "created": "2024-02-07T15:56:17.423770626Z",
+            "created_by": "WORKDIR /",
+            "comment": "buildkit.dockerfile.v0",
+            "empty_layer": true
+          },
+          {
+            "created": "2024-02-07T15:56:17.423770626Z",
+            "created_by": "COPY /workspace/go-runner . # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          },
+          {
+            "created": "2024-02-07T15:56:17.423770626Z",
+            "created_by": "ENTRYPOINT [\"/go-runner\"]",
+            "comment": "buildkit.dockerfile.v0",
+            "empty_layer": true
+          },
+          {
+            "created": "2024-02-14T10:56:40.266712184Z",
+            "created_by": "COPY  /usr/local/bin/ # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          }
+        ],
+        "os": "linux",
+        "rootfs": {
+          "type": "layers",
+          "diff_ids": [
+            "sha256:6f4d4102c049625bda5ffcd0e671ae65aea1d600735d3dc3585309f7d99cc083",
+            "sha256:10e9b9e72178b3e5fe8ff566a61eefb03ad585f5eae5cc0f2b08dbe3c874cecb",
+            "sha256:6f1e3682d66abd0d92095699687c4c9a03b87f68a65b5dd9b79a4c1e87309936",
+            "sha256:ff5700ec54186528cbae40f54c24b1a34fb7c01527beaa1232868c16e2353f52",
+            "sha256:d52f02c6501c9c4410568f0bf6ff30d30d8290f57794c308fe36ea78393afac2",
+            "sha256:e624a5370eca2b8266e74d179326e2a8767d361db14d13edd9fb57e408731784",
+            "sha256:1a73b54f556b477f0a8b939d13c504a3b4f4db71f7a09c63afbc10acb3de5849",
+            "sha256:8f2b2d741d53c8e25da6a3b40a1f45aba2612cf5c1ff06e642286358e756d9a8",
+            "sha256:9959f8de333696342eedd49db37331a9c3efa84899f1236226c18db2e856f2aa",
+            "sha256:eeda2c8159d73b314ad67e5f8ad6b497b810761cefc41858719b81cbc2ff0168",
+            "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+          ]
+        },
+        "config": {
+          "Entrypoint": [
+            "/go-runner"
+          ],
+          "Env": [
+            "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt"
+          ],
+          "Labels": {
+            "description": "go based runner for distroless scenarios",
+            "maintainers": "Kubernetes Authors"
+          },
+          "User": "0",
+          "WorkingDir": "/"
+        }
+      },
+      "raw_manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjoyNDI1LCJkaWdlc3QiOiJzaGEyNTY6NmZjNWU2YjcyMThjNzUzZWE3ZWJiZDAzMjA5NTcyMThiYWQ3NjJjMjdhNjAzMTljNmY0ZDgxMzZiMDg0MDg5MyJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo4NDU3MiwiZGlnZXN0Ijoic2hhMjU2OmFiYTUzNzliOWM2ZGM3YzA5NTYyOGZlNjU5ODE4M2Q2ODBiMTM0YzdmOTk3NDg2NDlkZGRmMDdmZjE0MjI4NDYifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxMjU5NCwiZGlnZXN0Ijoic2hhMjU2OmU1ZGJlZjkwYmFlM2M5ZGYxZGZkNGFlNzA0OGM1NjIyNmY2MjA5ZDUzOGM5MWY5ODdhZmY0ZjU0ZTg4OGY1NjYifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo0NTI4NTYsImRpZ2VzdCI6InNoYTI1NjpmYmU5MzQzY2I0YWY5OGNhNWE2MGI2NTE3YmY0NWE1YTRkN2Y3MTcyZmI0NzkzZDRiNTVjOTUwMTk2MDg5Y2RhIn0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MzE3LCJkaWdlc3QiOiJzaGEyNTY6ZmNiNmY2ZDJjOTk4NmQ5Y2Q2YTJlYTNjYzI5MzZlNWZjNjEzZTA5ZjFhZjkwNDIzMjkwMTFlNDMwNTdmMzI2NSJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjE5OCwiZGlnZXN0Ijoic2hhMjU2OmU4YzczYzYzOGFlOWVjNWFkNzBjNDlkZjdlNDg0MDQwZDg4OWNjYTZiNGE5YWYwNTY1NzljM2QwNThlYTkzZjAifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxMTMsImRpZ2VzdCI6InNoYTI1NjoxZTNkOWI3ZDE0NTIwOGZhOGZhM2VlMWM5NjEyZDBhZGFhYzcyNTVmMWJiYzlkZGVhN2U0NjFlMGIzMTc4MDVjIn0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6Mzg1LCJkaWdlc3QiOiJzaGEyNTY6NGFhMGVhMTQxM2QzN2E1ODYxNTQ4ODU5MmEwYjgyN2VhNGIyZTQ4ZmE1YTc3Y2Y3MDdkMGUzNWYwMjVlNjEzZiJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjM0MywiZGlnZXN0Ijoic2hhMjU2OjY1ZWZiMWNhYmJhNDRjYThlZWZhMjA1OGViZGMxOWI3Zjc2YmJiNDg0MDBmZjllMzJiODA5YmUyNWYwY2RlZmEifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxMjkxNTEsImRpZ2VzdCI6InNoYTI1NjoxMzU0NzQ3MmM1MjExMjFmYzA0YzhmYTQ3Mzc1NzExNWVmOGFiZTY5OGNjOWZhNjdlODI4MzcxZmVlZmY0MGU3In0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6NzM1MzgyLCJkaWdlc3QiOiJzaGEyNTY6MGZmMjNjYmRiNGYwZjM4MTA5OGE5ODkwMzkxY2JmN2MwMWJmYTBiZTk5YmY5MzVhM2VmY2RiMTY2ZTE3NWIzYyJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjE3MTAwMTk5LCJkaWdlc3QiOiJzaGEyNTY6YzE2ZTM0YzE4MzljY2I2YjRmODI3Y2NhOTljYWI1YTU1MjRlNTRiMmFiN2U1NWE4ZTNlMjExYTNjMDU1MzY2YSJ9XX0=",
+      "raw_config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJVc2VyIjoiMCIsIkVudiI6WyJQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbiIsIlNTTF9DRVJUX0ZJTEU9L2V0Yy9zc2wvY2VydHMvY2EtY2VydGlmaWNhdGVzLmNydCJdLCJFbnRyeXBvaW50IjpbIi9nby1ydW5uZXIiXSwiV29ya2luZ0RpciI6Ii8iLCJMYWJlbHMiOnsiZGVzY3JpcHRpb24iOiJnbyBiYXNlZCBydW5uZXIgZm9yIGRpc3Ryb2xlc3Mgc2NlbmFyaW9zIiwibWFpbnRhaW5lcnMiOiJLdWJlcm5ldGVzIEF1dGhvcnMifSwiT25CdWlsZCI6bnVsbH0sImNyZWF0ZWQiOiIyMDI0LTAyLTE0VDEwOjU2OjQwLjI2NjcxMjE4NFoiLCJoaXN0b3J5IjpbeyJjcmVhdGVkIjoiMDAwMS0wMS0wMVQwMDowMDowMFoifSx7ImNyZWF0ZWQiOiIwMDAxLTAxLTAxVDAwOjAwOjAwWiJ9LHsiY3JlYXRlZCI6IjAwMDEtMDEtMDFUMDA6MDA6MDBaIn0seyJjcmVhdGVkIjoiMDAwMS0wMS0wMVQwMDowMDowMFoifSx7ImNyZWF0ZWQiOiIwMDAxLTAxLTAxVDAwOjAwOjAwWiJ9LHsiY3JlYXRlZCI6IjAwMDEtMDEtMDFUMDA6MDA6MDBaIn0seyJjcmVhdGVkIjoiMDAwMS0wMS0wMVQwMDowMDowMFoifSx7ImNyZWF0ZWQiOiIwMDAxLTAxLTAxVDAwOjAwOjAwWiJ9LHsiY3JlYXRlZCI6IjAwMDEtMDEtMDFUMDA6MDA6MDBaIn0seyJjcmVhdGVkIjoiMjAyNC0wMi0wN1QxNTo1NjoxNy40MjM3NzA2MjZaIiwiY3JlYXRlZF9ieSI6IkxBQkVMIG1haW50YWluZXJzPUt1YmVybmV0ZXMgQXV0aG9ycyIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDItMDdUMTU6NTY6MTcuNDIzNzcwNjI2WiIsImNyZWF0ZWRfYnkiOiJMQUJFTCBkZXNjcmlwdGlvbj1nbyBiYXNlZCBydW5uZXIgZm9yIGRpc3Ryb2xlc3Mgc2NlbmFyaW9zIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wMi0wN1QxNTo1NjoxNy40MjM3NzA2MjZaIiwiY3JlYXRlZF9ieSI6IldPUktESVIgLyIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDItMDdUMTU6NTY6MTcuNDIzNzcwNjI2WiIsImNyZWF0ZWRfYnkiOiJDT1BZIC93b3Jrc3BhY2UvZ28tcnVubmVyIC4gIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyNC0wMi0wN1QxNTo1NjoxNy40MjM3NzA2MjZaIiwiY3JlYXRlZF9ieSI6IkVOVFJZUE9JTlQgW1wiL2dvLXJ1bm5lclwiXSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDItMTRUMTA6NTY6NDAuMjY2NzEyMTg0WiIsImNyZWF0ZWRfYnkiOiJDT1BZICAvdXNyL2xvY2FsL2Jpbi8gIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6NmY0ZDQxMDJjMDQ5NjI1YmRhNWZmY2QwZTY3MWFlNjVhZWExZDYwMDczNWQzZGMzNTg1MzA5ZjdkOTljYzA4MyIsInNoYTI1NjoxMGU5YjllNzIxNzhiM2U1ZmU4ZmY1NjZhNjFlZWZiMDNhZDU4NWY1ZWFlNWNjMGYyYjA4ZGJlM2M4NzRjZWNiIiwic2hhMjU2OjZmMWUzNjgyZDY2YWJkMGQ5MjA5NTY5OTY4N2M0YzlhMDNiODdmNjhhNjViNWRkOWI3OWE0YzFlODczMDk5MzYiLCJzaGEyNTY6ZmY1NzAwZWM1NDE4NjUyOGNiYWU0MGY1NGMyNGIxYTM0ZmI3YzAxNTI3YmVhYTEyMzI4NjhjMTZlMjM1M2Y1MiIsInNoYTI1NjpkNTJmMDJjNjUwMWM5YzQ0MTA1NjhmMGJmNmZmMzBkMzBkODI5MGY1Nzc5NGMzMDhmZTM2ZWE3ODM5M2FmYWMyIiwic2hhMjU2OmU2MjRhNTM3MGVjYTJiODI2NmU3NGQxNzkzMjZlMmE4NzY3ZDM2MWRiMTRkMTNlZGQ5ZmI1N2U0MDg3MzE3ODQiLCJzaGEyNTY6MWE3M2I1NGY1NTZiNDc3ZjBhOGI5MzlkMTNjNTA0YTNiNGY0ZGI3MWY3YTA5YzYzYWZiYzEwYWNiM2RlNTg0OSIsInNoYTI1Njo4ZjJiMmQ3NDFkNTNjOGUyNWRhNmEzYjQwYTFmNDVhYmEyNjEyY2Y1YzFmZjA2ZTY0MjI4NjM1OGU3NTZkOWE4Iiwic2hhMjU2Ojk5NTlmOGRlMzMzNjk2MzQyZWVkZDQ5ZGIzNzMzMWE5YzNlZmE4NDg5OWYxMjM2MjI2YzE4ZGIyZTg1NmYyYWEiLCJzaGEyNTY6ZWVkYTJjODE1OWQ3M2IzMTRhZDY3ZTVmOGFkNmI0OTdiODEwNzYxY2VmYzQxODU4NzE5YjgxY2JjMmZmMDE2OCIsInNoYTI1Njo4NGZjYWZlZDA1Yjc4MTc2Y2I1NDU1M2ZkNDNiMWI4YTM2YzEzOGZjNDg2ZTkzZWU5MzAwMDY0M2VhZDY5NzUxIl19fQ==",
+      "distro": {
+        "os_name": "debian",
+        "os_version": "Debian"
+      },
+      "platform": {
+        "os": "linux",
+        "architecture": "amd64"
+      },
+      "size": 18516110
+    }
+  },
+  "attestations": [],
+  "artifacts": [
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "base-files",
+      "version": "12.4+deb12u4",
+      "purl": "pkg:deb/debian/base-files@12.4%2Bdeb12u4?os_name=debian&os_version=Debian",
+      "author": "Santiago Vila <sanvila@debian.org>",
+      "description": "Debian base system miscellaneous files\n This package contains the basic filesystem hierarchy of a Debian system, and\n several important miscellaneous files, such as /etc/debian_version,\n /etc/host.conf, /etc/issue, /etc/motd, /etc/profile, and others,\n and the text of several common licenses in use on Debian systems.",
+      "licenses": [
+        "GPL"
+      ],
+      "installed_size": 341,
+      "locations": [
+        {
+          "path": "/usr/share/doc/base-files/copyright",
+          "digest": "sha256:aba5379b9c6dc7c095628fe6598183d680b134c7f99748649dddf07ff1422846",
+          "diff_id": "sha256:6f4d4102c049625bda5ffcd0e671ae65aea1d600735d3dc3585309f7d99cc083"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/base-files",
+          "digest": "sha256:aba5379b9c6dc7c095628fe6598183d680b134c7f99748649dddf07ff1422846",
+          "diff_id": "sha256:6f4d4102c049625bda5ffcd0e671ae65aea1d600735d3dc3585309f7d99cc083"
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "netbase",
+      "version": "6.4",
+      "purl": "pkg:deb/debian/netbase@6.4?os_name=debian&os_version=Debian",
+      "author": "Marco d'Itri <md@linux.it>",
+      "description": "Basic TCP/IP networking system\n This package provides the necessary infrastructure for basic TCP/IP based\n networking.\n .\n In particular, it supplies common name-to-number mappings in /etc/services,\n /etc/rpc, /etc/protocols and /etc/ethertypes.",
+      "licenses": [
+        "GPL-2"
+      ],
+      "installed_size": 36,
+      "locations": [
+        {
+          "path": "/usr/share/doc/netbase/copyright",
+          "ordinal": 1,
+          "digest": "sha256:e5dbef90bae3c9df1dfd4ae7048c56226f6209d538c91f987aff4f54e888f566",
+          "diff_id": "sha256:10e9b9e72178b3e5fe8ff566a61eefb03ad585f5eae5cc0f2b08dbe3c874cecb"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/netbase",
+          "ordinal": 1,
+          "digest": "sha256:e5dbef90bae3c9df1dfd4ae7048c56226f6209d538c91f987aff4f54e888f566",
+          "diff_id": "sha256:10e9b9e72178b3e5fe8ff566a61eefb03ad585f5eae5cc0f2b08dbe3c874cecb"
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "tzdata",
+      "version": "2023c-5+deb12u1",
+      "purl": "pkg:deb/debian/tzdata@2023c-5%2Bdeb12u1?os_name=debian&os_version=Debian",
+      "author": "GNU Libc Maintainers <debian-glibc@lists.debian.org>",
+      "description": "time zone and daylight-saving time data\n This package contains data required for the implementation of\n standard local time for many representative locations around the\n globe. It is updated periodically to reflect changes made by\n political bodies to time zone boundaries, UTC offsets, and\n daylight-saving rules.",
+      "licenses": [
+        "public-domain"
+      ],
+      "installed_size": 2550,
+      "locations": [
+        {
+          "path": "/usr/share/doc/tzdata/copyright",
+          "ordinal": 2,
+          "digest": "sha256:fbe9343cb4af98ca5a60b6517bf45a5a4d7f7172fb4793d4b55c950196089cda",
+          "diff_id": "sha256:6f1e3682d66abd0d92095699687c4c9a03b87f68a65b5dd9b79a4c1e87309936"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/tzdata",
+          "ordinal": 2,
+          "digest": "sha256:fbe9343cb4af98ca5a60b6517bf45a5a4d7f7172fb4793d4b55c950196089cda",
+          "diff_id": "sha256:6f1e3682d66abd0d92095699687c4c9a03b87f68a65b5dd9b79a4c1e87309936"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/api",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/apiextensions-apiserver",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/apimachinery",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/apiserver",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/client-go",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/cloud-provider",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/component-base",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/component-helpers",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/controller-manager",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/csi-translation-lib",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/dynamic-resource-allocation",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/kms",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/kube-scheduler",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/kubelet",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/mount-utils",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/antlr",
+      "name": "antlr4",
+      "version": "4.0.0-20230305170008-8188dc5388df",
+      "purl": "pkg:golang/github.com/antlr/antlr4@4.0.0-20230305170008-8188dc5388df#runtime/Go/antlr/v4",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/asaskevich",
+      "name": "govalidator",
+      "version": "0.0.0-20190424111038-f61b66f89f4a",
+      "purl": "pkg:golang/github.com/asaskevich/govalidator@0.0.0-20190424111038-f61b66f89f4a",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/beorn7",
+      "name": "perks",
+      "version": "1.0.1",
+      "purl": "pkg:golang/github.com/beorn7/perks@1.0.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/blang",
+      "name": "semver",
+      "version": "4.0.0",
+      "purl": "pkg:golang/github.com/blang/semver@4.0.0#v4",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/cenkalti",
+      "name": "backoff",
+      "version": "4.2.1",
+      "purl": "pkg:golang/github.com/cenkalti/backoff@4.2.1#v4",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/cespare",
+      "name": "xxhash",
+      "version": "2.2.0",
+      "purl": "pkg:golang/github.com/cespare/xxhash@2.2.0#v2",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/coreos",
+      "name": "go-semver",
+      "version": "0.3.1",
+      "purl": "pkg:golang/github.com/coreos/go-semver@0.3.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/coreos",
+      "name": "go-systemd",
+      "version": "22.5.0",
+      "purl": "pkg:golang/github.com/coreos/go-systemd@22.5.0#v22",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/davecgh",
+      "name": "go-spew",
+      "version": "1.1.1",
+      "purl": "pkg:golang/github.com/davecgh/go-spew@1.1.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/distribution",
+      "name": "reference",
+      "version": "0.5.0",
+      "purl": "pkg:golang/github.com/distribution/reference@0.5.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/emicklei",
+      "name": "go-restful",
+      "version": "3.11.0",
+      "purl": "pkg:golang/github.com/emicklei/go-restful@3.11.0#v3",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/evanphx",
+      "name": "json-patch",
+      "version": "4.12.0+incompatible",
+      "purl": "pkg:golang/github.com/evanphx/json-patch@4.12.0%2Bincompatible",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/felixge",
+      "name": "httpsnoop",
+      "version": "1.0.3",
+      "purl": "pkg:golang/github.com/felixge/httpsnoop@1.0.3",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/fsnotify",
+      "name": "fsnotify",
+      "version": "1.7.0",
+      "purl": "pkg:golang/github.com/fsnotify/fsnotify@1.7.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/go-logr",
+      "name": "logr",
+      "version": "1.3.0",
+      "purl": "pkg:golang/github.com/go-logr/logr@1.3.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/go-logr",
+      "name": "stdr",
+      "version": "1.2.2",
+      "purl": "pkg:golang/github.com/go-logr/stdr@1.2.2",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/go-logr",
+      "name": "zapr",
+      "version": "1.2.3",
+      "purl": "pkg:golang/github.com/go-logr/zapr@1.2.3",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/go-openapi",
+      "name": "jsonpointer",
+      "version": "0.19.6",
+      "purl": "pkg:golang/github.com/go-openapi/jsonpointer@0.19.6",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/go-openapi",
+      "name": "jsonreference",
+      "version": "0.20.2",
+      "purl": "pkg:golang/github.com/go-openapi/jsonreference@0.20.2",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/go-openapi",
+      "name": "swag",
+      "version": "0.22.3",
+      "purl": "pkg:golang/github.com/go-openapi/swag@0.22.3",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/gogo",
+      "name": "protobuf",
+      "version": "1.3.2",
+      "purl": "pkg:golang/github.com/gogo/protobuf@1.3.2",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/golang",
+      "name": "groupcache",
+      "version": "0.0.0-20210331224755-41bb18bfe9da",
+      "purl": "pkg:golang/github.com/golang/groupcache@0.0.0-20210331224755-41bb18bfe9da",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/golang",
+      "name": "protobuf",
+      "version": "1.5.3",
+      "purl": "pkg:golang/github.com/golang/protobuf@1.5.3",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/google",
+      "name": "cel-go",
+      "version": "0.17.7",
+      "purl": "pkg:golang/github.com/google/cel-go@0.17.7",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/google",
+      "name": "gnostic-models",
+      "version": "0.6.8",
+      "purl": "pkg:golang/github.com/google/gnostic-models@0.6.8",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/google",
+      "name": "go-cmp",
+      "version": "0.6.0",
+      "purl": "pkg:golang/github.com/google/go-cmp@0.6.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/google",
+      "name": "gofuzz",
+      "version": "1.2.0",
+      "purl": "pkg:golang/github.com/google/gofuzz@1.2.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/google",
+      "name": "uuid",
+      "version": "1.3.0",
+      "purl": "pkg:golang/github.com/google/uuid@1.3.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/grpc-ecosystem",
+      "name": "go-grpc-prometheus",
+      "version": "1.2.0",
+      "purl": "pkg:golang/github.com/grpc-ecosystem/go-grpc-prometheus@1.2.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/grpc-ecosystem",
+      "name": "grpc-gateway",
+      "version": "2.16.0",
+      "purl": "pkg:golang/github.com/grpc-ecosystem/grpc-gateway@2.16.0#v2",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/imdario",
+      "name": "mergo",
+      "version": "0.3.6",
+      "purl": "pkg:golang/github.com/imdario/mergo@0.3.6",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/josharian",
+      "name": "intern",
+      "version": "1.0.0",
+      "purl": "pkg:golang/github.com/josharian/intern@1.0.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/json-iterator",
+      "name": "go",
+      "version": "1.1.12",
+      "purl": "pkg:golang/github.com/json-iterator/go@1.1.12",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/mailru",
+      "name": "easyjson",
+      "version": "0.7.7",
+      "purl": "pkg:golang/github.com/mailru/easyjson@0.7.7",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/matttproud",
+      "name": "golang_protobuf_extensions",
+      "version": "1.0.4",
+      "purl": "pkg:golang/github.com/matttproud/golang_protobuf_extensions@1.0.4",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/moby",
+      "name": "sys",
+      "version": "0.6.2",
+      "purl": "pkg:golang/github.com/moby/sys@0.6.2#mountinfo",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/moby",
+      "name": "term",
+      "version": "0.0.0-20221205130635-1aeaba878587",
+      "purl": "pkg:golang/github.com/moby/term@0.0.0-20221205130635-1aeaba878587",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/modern-go",
+      "name": "concurrent",
+      "version": "0.0.0-20180306012644-bacd9c7ef1dd",
+      "purl": "pkg:golang/github.com/modern-go/concurrent@0.0.0-20180306012644-bacd9c7ef1dd",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/modern-go",
+      "name": "reflect2",
+      "version": "1.0.2",
+      "purl": "pkg:golang/github.com/modern-go/reflect2@1.0.2",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/munnerz",
+      "name": "goautoneg",
+      "version": "0.0.0-20191010083416-a7dc8b61c822",
+      "purl": "pkg:golang/github.com/munnerz/goautoneg@0.0.0-20191010083416-a7dc8b61c822",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/nytimes",
+      "name": "gziphandler",
+      "version": "1.1.1",
+      "purl": "pkg:golang/github.com/nytimes/gziphandler@1.1.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/opencontainers",
+      "name": "go-digest",
+      "version": "1.0.0",
+      "purl": "pkg:golang/github.com/opencontainers/go-digest@1.0.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/opencontainers",
+      "name": "selinux",
+      "version": "1.11.0",
+      "purl": "pkg:golang/github.com/opencontainers/selinux@1.11.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/pkg",
+      "name": "errors",
+      "version": "0.9.1",
+      "purl": "pkg:golang/github.com/pkg/errors@0.9.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/prometheus",
+      "name": "client_golang",
+      "version": "1.16.0",
+      "purl": "pkg:golang/github.com/prometheus/client_golang@1.16.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/prometheus",
+      "name": "client_model",
+      "version": "0.4.0",
+      "purl": "pkg:golang/github.com/prometheus/client_model@0.4.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/prometheus",
+      "name": "common",
+      "version": "0.44.0",
+      "purl": "pkg:golang/github.com/prometheus/common@0.44.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/prometheus",
+      "name": "procfs",
+      "version": "0.10.1",
+      "purl": "pkg:golang/github.com/prometheus/procfs@0.10.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/spf13",
+      "name": "cobra",
+      "version": "1.7.0",
+      "purl": "pkg:golang/github.com/spf13/cobra@1.7.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/spf13",
+      "name": "pflag",
+      "version": "1.0.5",
+      "purl": "pkg:golang/github.com/spf13/pflag@1.0.5",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/stoewer",
+      "name": "go-strcase",
+      "version": "1.2.0",
+      "purl": "pkg:golang/github.com/stoewer/go-strcase@1.2.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.etcd.io/etcd",
+      "name": "api",
+      "version": "3.5.10",
+      "purl": "pkg:golang/go.etcd.io/etcd/api@3.5.10#v3",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.etcd.io/etcd",
+      "name": "client",
+      "version": "3.5.10",
+      "purl": "pkg:golang/go.etcd.io/etcd/client@3.5.10#pkg/v3",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.etcd.io/etcd",
+      "name": "client",
+      "version": "3.5.10",
+      "purl": "pkg:golang/go.etcd.io/etcd/client@3.5.10#v3",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/contrib",
+      "name": "instrumentation",
+      "version": "0.42.0",
+      "purl": "pkg:golang/go.opentelemetry.io/contrib/instrumentation@0.42.0#google.golang.org/grpc/otelgrpc",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/contrib",
+      "name": "instrumentation",
+      "version": "0.44.0",
+      "purl": "pkg:golang/go.opentelemetry.io/contrib/instrumentation@0.44.0#net/http/otelhttp",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/otel",
+      "name": "exporters",
+      "version": "1.19.0",
+      "purl": "pkg:golang/go.opentelemetry.io/otel/exporters@1.19.0#otlp/otlptrace",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/otel",
+      "name": "exporters",
+      "version": "1.19.0",
+      "purl": "pkg:golang/go.opentelemetry.io/otel/exporters@1.19.0#otlp/otlptrace/otlptracegrpc",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/otel",
+      "name": "metric",
+      "version": "1.19.0",
+      "purl": "pkg:golang/go.opentelemetry.io/otel/metric@1.19.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/otel",
+      "name": "sdk",
+      "version": "1.19.0",
+      "purl": "pkg:golang/go.opentelemetry.io/otel/sdk@1.19.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/otel",
+      "name": "trace",
+      "version": "1.19.0",
+      "purl": "pkg:golang/go.opentelemetry.io/otel/trace@1.19.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io",
+      "name": "otel",
+      "version": "1.19.0",
+      "purl": "pkg:golang/go.opentelemetry.io/otel@1.19.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/proto",
+      "name": "otlp",
+      "version": "1.0.0",
+      "purl": "pkg:golang/go.opentelemetry.io/proto/otlp@1.0.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.uber.org",
+      "name": "atomic",
+      "version": "1.10.0",
+      "purl": "pkg:golang/go.uber.org/atomic@1.10.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.uber.org",
+      "name": "multierr",
+      "version": "1.11.0",
+      "purl": "pkg:golang/go.uber.org/multierr@1.11.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.uber.org",
+      "name": "zap",
+      "version": "1.19.0",
+      "purl": "pkg:golang/go.uber.org/zap@1.19.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "crypto",
+      "version": "0.16.0",
+      "purl": "pkg:golang/golang.org/x/crypto@0.16.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "exp",
+      "version": "0.0.0-20220722155223-a9213eeb770e",
+      "purl": "pkg:golang/golang.org/x/exp@0.0.0-20220722155223-a9213eeb770e",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "net",
+      "version": "0.19.0",
+      "purl": "pkg:golang/golang.org/x/net@0.19.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "oauth2",
+      "version": "0.10.0",
+      "purl": "pkg:golang/golang.org/x/oauth2@0.10.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "sync",
+      "version": "0.5.0",
+      "purl": "pkg:golang/golang.org/x/sync@0.5.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "sys",
+      "version": "0.15.0",
+      "purl": "pkg:golang/golang.org/x/sys@0.15.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "term",
+      "version": "0.15.0",
+      "purl": "pkg:golang/golang.org/x/term@0.15.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "text",
+      "version": "0.14.0",
+      "purl": "pkg:golang/golang.org/x/text@0.14.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "time",
+      "version": "0.3.0",
+      "purl": "pkg:golang/golang.org/x/time@0.3.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "google.golang.org/genproto",
+      "name": "googleapis",
+      "version": "0.0.0-20230726155614-23370e0ffb3e",
+      "purl": "pkg:golang/google.golang.org/genproto/googleapis@0.0.0-20230726155614-23370e0ffb3e#api",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "google.golang.org/genproto",
+      "name": "googleapis",
+      "version": "0.0.0-20230822172742-b8732ec3820d",
+      "purl": "pkg:golang/google.golang.org/genproto/googleapis@0.0.0-20230822172742-b8732ec3820d#rpc",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "google.golang.org",
+      "name": "grpc",
+      "version": "1.58.3",
+      "purl": "pkg:golang/google.golang.org/grpc@1.58.3",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "google.golang.org",
+      "name": "protobuf",
+      "version": "1.31.0",
+      "purl": "pkg:golang/google.golang.org/protobuf@1.31.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "gopkg.in",
+      "name": "inf.v0",
+      "version": "0.9.1",
+      "purl": "pkg:golang/gopkg.in/inf.v0@0.9.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "gopkg.in/natefinch",
+      "name": "lumberjack.v2",
+      "version": "2.2.1",
+      "purl": "pkg:golang/gopkg.in/natefinch/lumberjack.v2@2.2.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "gopkg.in",
+      "name": "yaml.v2",
+      "version": "2.4.0",
+      "purl": "pkg:golang/gopkg.in/yaml.v2@2.4.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "gopkg.in",
+      "name": "yaml.v3",
+      "version": "3.0.1",
+      "purl": "pkg:golang/gopkg.in/yaml.v3@3.0.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "k8s.io/klog",
+      "name": "v2",
+      "version": "2.110.1",
+      "purl": "pkg:golang/k8s.io/klog/v2@2.110.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "k8s.io",
+      "name": "kube-openapi",
+      "version": "0.0.0-20231010175941-2dd684a91f00",
+      "purl": "pkg:golang/k8s.io/kube-openapi@0.0.0-20231010175941-2dd684a91f00",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "k8s.io",
+      "name": "kubernetes",
+      "version": "(devel)",
+      "purl": "pkg:golang/k8s.io/kubernetes@(devel)",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "k8s.io/release",
+      "name": "images",
+      "version": "(devel)",
+      "purl": "pkg:golang/k8s.io/release/images@(devel)#build/go-runner",
+      "locations": [
+        {
+          "path": "/go-runner",
+          "ordinal": 12,
+          "digest": "sha256:0ff23cbdb4f0f381098a9890391cbf7c01bfa0be99bf935a3efcdb166e175b3c",
+          "diff_id": "sha256:eeda2c8159d73b314ad67e5f8ad6b497b810761cefc41858719b81cbc2ff0168"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "k8s.io",
+      "name": "utils",
+      "version": "0.0.0-20230726121419-3b25d923346b",
+      "purl": "pkg:golang/k8s.io/utils@0.0.0-20230726121419-3b25d923346b",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "sigs.k8s.io/apiserver-network-proxy",
+      "name": "konnectivity-client",
+      "version": "0.28.0",
+      "purl": "pkg:golang/sigs.k8s.io/apiserver-network-proxy/konnectivity-client@0.28.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "sigs.k8s.io",
+      "name": "json",
+      "version": "0.0.0-20221116044647-bc3834ca7abd",
+      "purl": "pkg:golang/sigs.k8s.io/json@0.0.0-20221116044647-bc3834ca7abd",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "sigs.k8s.io/structured-merge-diff",
+      "name": "v4",
+      "version": "4.4.1",
+      "purl": "pkg:golang/sigs.k8s.io/structured-merge-diff/v4@4.4.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "sigs.k8s.io",
+      "name": "yaml",
+      "version": "1.3.0",
+      "purl": "pkg:golang/sigs.k8s.io/yaml@1.3.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "name": "stdlib",
+      "version": "1.21.7",
+      "purl": "pkg:golang/stdlib@1.21.7",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        },
+        {
+          "path": "/go-runner",
+          "ordinal": 12,
+          "digest": "sha256:0ff23cbdb4f0f381098a9890391cbf7c01bfa0be99bf935a3efcdb166e175b3c",
+          "diff_id": "sha256:eeda2c8159d73b314ad67e5f8ad6b497b810761cefc41858719b81cbc2ff0168"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "name": "stdlib",
+      "version": "go1.21.7",
+      "purl": "pkg:golang/stdlib@go1.21.7",
+      "licenses": [
+        "BSD-3-Clause"
+      ],
+      "locations": [
+        {
+          "path": "/go-runner",
+          "ordinal": 12,
+          "digest": "sha256:0ff23cbdb4f0f381098a9890391cbf7c01bfa0be99bf935a3efcdb166e175b3c",
+          "diff_id": "sha256:eeda2c8159d73b314ad67e5f8ad6b497b810761cefc41858719b81cbc2ff0168"
+        },
+        {
+          "path": "/usr/local/bin/kube-scheduler",
+          "ordinal": 14,
+          "digest": "sha256:c16e34c1839ccb6b4f827cca99cab5a5524e54b2ab7e55a8e3e211a3c055366a",
+          "diff_id": "sha256:84fcafed05b78176cb54553fd43b1b8a36c138fc486e93ee93000643ead69751"
+        }
+      ]
+    }
+  ],
+  "descriptor": {
+    "name": "docker-scout",
+    "version": "1.10.0",
+    "sbom_version": "11"
+  }
+}

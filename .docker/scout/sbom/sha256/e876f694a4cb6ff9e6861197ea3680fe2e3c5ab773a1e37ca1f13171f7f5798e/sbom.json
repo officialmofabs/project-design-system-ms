@@ -1,0 +1,76 @@
+{
+  "source": {
+    "type": "image",
+    "image": {
+      "name": "justincormack/nsenter1",
+      "digest": "sha256:e876f694a4cb6ff9e6861197ea3680fe2e3c5ab773a1e37ca1f13171f7f5798e",
+      "tags": [
+        "latest"
+      ],
+      "manifest": {
+        "schemaVersion": 2,
+        "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+        "config": {
+          "mediaType": "application/vnd.docker.container.image.v1+json",
+          "size": 1552,
+          "digest": "sha256:c81481184b1b001f225769d1482b360b4be18fe7dd53fa93cdbd45d568e905a7"
+        },
+        "layers": [
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 32021,
+            "digest": "sha256:5bc638ae6f98f853c3e62a7b84c971cc7ceef4c6144b600c5b5ac7bf7cc72344"
+          }
+        ]
+      },
+      "config": {
+        "architecture": "amd64",
+        "container": "376360880cd65e85eb69d10f966e7b7e1407c9eb51c2426674ca126e1520e82c",
+        "created": "2018-01-17T11:36:39.275322941Z",
+        "docker_version": "18.01.0-ce",
+        "history": [
+          {
+            "created": "2018-01-17T11:36:39.073955175Z",
+            "created_by": "/bin/sh -c #(nop) COPY file:32a3175cae8425b06e9da06d4bd3a6ce15c2fbaa103ed7b8e6d19356e4fd3496 in /usr/bin/nsenter1 "
+          },
+          {
+            "created": "2018-01-17T11:36:39.275322941Z",
+            "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/usr/bin/nsenter1\"]",
+            "empty_layer": true
+          }
+        ],
+        "os": "linux",
+        "rootfs": {
+          "type": "layers",
+          "diff_ids": [
+            "sha256:c43e635df3c82c2f4ce61495e8440e23ed6001c7c26c8353e6b743459a97d60e"
+          ]
+        },
+        "config": {
+          "Entrypoint": [
+            "/usr/bin/nsenter1"
+          ],
+          "Env": [
+            "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+          ],
+          "Image": "sha256:20b8e8e47273c07a3e7452917b374a3d8be6170a7e846d4bcec82e62f052dfa3"
+        }
+      },
+      "raw_manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjoxNTUyLCJkaWdlc3QiOiJzaGEyNTY6YzgxNDgxMTg0YjFiMDAxZjIyNTc2OWQxNDgyYjM2MGI0YmUxOGZlN2RkNTNmYTkzY2RiZDQ1ZDU2OGU5MDVhNyJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjozMjAyMSwiZGlnZXN0Ijoic2hhMjU2OjViYzYzOGFlNmY5OGY4NTNjM2U2MmE3Yjg0Yzk3MWNjN2NlZWY0YzYxNDRiNjAwYzViNWFjN2JmN2NjNzIzNDQifV19",
+      "raw_config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iXSwiQ21kIjpudWxsLCJJbWFnZSI6InNoYTI1NjoyMGI4ZThlNDcyNzNjMDdhM2U3NDUyOTE3YjM3NGEzZDhiZTYxNzBhN2U4NDZkNGJjZWM4MmU2MmYwNTJkZmEzIiwiVm9sdW1lcyI6bnVsbCwiV29ya2luZ0RpciI6IiIsIkVudHJ5cG9pbnQiOlsiL3Vzci9iaW4vbnNlbnRlcjEiXSwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjpudWxsfSwiY29udGFpbmVyIjoiMzc2MzYwODgwY2Q2NWU4NWViNjlkMTBmOTY2ZTdiN2UxNDA3YzllYjUxYzI0MjY2NzRjYTEyNmUxNTIwZTgyYyIsImNvbnRhaW5lcl9jb25maWciOnsiSG9zdG5hbWUiOiIzNzYzNjA4ODBjZDYiLCJEb21haW5uYW1lIjoiIiwiVXNlciI6IiIsIkF0dGFjaFN0ZGluIjpmYWxzZSwiQXR0YWNoU3Rkb3V0IjpmYWxzZSwiQXR0YWNoU3RkZXJyIjpmYWxzZSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIl0sIkNtZCI6WyIvYmluL3NoIiwiLWMiLCIjKG5vcCkgIiwiRU5UUllQT0lOVCBbXCIvdXNyL2Jpbi9uc2VudGVyMVwiXSJdLCJJbWFnZSI6InNoYTI1NjoyMGI4ZThlNDcyNzNjMDdhM2U3NDUyOTE3YjM3NGEzZDhiZTYxNzBhN2U4NDZkNGJjZWM4MmU2MmYwNTJkZmEzIiwiVm9sdW1lcyI6bnVsbCwiV29ya2luZ0RpciI6IiIsIkVudHJ5cG9pbnQiOlsiL3Vzci9iaW4vbnNlbnRlcjEiXSwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjp7fX0sImNyZWF0ZWQiOiIyMDE4LTAxLTE3VDExOjM2OjM5LjI3NTMyMjk0MVoiLCJkb2NrZXJfdmVyc2lvbiI6IjE4LjAxLjAtY2UiLCJoaXN0b3J5IjpbeyJjcmVhdGVkIjoiMjAxOC0wMS0xN1QxMTozNjozOS4wNzM5NTUxNzVaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApIENPUFkgZmlsZTozMmEzMTc1Y2FlODQyNWIwNmU5ZGEwNmQ0YmQzYTZjZTE1YzJmYmFhMTAzZWQ3YjhlNmQxOTM1NmU0ZmQzNDk2IGluIC91c3IvYmluL25zZW50ZXIxICJ9LHsiY3JlYXRlZCI6IjIwMTgtMDEtMTdUMTE6MzY6MzkuMjc1MzIyOTQxWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgRU5UUllQT0lOVCBbXCIvdXNyL2Jpbi9uc2VudGVyMVwiXSIsImVtcHR5X2xheWVyIjp0cnVlfV0sIm9zIjoibGludXgiLCJyb290ZnMiOnsidHlwZSI6ImxheWVycyIsImRpZmZfaWRzIjpbInNoYTI1NjpjNDNlNjM1ZGYzYzgyYzJmNGNlNjE0OTVlODQ0MGUyM2VkNjAwMWM3YzI2YzgzNTNlNmI3NDM0NTlhOTdkNjBlIl19fQ==",
+      "distro": {},
+      "platform": {
+        "os": "linux",
+        "architecture": "amd64"
+      },
+      "size": 32021
+    }
+  },
+  "attestations": [],
+  "artifacts": [],
+  "descriptor": {
+    "name": "docker-scout",
+    "version": "1.9.3",
+    "sbom_version": "11"
+  }
+}

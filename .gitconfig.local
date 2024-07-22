@@ -1,0 +1,179 @@
+# See the following for references:
+#  * http://www.metacircus.com/hacking/2011/02/18/play-git-like-a-violin.html
+#  * http://cheat.errtheblog.com/s/git/
+#  * http://pyrtsa.posterous.com/aligning-your-git-logs
+#  * http://blog.apiaxle.com/post/handy-git-tips-to-stop-you-getting-fired/
+
+# Git >v1.7.10 lets you include external files
+# Put your user configuration in here, so it never
+# accidentally gets checked in
+[include]
+  path = /home/officialmofabs/.gitconfig.local
+  path = D:\project-design-system-ms\.gitconfig.local
+
+# Colour settings across all (colour) reporting
+[color]
+	ui = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	whitespace = red reverse
+
+# External tools
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+
+[alias]
+	# Remember the current branch, so you can get back to it
+	remember = "!git b | grep '*' | sed -e 's/^\\* *//' > /tmp/git-remember"
+	recall = "!cat /tmp/git-remember"
+	forget = "!rm /tmp/git-remember"
+
+	# Add
+	a = add
+	# Add in interactive mode to make complex commits
+	ai = add --interactive
+
+	# Assuming
+	assume   = update-index --assume-unchanged
+	unassume = update-index --no-assume-unchanged
+	assumed  = "!git ls-files -v | grep ^h | cut -c 3-"
+
+	# Branching
+	b = branch
+	ba = branch -a
+	b-tr = branch --track
+	b-tr-u = branch --set-upstream
+
+	# Commit
+	c = commit
+	# commit with a message
+	cm = commit -m
+	cma = commit -a -m
+	# amending the previous commit
+	ca = commit --amend
+	caa = commit -a --amend -C HEAD
+
+	# Checkout
+	co = checkout
+	co6 = checkout 6.x-1.x
+	co7 = checkout 7.x-1.x
+	co8 = checkout 8.x-1.x
+	com = checkout master
+	cod = checkout develop
+	cor = checkout release
+
+	# Diff
+	d = diff
+	dc = diff --cached
+	d-np = diff --no-prefix
+
+	# Fetching
+	f = fetch
+	ft = fetch --tags
+	fta = fetch --tags --all
+
+	# Merging
+	m = merge
+	# Merge master/develop into the current branch
+	mm = merge master
+	md = merge develop
+	# Merge from current branch into master, then switch back
+	m2m = "!i=`git b | grep '*' | sed -e 's/^\\* *//'`; git com; git m $i; git co $i"
+	m2d = "!i=`git b | grep '*' | sed -e 's/^\\* *//'`; git cod; git m --no-ff $i; git co $i"
+	m2dff = "!i=`git b | grep '*' | sed -e 's/^\\* *//'`; git cod; git m $i; git co $i"
+	# Merge from remembered branch into current
+	mrem = "!git merge `cat /tmp/git-remember`"
+	# Working out what's ours and theirs during a merge
+	# "The function is there as hack to get $@..."
+	ours   = "!f() { git checkout --ours $@ && git add $@; }; f"
+	theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
+
+	# Push/pull
+	ps = push
+	pl = pull
+	pt = push --tags
+	pt-o = push origin --tags
+	ps-o = push origin
+	pl-o = pull origin
+	# Branch-specific push/pull
+	# Master, develop and release (pre-git flow)
+	ps-om = push origin master
+	pl-om = pull origin master
+	ps-od = push origin develop
+	pl-od = pull origin develop
+	ps-or = push origin release
+	pl-or = pull origin release
+	# Push/pull whatever the current branch is
+	pl-oc = "!git pl-o `git b | grep '*' | sed -e 's/^\\* *//'`"
+	ps-oc = "!git ps-o `git b | grep '*' | sed -e 's/^\\* *//'`"
+	# Pull followed by push, for reconciling and pushing changes.
+	pp-oc = "!git pl-oc && git ps-oc"
+	# Drupal module branches
+	pl-o6 = pull origin 6.x-1.x
+	ps-o6 = push origin 6.x-1.x
+	pl-o7 = pull origin 7.x-1.x
+	ps-o7 = push origin 7.x-1.x
+	pl-o8 = pull origin 8.x-1.x
+	ps-o8 = push origin 8.x-1.x
+
+	# Reset
+	# Soft resets
+	r = reset
+	r1 = reset HEAD^
+	r2 = reset HEAD^^
+	# Hard resets
+	rh = reset --hard
+	rh1 = reset HEAD^ --hard
+	rh2 = reset HEAD^^ --hard
+
+	# Remote repositories and cloning
+	rem = remote
+	rema = remote add
+	remao = remote add origin
+	remd = remote rm
+	remv = remote -v
+	cl = clone
+
+	# Tagging and describing the current checkout
+	t = tag -l
+	tt = tag -l -n1
+	desc = describe
+	desct = describe --tags
+	name = rev-parse HEAD
+	name-cut = "!git rev-parse HEAD | cut -c -8"
+
+	# Nice logging
+	where = log --decorate --pretty=oneline -n1 --color
+	lol = log --pretty=oneline --graph --color --decorate --stat
+	lola = log --pretty=oneline --graph --color --decorate --abbrev-commit --all
+	l50 = "!git log --abbrev-commit --date=short --pretty=format:'%x00%h%x00%cd%x00%s%x00%an%x00%d' | gawk -F '\\0' '{ printf \"%s\\033[31m%s\\033[0m \\033[32m%s\\033[0m  %-50s \\033[30;1m%s\\033[0m\\033[33m%s\\n\", $1, $2, $3, gensub(/(.{49}).{2,}/, \"\\\\1…\",\"g\",$4), $5, $6 }' | less -R"
+	l80 = "!git log --abbrev-commit --date=short --pretty=format:'%x00%h%x00%cd%x00%s%x00%an%x00%d' | gawk -F '\\0' '{ printf \"%s\\033[31m%s\\033[0m \\033[32m%s\\033[0m  %-80s \\033[30;1m%s\\033[0m\\033[33m%s\\n\", $1, $2, $3, gensub(/(.{79}).{2,}/, \"\\\\1…\",\"g\",$4), $5, $6 }' | less -R"
+	lg50 = "!git log --graph --color --abbrev-commit --date=relative --pretty=format:'%x00%h%x00%s%x00%cd%x00%an%x00%d' | gawk -F '\\0' '{ printf \"%s\\033[31m%s\\033[0m %-50s \\033[32m%14s\\033[0m \\033[30;1m%s\\033[0m\\033[33m%s\\n\", $1, $2, gensub(/(.{49}).{2,}/, \"\\\\1…\",\"g\",$3), $4, $5, $6 }' | less -R"
+	lg80 = "!git log --graph --color --abbrev-commit --date=relative --pretty=format:'%x00%h%x00%s%x00%cd%x00%an%x00%d' | gawk -F '\\0' '{ printf \"%s\\033[31m%s\\033[0m %-80s \\033[32m%14s\\033[0m \\033[30;1m%s\\033[0m\\033[33m%s\\n\", $1, $2, gensub(/(.{79}).{2,}/, \"\\\\1…\",\"g\",$3), $4, $5, $6 }' | less -R"
+
+	# Misc other commands
+	s = status
+	i = init
+	l = log
+	ls = ls-files
+	ign = ls-files -o -i --exclude-standard
+	# Initialize a git repository and check everything in
+	inad = !"git init && git add . && git commit -m 'First checkin'"
+	# Take a snapshot of the current build as a stash
+	snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
+
+	# Gitk
+	k = !"gitk &"
+	ka = !"gitk --all &"
+
+[core]
+	excludesfile = ~/.gitignore
+	autocrlf = false

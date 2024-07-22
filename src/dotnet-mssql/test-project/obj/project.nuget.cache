@@ -1,54 +1,44 @@
 {
   "version": 2,
-  "dgSpecHash": "SqYzP5EBM3JN+SH1RSxqBymRlRuxEC3FzmU+F1gXhScmryVk7Ux+RtiSXA+VfAZUnvxt/GMIb8QWLwdV6Zgl8g==",
+  "dgSpecHash": "DCS3HpEZ8zQ=",
   "success": false,
-  "projectFilePath": "D:\\workspaces.git\\projects.git\\microsoft-cloud-development\\containers\\dotnet-mssql\\test-project\\aspnetapp.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\project-design-system-ms\\src\\dotnet-mssql\\test-project\\aspnetapp.csproj",
+  "expectedPackageFiles": [
+    "D:\\packages\\NuGet\\cache\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "D:\\packages\\NuGet\\cache\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "D:\\packages\\NuGet\\cache\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "D:\\packages\\NuGet\\cache\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
   "logs": [
     {
-      "code": "NU1101",
+      "code": "NU1301",
       "level": "Error",
-      "message": "Unable to find package Microsoft.Data.SqlClient. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
-      "libraryId": "Microsoft.Data.SqlClient",
-      "targetGraphs": [
-        "net5.0"
-      ]
+      "message": "The local source 'I:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages' doesn't exist.",
+      "libraryId": "Microsoft.Data.SqlClient"
     },
     {
-      "code": "NU1101",
+      "code": "NU1301",
       "level": "Error",
-      "message": "Unable to find package Microsoft.NETCore.App.Ref. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
-      "libraryId": "Microsoft.NETCore.App.Ref",
-      "targetGraphs": [
-        "net5.0"
-      ]
+      "message": "The local source 'I:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages' doesn't exist.",
+      "libraryId": "Microsoft.Data.SqlClient.SNI.runtime"
     },
     {
-      "code": "NU1101",
+      "code": "NU1301",
       "level": "Error",
-      "message": "Unable to find package Microsoft.WindowsDesktop.App.Ref. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
-      "libraryId": "Microsoft.WindowsDesktop.App.Ref",
-      "targetGraphs": [
-        "net5.0"
-      ]
+      "message": "The local source 'I:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages' doesn't exist.",
+      "libraryId": "System.Security.Principal.Windows"
     },
     {
-      "code": "NU1101",
+      "code": "NU1301",
       "level": "Error",
-      "message": "Unable to find package Microsoft.AspNetCore.App.Ref. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
-      "libraryId": "Microsoft.AspNetCore.App.Ref",
-      "targetGraphs": [
-        "net5.0"
-      ]
+      "message": "The local source 'I:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages' doesn't exist.",
+      "libraryId": "Microsoft.Win32.Registry"
     },
     {
-      "code": "NU1101",
+      "code": "NU1301",
       "level": "Error",
-      "message": "Unable to find package Microsoft.NETCore.App.Host.win-x64. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
-      "libraryId": "Microsoft.NETCore.App.Host.win-x64",
-      "targetGraphs": [
-        "net5.0"
-      ]
+      "message": "The local source 'I:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages' doesn't exist.",
+      "libraryId": "Microsoft.NETCore.Platforms"
     }
   ]
 }

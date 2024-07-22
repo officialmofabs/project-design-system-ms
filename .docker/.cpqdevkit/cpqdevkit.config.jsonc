@@ -1,0 +1,22 @@
+//CPQ DevKit Configuration File 
+{
+    "_git_auto_commit": false,
+    "_table_format": "json",
+    "_ocpq_environment_active": "dev",
+    "_ocpq_environments": [{
+        "name": "prod",
+        "url": "*.bigmachines.com",
+        "username": "",
+        "password": ""
+    }, {
+        "name": "dev",
+        "url": "*.bigmachines.com",
+        "username": "",
+        "password": ""
+    }, {
+        "name": "test",
+        "url": "*.bigmachines.com",
+        "username": "",
+        "password": ""
+    }]
+}

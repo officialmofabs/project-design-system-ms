@@ -1,0 +1,82 @@
+{
+  "source": {
+    "type": "image",
+    "image": {
+      "name": "busybox",
+      "digest": "sha256:9ae97d36d26566ff84e8893c64a6dc4fe8ca6d1144bf5b87b2b85a32def253c7",
+      "tags": [
+        "latest"
+      ],
+      "manifest": {
+        "schemaVersion": 2,
+        "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+        "config": {
+          "mediaType": "application/vnd.docker.container.image.v1+json",
+          "size": 372,
+          "digest": "sha256:65ad0d468eb1c558bf7f4e64e790f586e9eda649ee9f130cd0e835b292bbc5ac"
+        },
+        "layers": [
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 2152663,
+            "digest": "sha256:ec562eabd705d25bfea8c8d79e4610775e375524af00552fe871d3338261563c"
+          }
+        ]
+      },
+      "config": {
+        "architecture": "amd64",
+        "created": "2023-05-18T22:34:17Z",
+        "history": [
+          {
+            "created": "2023-05-18T22:34:17Z",
+            "created_by": "BusyBox 1.36.1 (glibc), Debian 12"
+          }
+        ],
+        "os": "linux",
+        "rootfs": {
+          "type": "layers",
+          "diff_ids": [
+            "sha256:d51af96cf93e225825efd484ea457f867cb2b967f7415b9a3b7e65a2f803838a"
+          ]
+        },
+        "config": {
+          "Cmd": [
+            "sh"
+          ]
+        }
+      },
+      "raw_manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjozNzIsImRpZ2VzdCI6InNoYTI1Njo2NWFkMGQ0NjhlYjFjNTU4YmY3ZjRlNjRlNzkwZjU4NmU5ZWRhNjQ5ZWU5ZjEzMGNkMGU4MzViMjkyYmJjNWFjIn0sImxheWVycyI6W3sibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjIxNTI2NjMsImRpZ2VzdCI6InNoYTI1NjplYzU2MmVhYmQ3MDVkMjViZmVhOGM4ZDc5ZTQ2MTA3NzVlMzc1NTI0YWYwMDU1MmZlODcxZDMzMzgyNjE1NjNjIn1dfQ==",
+      "raw_config": "ewoJImNvbmZpZyI6IHsKCQkiQ21kIjogWwoJCQkic2giCgkJXQoJfSwKCSJjcmVhdGVkIjogIjIwMjMtMDUtMThUMjI6MzQ6MTdaIiwKCSJoaXN0b3J5IjogWwoJCXsKCQkJImNyZWF0ZWQiOiAiMjAyMy0wNS0xOFQyMjozNDoxN1oiLAoJCQkiY3JlYXRlZF9ieSI6ICJCdXN5Qm94IDEuMzYuMSAoZ2xpYmMpLCBEZWJpYW4gMTIiCgkJfQoJXSwKCSJyb290ZnMiOiB7CgkJInR5cGUiOiAibGF5ZXJzIiwKCQkiZGlmZl9pZHMiOiBbCgkJCSJzaGEyNTY6ZDUxYWY5NmNmOTNlMjI1ODI1ZWZkNDg0ZWE0NTdmODY3Y2IyYjk2N2Y3NDE1YjlhM2I3ZTY1YTJmODAzODM4YSIKCQldCgl9LAoJImFyY2hpdGVjdHVyZSI6ICJhbWQ2NCIsCgkib3MiOiAibGludXgiCn0K",
+      "distro": {
+        "os_name": "busybox",
+        "os_version": "1"
+      },
+      "platform": {
+        "os": "linux",
+        "architecture": "amd64"
+      },
+      "size": 2152663
+    }
+  },
+  "attestations": [],
+  "artifacts": [
+    {
+      "type": "generic",
+      "name": "busybox",
+      "version": "1.36.1",
+      "purl": "pkg:generic/busybox@1.36.1",
+      "locations": [
+        {
+          "path": "/bin/[",
+          "digest": "sha256:ec562eabd705d25bfea8c8d79e4610775e375524af00552fe871d3338261563c",
+          "diff_id": "sha256:d51af96cf93e225825efd484ea457f867cb2b967f7415b9a3b7e65a2f803838a"
+        }
+      ]
+    }
+  ],
+  "descriptor": {
+    "name": "docker-scout",
+    "version": "1.9.3",
+    "sbom_version": "11"
+  }
+}

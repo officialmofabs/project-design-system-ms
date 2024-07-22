@@ -1,0 +1,2392 @@
+{
+  "source": {
+    "type": "image",
+    "image": {
+      "name": "registry.k8s.io/etcd",
+      "digest": "sha256:22f892d7672adc0b9c86df67792afdb8b2dc08880f49f669eaaa59c47d7908c2",
+      "tags": [
+        "3.5.10-0"
+      ],
+      "manifest": {
+        "schemaVersion": 2,
+        "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+        "config": {
+          "mediaType": "application/vnd.docker.container.image.v1+json",
+          "size": 2306,
+          "digest": "sha256:a0eed15eed4498c145ef2f1883fcd300d7adbb759df73c901abd5383dda668e7"
+        },
+        "layers": [
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 103742,
+            "digest": "sha256:07a64a71e01156f8f99039bc246149925c6d1480d3957de78510bbec6ec68f7a"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 21202,
+            "digest": "sha256:fe5ca62666f04366c8e7f605aa82997d71320183e99962fa76b3209fdfbb8b58"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 716491,
+            "digest": "sha256:b02a7525f878e61fc1ef8a7405a2cc17f866e8de222c1c98fd6681aff6e509db"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 317,
+            "digest": "sha256:fcb6f6d2c9986d9cd6a2ea3cc2936e5fc613e09f1af9042329011e43057f3265"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 198,
+            "digest": "sha256:e8c73c638ae9ec5ad70c49df7e484040d889cca6b4a9af056579c3d058ea93f0"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 113,
+            "digest": "sha256:1e3d9b7d145208fa8fa3ee1c9612d0adaac7255f1bbc9ddea7e461e0b317805c"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 385,
+            "digest": "sha256:4aa0ea1413d37a58615488592a0b827ea4b2e48fa5a77cf707d0e35f025e613f"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 355,
+            "digest": "sha256:7c881f9ab25e0d86562a123b5fb56aebf8aa0ddd7d48ef602faf8d1e7cf43d8c"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 130562,
+            "digest": "sha256:5627a970d25e752d971a501ec7e35d0d6fdcd4a3ce9e958715a686853024794a"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 1155942,
+            "digest": "sha256:4afac388286e54640c242f33e594651092bff34908f53ed81caabd0d9a98b1f8"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 44696704,
+            "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 9815847,
+            "digest": "sha256:0eaaff167d4d678a2a67a1ab7239a902446b10922fe32476cc25ab8f04e707b2"
+          }
+        ]
+      },
+      "config": {
+        "architecture": "amd64",
+        "created": "2023-11-01T13:20:00.072557844Z",
+        "history": [
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "0001-01-01T00:00:00Z"
+          },
+          {
+            "created": "2023-11-01T13:19:59.274179834Z",
+            "created_by": "WORKDIR /",
+            "comment": "buildkit.dockerfile.v0",
+            "empty_layer": true
+          },
+          {
+            "created": "2023-11-01T13:19:59.274179834Z",
+            "created_by": "COPY /sh /bin/ # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          },
+          {
+            "created": "2023-11-01T13:19:59.274179834Z",
+            "created_by": "EXPOSE map[2379/tcp:{} 2380/tcp:{} 4001/tcp:{} 7001/tcp:{}]",
+            "comment": "buildkit.dockerfile.v0",
+            "empty_layer": true
+          },
+          {
+            "created": "2023-11-01T13:19:59.974284903Z",
+            "created_by": "COPY etcd* etcdctl* /usr/local/bin/ # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          },
+          {
+            "created": "2023-11-01T13:20:00.072557844Z",
+            "created_by": "COPY migrate-if-needed.sh migrate /usr/local/bin/ # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          }
+        ],
+        "os": "linux",
+        "rootfs": {
+          "type": "layers",
+          "diff_ids": [
+            "sha256:54ad2ec71039b74f7e82f020a92a8c2ca45f16a51930d539b56973a18b8ffe8d",
+            "sha256:6fbdf253bbc2490dcfede5bdb58ca0db63ee8aff565f6ea9f918f3bce9e2d5aa",
+            "sha256:7bea6b893187b14fc0a759fe5f8972d1292a9c0554c87cbf485f0947c26b8a05",
+            "sha256:ff5700ec54186528cbae40f54c24b1a34fb7c01527beaa1232868c16e2353f52",
+            "sha256:d52f02c6501c9c4410568f0bf6ff30d30d8290f57794c308fe36ea78393afac2",
+            "sha256:e624a5370eca2b8266e74d179326e2a8767d361db14d13edd9fb57e408731784",
+            "sha256:1a73b54f556b477f0a8b939d13c504a3b4f4db71f7a09c63afbc10acb3de5849",
+            "sha256:d2d7ec0f6756eb51cf1602c6f8ac4dd811d3d052661142e0110357bf0b581457",
+            "sha256:4cb10dd2545bd173858450b80853b850e49608260f1a0789e0d0b39edf12f500",
+            "sha256:5185a177ceb5de87c52c72d5704ad35976a413b25e14a96149f917e8ed29aedc",
+            "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13",
+            "sha256:8247c33dd8dcfc2cedd8a00591c6809676cafb8e0da44b6dbc9aed8525b560e8"
+          ]
+        },
+        "config": {
+          "Env": [
+            "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt"
+          ],
+          "User": "0",
+          "WorkingDir": "/",
+          "ExposedPorts": {
+            "2379/tcp": {},
+            "2380/tcp": {},
+            "4001/tcp": {},
+            "7001/tcp": {}
+          }
+        }
+      },
+      "raw_manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjoyMzA2LCJkaWdlc3QiOiJzaGEyNTY6YTBlZWQxNWVlZDQ0OThjMTQ1ZWYyZjE4ODNmY2QzMDBkN2FkYmI3NTlkZjczYzkwMWFiZDUzODNkZGE2NjhlNyJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxMDM3NDIsImRpZ2VzdCI6InNoYTI1NjowN2E2NGE3MWUwMTE1NmY4Zjk5MDM5YmMyNDYxNDk5MjVjNmQxNDgwZDM5NTdkZTc4NTEwYmJlYzZlYzY4ZjdhIn0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MjEyMDIsImRpZ2VzdCI6InNoYTI1NjpmZTVjYTYyNjY2ZjA0MzY2YzhlN2Y2MDVhYTgyOTk3ZDcxMzIwMTgzZTk5OTYyZmE3NmIzMjA5ZmRmYmI4YjU4In0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6NzE2NDkxLCJkaWdlc3QiOiJzaGEyNTY6YjAyYTc1MjVmODc4ZTYxZmMxZWY4YTc0MDVhMmNjMTdmODY2ZThkZTIyMmMxYzk4ZmQ2NjgxYWZmNmU1MDlkYiJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjMxNywiZGlnZXN0Ijoic2hhMjU2OmZjYjZmNmQyYzk5ODZkOWNkNmEyZWEzY2MyOTM2ZTVmYzYxM2UwOWYxYWY5MDQyMzI5MDExZTQzMDU3ZjMyNjUifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxOTgsImRpZ2VzdCI6InNoYTI1NjplOGM3M2M2MzhhZTllYzVhZDcwYzQ5ZGY3ZTQ4NDA0MGQ4ODljY2E2YjRhOWFmMDU2NTc5YzNkMDU4ZWE5M2YwIn0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MTEzLCJkaWdlc3QiOiJzaGEyNTY6MWUzZDliN2QxNDUyMDhmYThmYTNlZTFjOTYxMmQwYWRhYWM3MjU1ZjFiYmM5ZGRlYTdlNDYxZTBiMzE3ODA1YyJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjM4NSwiZGlnZXN0Ijoic2hhMjU2OjRhYTBlYTE0MTNkMzdhNTg2MTU0ODg1OTJhMGI4MjdlYTRiMmU0OGZhNWE3N2NmNzA3ZDBlMzVmMDI1ZTYxM2YifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjozNTUsImRpZ2VzdCI6InNoYTI1Njo3Yzg4MWY5YWIyNWUwZDg2NTYyYTEyM2I1ZmI1NmFlYmY4YWEwZGRkN2Q0OGVmNjAyZmFmOGQxZTdjZjQzZDhjIn0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MTMwNTYyLCJkaWdlc3QiOiJzaGEyNTY6NTYyN2E5NzBkMjVlNzUyZDk3MWE1MDFlYzdlMzVkMGQ2ZmRjZDRhM2NlOWU5NTg3MTVhNjg2ODUzMDI0Nzk0YSJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjExNTU5NDIsImRpZ2VzdCI6InNoYTI1Njo0YWZhYzM4ODI4NmU1NDY0MGMyNDJmMzNlNTk0NjUxMDkyYmZmMzQ5MDhmNTNlZDgxY2FhYmQwZDlhOThiMWY4In0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6NDQ2OTY3MDQsImRpZ2VzdCI6InNoYTI1Njo0NThhOGYzNjA3YWZmYzRkODNhYzBkNTU4MmRlNGZmM2E5MmJlZjIwMGRiY2IyNjhkZDRkODkxMTQ5MWFjMzc1In0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6OTgxNTg0NywiZGlnZXN0Ijoic2hhMjU2OjBlYWFmZjE2N2Q0ZDY3OGEyYTY3YTFhYjcyMzlhOTAyNDQ2YjEwOTIyZmUzMjQ3NmNjMjVhYjhmMDRlNzA3YjIifV19",
+      "raw_config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJVc2VyIjoiMCIsIkV4cG9zZWRQb3J0cyI6eyIyMzc5L3RjcCI6e30sIjIzODAvdGNwIjp7fSwiNDAwMS90Y3AiOnt9LCI3MDAxL3RjcCI6e319LCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iLCJTU0xfQ0VSVF9GSUxFPS9ldGMvc3NsL2NlcnRzL2NhLWNlcnRpZmljYXRlcy5jcnQiXSwiV29ya2luZ0RpciI6Ii8iLCJPbkJ1aWxkIjpudWxsfSwiY3JlYXRlZCI6IjIwMjMtMTEtMDFUMTM6MjA6MDAuMDcyNTU3ODQ0WiIsImhpc3RvcnkiOlt7ImNyZWF0ZWQiOiIwMDAxLTAxLTAxVDAwOjAwOjAwWiJ9LHsiY3JlYXRlZCI6IjAwMDEtMDEtMDFUMDA6MDA6MDBaIn0seyJjcmVhdGVkIjoiMDAwMS0wMS0wMVQwMDowMDowMFoifSx7ImNyZWF0ZWQiOiIwMDAxLTAxLTAxVDAwOjAwOjAwWiJ9LHsiY3JlYXRlZCI6IjAwMDEtMDEtMDFUMDA6MDA6MDBaIn0seyJjcmVhdGVkIjoiMDAwMS0wMS0wMVQwMDowMDowMFoifSx7ImNyZWF0ZWQiOiIwMDAxLTAxLTAxVDAwOjAwOjAwWiJ9LHsiY3JlYXRlZCI6IjAwMDEtMDEtMDFUMDA6MDA6MDBaIn0seyJjcmVhdGVkIjoiMDAwMS0wMS0wMVQwMDowMDowMFoifSx7ImNyZWF0ZWQiOiIyMDIzLTExLTAxVDEzOjE5OjU5LjI3NDE3OTgzNFoiLCJjcmVhdGVkX2J5IjoiV09SS0RJUiAvIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0xMS0wMVQxMzoxOTo1OS4yNzQxNzk4MzRaIiwiY3JlYXRlZF9ieSI6IkNPUFkgL3NoIC9iaW4vICMgYnVpbGRraXQiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCJ9LHsiY3JlYXRlZCI6IjIwMjMtMTEtMDFUMTM6MTk6NTkuMjc0MTc5ODM0WiIsImNyZWF0ZWRfYnkiOiJFWFBPU0UgbWFwWzIzNzkvdGNwOnt9IDIzODAvdGNwOnt9IDQwMDEvdGNwOnt9IDcwMDEvdGNwOnt9XSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMTEtMDFUMTM6MTk6NTkuOTc0Mjg0OTAzWiIsImNyZWF0ZWRfYnkiOiJDT1BZIGV0Y2QqIGV0Y2RjdGwqIC91c3IvbG9jYWwvYmluLyAjIGJ1aWxka2l0IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAifSx7ImNyZWF0ZWQiOiIyMDIzLTExLTAxVDEzOjIwOjAwLjA3MjU1Nzg0NFoiLCJjcmVhdGVkX2J5IjoiQ09QWSBtaWdyYXRlLWlmLW5lZWRlZC5zaCBtaWdyYXRlIC91c3IvbG9jYWwvYmluLyAjIGJ1aWxka2l0IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAifV0sIm9zIjoibGludXgiLCJyb290ZnMiOnsidHlwZSI6ImxheWVycyIsImRpZmZfaWRzIjpbInNoYTI1Njo1NGFkMmVjNzEwMzliNzRmN2U4MmYwMjBhOTJhOGMyY2E0NWYxNmE1MTkzMGQ1MzliNTY5NzNhMThiOGZmZThkIiwic2hhMjU2OjZmYmRmMjUzYmJjMjQ5MGRjZmVkZTViZGI1OGNhMGRiNjNlZThhZmY1NjVmNmVhOWY5MThmM2JjZTllMmQ1YWEiLCJzaGEyNTY6N2JlYTZiODkzMTg3YjE0ZmMwYTc1OWZlNWY4OTcyZDEyOTJhOWMwNTU0Yzg3Y2JmNDg1ZjA5NDdjMjZiOGEwNSIsInNoYTI1NjpmZjU3MDBlYzU0MTg2NTI4Y2JhZTQwZjU0YzI0YjFhMzRmYjdjMDE1MjdiZWFhMTIzMjg2OGMxNmUyMzUzZjUyIiwic2hhMjU2OmQ1MmYwMmM2NTAxYzljNDQxMDU2OGYwYmY2ZmYzMGQzMGQ4MjkwZjU3Nzk0YzMwOGZlMzZlYTc4MzkzYWZhYzIiLCJzaGEyNTY6ZTYyNGE1MzcwZWNhMmI4MjY2ZTc0ZDE3OTMyNmUyYTg3NjdkMzYxZGIxNGQxM2VkZDlmYjU3ZTQwODczMTc4NCIsInNoYTI1NjoxYTczYjU0ZjU1NmI0NzdmMGE4YjkzOWQxM2M1MDRhM2I0ZjRkYjcxZjdhMDljNjNhZmJjMTBhY2IzZGU1ODQ5Iiwic2hhMjU2OmQyZDdlYzBmNjc1NmViNTFjZjE2MDJjNmY4YWM0ZGQ4MTFkM2QwNTI2NjExNDJlMDExMDM1N2JmMGI1ODE0NTciLCJzaGEyNTY6NGNiMTBkZDI1NDViZDE3Mzg1ODQ1MGI4MDg1M2I4NTBlNDk2MDgyNjBmMWEwNzg5ZTBkMGIzOWVkZjEyZjUwMCIsInNoYTI1Njo1MTg1YTE3N2NlYjVkZTg3YzUyYzcyZDU3MDRhZDM1OTc2YTQxM2IyNWUxNGE5NjE0OWY5MTdlOGVkMjlhZWRjIiwic2hhMjU2OmY5ZTEzYjZmY2JiZTg5YmM1OGNhNDQ3OTg4OGQzYTQyN2I0ZmE0NjhlYTc1MGZhYzJjOWE0N2RiN2Q5MjNkMTMiLCJzaGEyNTY6ODI0N2MzM2RkOGRjZmMyY2VkZDhhMDA1OTFjNjgwOTY3NmNhZmI4ZTBkYTQ0YjZkYmM5YWVkODUyNWI1NjBlOCJdfX0=",
+      "distro": {
+        "os_name": "debian",
+        "os_version": "Debian"
+      },
+      "platform": {
+        "os": "linux",
+        "architecture": "amd64"
+      },
+      "size": 56641858
+    }
+  },
+  "attestations": [],
+  "artifacts": [
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "base-files",
+      "version": "11.1+deb11u8",
+      "purl": "pkg:deb/debian/base-files@11.1%2Bdeb11u8?os_name=debian&os_version=Debian",
+      "author": "Santiago Vila <sanvila@debian.org>",
+      "description": "Debian base system miscellaneous files\n This package contains the basic filesystem hierarchy of a Debian system, and\n several important miscellaneous files, such as /etc/debian_version,\n /etc/host.conf, /etc/issue, /etc/motd, /etc/profile, and others,\n and the text of several common licenses in use on Debian systems.",
+      "licenses": [
+        "GPL"
+      ],
+      "installed_size": 341,
+      "locations": [
+        {
+          "path": "/usr/share/doc/base-files/copyright",
+          "digest": "sha256:07a64a71e01156f8f99039bc246149925c6d1480d3957de78510bbec6ec68f7a",
+          "diff_id": "sha256:54ad2ec71039b74f7e82f020a92a8c2ca45f16a51930d539b56973a18b8ffe8d"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/base-files",
+          "digest": "sha256:07a64a71e01156f8f99039bc246149925c6d1480d3957de78510bbec6ec68f7a",
+          "diff_id": "sha256:54ad2ec71039b74f7e82f020a92a8c2ca45f16a51930d539b56973a18b8ffe8d"
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "netbase",
+      "version": "6.3",
+      "purl": "pkg:deb/debian/netbase@6.3?os_name=debian&os_version=Debian",
+      "author": "Marco d'Itri <md@linux.it>",
+      "description": "Basic TCP/IP networking system\n This package provides the necessary infrastructure for basic TCP/IP based\n networking.\n .\n In particular, it supplies common name-to-number mappings in /etc/services,\n /etc/rpc, /etc/protocols and /etc/ethertypes.",
+      "licenses": [
+        "GPL-2"
+      ],
+      "installed_size": 41,
+      "locations": [
+        {
+          "path": "/usr/share/doc/netbase/copyright",
+          "ordinal": 1,
+          "digest": "sha256:fe5ca62666f04366c8e7f605aa82997d71320183e99962fa76b3209fdfbb8b58",
+          "diff_id": "sha256:6fbdf253bbc2490dcfede5bdb58ca0db63ee8aff565f6ea9f918f3bce9e2d5aa"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/netbase",
+          "ordinal": 1,
+          "digest": "sha256:fe5ca62666f04366c8e7f605aa82997d71320183e99962fa76b3209fdfbb8b58",
+          "diff_id": "sha256:6fbdf253bbc2490dcfede5bdb58ca0db63ee8aff565f6ea9f918f3bce9e2d5aa"
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "tzdata",
+      "version": "2021a-1+deb11u10",
+      "purl": "pkg:deb/debian/tzdata@2021a-1%2Bdeb11u10?os_name=debian&os_version=Debian",
+      "author": "GNU Libc Maintainers <debian-glibc@lists.debian.org>",
+      "description": "time zone and daylight-saving time data\n This package contains data required for the implementation of\n standard local time for many representative locations around the\n globe. It is updated periodically to reflect changes made by\n political bodies to time zone boundaries, UTC offsets, and\n daylight-saving rules.",
+      "installed_size": 3413,
+      "locations": [
+        {
+          "path": "/usr/share/doc/tzdata/copyright",
+          "ordinal": 2,
+          "digest": "sha256:b02a7525f878e61fc1ef8a7405a2cc17f866e8de222c1c98fd6681aff6e509db",
+          "diff_id": "sha256:7bea6b893187b14fc0a759fe5f8972d1292a9c0554c87cbf485f0947c26b8a05"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/tzdata",
+          "ordinal": 2,
+          "digest": "sha256:b02a7525f878e61fc1ef8a7405a2cc17f866e8de222c1c98fd6681aff6e509db",
+          "diff_id": "sha256:7bea6b893187b14fc0a759fe5f8972d1292a9c0554c87cbf485f0947c26b8a05"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "..",
+      "name": "api",
+      "version": "(devel)",
+      "purl": "pkg:golang/../api@(devel)",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "../client",
+      "name": "pkg",
+      "version": "(devel)",
+      "purl": "pkg:golang/../client/pkg@(devel)",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "../client",
+      "name": "v2",
+      "version": "(devel)",
+      "purl": "pkg:golang/../client/v2@(devel)",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "../client",
+      "name": "v3",
+      "version": "(devel)",
+      "purl": "pkg:golang/../client/v3@(devel)",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "..",
+      "name": "etcdutl",
+      "version": "(devel)",
+      "purl": "pkg:golang/../etcdutl@(devel)",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "..",
+      "name": "pkg",
+      "version": "(devel)",
+      "purl": "pkg:golang/../pkg@(devel)",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "..",
+      "name": "raft",
+      "version": "(devel)",
+      "purl": "pkg:golang/../raft@(devel)",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "..",
+      "name": "server",
+      "version": "(devel)",
+      "purl": "pkg:golang/../server@(devel)",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/beorn7",
+      "name": "perks",
+      "version": "1.0.1",
+      "purl": "pkg:golang/github.com/beorn7/perks@1.0.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/bgentry",
+      "name": "speakeasy",
+      "version": "0.1.0",
+      "purl": "pkg:golang/github.com/bgentry/speakeasy@0.1.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/cenkalti",
+      "name": "backoff",
+      "version": "4.1.1",
+      "purl": "pkg:golang/github.com/cenkalti/backoff@4.1.1#v4",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/cespare",
+      "name": "xxhash",
+      "version": "2.2.0",
+      "purl": "pkg:golang/github.com/cespare/xxhash@2.2.0#v2",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/coreos",
+      "name": "go-semver",
+      "version": "0.3.0",
+      "purl": "pkg:golang/github.com/coreos/go-semver@0.3.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/coreos",
+      "name": "go-systemd",
+      "version": "22.3.2",
+      "purl": "pkg:golang/github.com/coreos/go-systemd@22.3.2#v22",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/cpuguy83",
+      "name": "go-md2man",
+      "version": "2.0.0",
+      "purl": "pkg:golang/github.com/cpuguy83/go-md2man@2.0.0#v2",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/dustin",
+      "name": "go-humanize",
+      "version": "1.0.0",
+      "purl": "pkg:golang/github.com/dustin/go-humanize@1.0.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/gogo",
+      "name": "protobuf",
+      "version": "1.3.2",
+      "purl": "pkg:golang/github.com/gogo/protobuf@1.3.2",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/golang-jwt",
+      "name": "jwt",
+      "version": "4.4.2",
+      "purl": "pkg:golang/github.com/golang-jwt/jwt@4.4.2#v4",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/golang",
+      "name": "groupcache",
+      "version": "0.0.0-20210331224755-41bb18bfe9da",
+      "purl": "pkg:golang/github.com/golang/groupcache@0.0.0-20210331224755-41bb18bfe9da",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/golang",
+      "name": "protobuf",
+      "version": "1.5.3",
+      "purl": "pkg:golang/github.com/golang/protobuf@1.5.3",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/google",
+      "name": "btree",
+      "version": "1.0.1",
+      "purl": "pkg:golang/github.com/google/btree@1.0.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/gorilla",
+      "name": "websocket",
+      "version": "1.4.2",
+      "purl": "pkg:golang/github.com/gorilla/websocket@1.4.2",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/grpc-ecosystem",
+      "name": "go-grpc-middleware",
+      "version": "1.3.0",
+      "purl": "pkg:golang/github.com/grpc-ecosystem/go-grpc-middleware@1.3.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/grpc-ecosystem",
+      "name": "go-grpc-prometheus",
+      "version": "1.2.0",
+      "purl": "pkg:golang/github.com/grpc-ecosystem/go-grpc-prometheus@1.2.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/grpc-ecosystem",
+      "name": "grpc-gateway",
+      "version": "1.16.0",
+      "purl": "pkg:golang/github.com/grpc-ecosystem/grpc-gateway@1.16.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/jonboulle",
+      "name": "clockwork",
+      "version": "0.2.2",
+      "purl": "pkg:golang/github.com/jonboulle/clockwork@0.2.2",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/json-iterator",
+      "name": "go",
+      "version": "1.1.11",
+      "purl": "pkg:golang/github.com/json-iterator/go@1.1.11",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/mattn",
+      "name": "go-runewidth",
+      "version": "0.0.9",
+      "purl": "pkg:golang/github.com/mattn/go-runewidth@0.0.9",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/matttproud",
+      "name": "golang_protobuf_extensions",
+      "version": "1.0.1",
+      "purl": "pkg:golang/github.com/matttproud/golang_protobuf_extensions@1.0.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/modern-go",
+      "name": "concurrent",
+      "version": "0.0.0-20180306012644-bacd9c7ef1dd",
+      "purl": "pkg:golang/github.com/modern-go/concurrent@0.0.0-20180306012644-bacd9c7ef1dd",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/modern-go",
+      "name": "reflect2",
+      "version": "1.0.1",
+      "purl": "pkg:golang/github.com/modern-go/reflect2@1.0.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/olekukonko",
+      "name": "tablewriter",
+      "version": "0.0.5",
+      "purl": "pkg:golang/github.com/olekukonko/tablewriter@0.0.5",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/prometheus",
+      "name": "client_golang",
+      "version": "1.11.1",
+      "purl": "pkg:golang/github.com/prometheus/client_golang@1.11.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/prometheus",
+      "name": "client_model",
+      "version": "0.2.0",
+      "purl": "pkg:golang/github.com/prometheus/client_model@0.2.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/prometheus",
+      "name": "common",
+      "version": "0.26.0",
+      "purl": "pkg:golang/github.com/prometheus/common@0.26.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/prometheus",
+      "name": "procfs",
+      "version": "0.6.0",
+      "purl": "pkg:golang/github.com/prometheus/procfs@0.6.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/russross",
+      "name": "blackfriday",
+      "version": "2.0.1",
+      "purl": "pkg:golang/github.com/russross/blackfriday@2.0.1#v2",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/shurcool",
+      "name": "sanitized_anchor_name",
+      "version": "1.0.0",
+      "purl": "pkg:golang/github.com/shurcool/sanitized_anchor_name@1.0.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/sirupsen",
+      "name": "logrus",
+      "version": "1.7.0",
+      "purl": "pkg:golang/github.com/sirupsen/logrus@1.7.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/soheilhy",
+      "name": "cmux",
+      "version": "0.1.5",
+      "purl": "pkg:golang/github.com/soheilhy/cmux@0.1.5",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/spf13",
+      "name": "cobra",
+      "version": "1.1.3",
+      "purl": "pkg:golang/github.com/spf13/cobra@1.1.3",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/spf13",
+      "name": "pflag",
+      "version": "1.0.5",
+      "purl": "pkg:golang/github.com/spf13/pflag@1.0.5",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/tmc",
+      "name": "grpc-websocket-proxy",
+      "version": "0.0.0-20201229170055-e5319fda7802",
+      "purl": "pkg:golang/github.com/tmc/grpc-websocket-proxy@0.0.0-20201229170055-e5319fda7802",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/urfave",
+      "name": "cli",
+      "version": "1.22.4",
+      "purl": "pkg:golang/github.com/urfave/cli@1.22.4",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/xiang90",
+      "name": "probing",
+      "version": "0.0.0-20190116061207-43a291ad63a2",
+      "purl": "pkg:golang/github.com/xiang90/probing@0.0.0-20190116061207-43a291ad63a2",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.etcd.io",
+      "name": "bbolt",
+      "version": "1.3.8",
+      "purl": "pkg:golang/go.etcd.io/bbolt@1.3.8",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.etcd.io/etcd",
+      "name": "etcdctl",
+      "version": "(devel)",
+      "purl": "pkg:golang/go.etcd.io/etcd/etcdctl@(devel)#v3",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.etcd.io/etcd",
+      "name": "server",
+      "version": "(devel)",
+      "purl": "pkg:golang/go.etcd.io/etcd/server@(devel)#v3",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/contrib",
+      "name": "instrumentation",
+      "version": "0.25.0",
+      "purl": "pkg:golang/go.opentelemetry.io/contrib/instrumentation@0.25.0#google.golang.org/grpc/otelgrpc",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/otel",
+      "name": "exporters",
+      "version": "1.0.1",
+      "purl": "pkg:golang/go.opentelemetry.io/otel/exporters@1.0.1#otlp/otlptrace",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/otel",
+      "name": "exporters",
+      "version": "1.0.1",
+      "purl": "pkg:golang/go.opentelemetry.io/otel/exporters@1.0.1#otlp/otlptrace/otlptracegrpc",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/otel",
+      "name": "sdk",
+      "version": "1.0.1",
+      "purl": "pkg:golang/go.opentelemetry.io/otel/sdk@1.0.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/otel",
+      "name": "trace",
+      "version": "1.0.1",
+      "purl": "pkg:golang/go.opentelemetry.io/otel/trace@1.0.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io",
+      "name": "otel",
+      "version": "1.0.1",
+      "purl": "pkg:golang/go.opentelemetry.io/otel@1.0.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/proto",
+      "name": "otlp",
+      "version": "0.9.0",
+      "purl": "pkg:golang/go.opentelemetry.io/proto/otlp@0.9.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.uber.org",
+      "name": "atomic",
+      "version": "1.7.0",
+      "purl": "pkg:golang/go.uber.org/atomic@1.7.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.uber.org",
+      "name": "multierr",
+      "version": "1.6.0",
+      "purl": "pkg:golang/go.uber.org/multierr@1.6.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.uber.org",
+      "name": "zap",
+      "version": "1.17.0",
+      "purl": "pkg:golang/go.uber.org/zap@1.17.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "crypto",
+      "version": "0.14.0",
+      "purl": "pkg:golang/golang.org/x/crypto@0.14.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "net",
+      "version": "0.17.0",
+      "purl": "pkg:golang/golang.org/x/net@0.17.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "sys",
+      "version": "0.13.0",
+      "purl": "pkg:golang/golang.org/x/sys@0.13.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "text",
+      "version": "0.13.0",
+      "purl": "pkg:golang/golang.org/x/text@0.13.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "time",
+      "version": "0.0.0-20210220033141-f8bda1e9f3ba",
+      "purl": "pkg:golang/golang.org/x/time@0.0.0-20210220033141-f8bda1e9f3ba",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "google.golang.org/genproto",
+      "name": "googleapis",
+      "version": "0.0.0-20230711160842-782d3b101e98",
+      "purl": "pkg:golang/google.golang.org/genproto/googleapis@0.0.0-20230711160842-782d3b101e98#api",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "google.golang.org/genproto",
+      "name": "googleapis",
+      "version": "0.0.0-20230711160842-782d3b101e98",
+      "purl": "pkg:golang/google.golang.org/genproto/googleapis@0.0.0-20230711160842-782d3b101e98#rpc",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "google.golang.org",
+      "name": "genproto",
+      "version": "0.0.0-20230711160842-782d3b101e98",
+      "purl": "pkg:golang/google.golang.org/genproto@0.0.0-20230711160842-782d3b101e98",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "google.golang.org",
+      "name": "grpc",
+      "version": "1.58.3",
+      "purl": "pkg:golang/google.golang.org/grpc@1.58.3",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "google.golang.org",
+      "name": "protobuf",
+      "version": "1.31.0",
+      "purl": "pkg:golang/google.golang.org/protobuf@1.31.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "gopkg.in/cheggaaa",
+      "name": "pb.v1",
+      "version": "1.0.28",
+      "purl": "pkg:golang/gopkg.in/cheggaaa/pb.v1@1.0.28",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "gopkg.in/natefinch",
+      "name": "lumberjack.v2",
+      "version": "2.0.0",
+      "purl": "pkg:golang/gopkg.in/natefinch/lumberjack.v2@2.0.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "gopkg.in",
+      "name": "yaml.v2",
+      "version": "2.4.0",
+      "purl": "pkg:golang/gopkg.in/yaml.v2@2.4.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "k8s.io/kubernetes",
+      "name": "cluster",
+      "version": "(devel)",
+      "purl": "pkg:golang/k8s.io/kubernetes/cluster@(devel)#images/etcd/migrate",
+      "locations": [
+        {
+          "path": "/usr/local/bin/migrate",
+          "ordinal": 13,
+          "digest": "sha256:0eaaff167d4d678a2a67a1ab7239a902446b10922fe32476cc25ab8f04e707b2",
+          "diff_id": "sha256:8247c33dd8dcfc2cedd8a00591c6809676cafb8e0da44b6dbc9aed8525b560e8"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "sigs.k8s.io",
+      "name": "yaml",
+      "version": "1.2.0",
+      "purl": "pkg:golang/sigs.k8s.io/yaml@1.2.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "name": "stdlib",
+      "version": "1.20.10",
+      "purl": "pkg:golang/stdlib@1.20.10",
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/migrate",
+          "ordinal": 13,
+          "digest": "sha256:0eaaff167d4d678a2a67a1ab7239a902446b10922fe32476cc25ab8f04e707b2",
+          "diff_id": "sha256:8247c33dd8dcfc2cedd8a00591c6809676cafb8e0da44b6dbc9aed8525b560e8"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "name": "stdlib",
+      "version": "go1.20.10",
+      "purl": "pkg:golang/stdlib@go1.20.10",
+      "licenses": [
+        "BSD-3-Clause"
+      ],
+      "locations": [
+        {
+          "path": "/usr/local/bin/etcd",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcd-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/etcdctl-3.5.10",
+          "ordinal": 12,
+          "digest": "sha256:458a8f3607affc4d83ac0d5582de4ff3a92bef200dbcb268dd4d8911491ac375",
+          "diff_id": "sha256:f9e13b6fcbbe89bc58ca4479888d3a427b4fa468ea750fac2c9a47db7d923d13"
+        },
+        {
+          "path": "/usr/local/bin/migrate",
+          "ordinal": 13,
+          "digest": "sha256:0eaaff167d4d678a2a67a1ab7239a902446b10922fe32476cc25ab8f04e707b2",
+          "diff_id": "sha256:8247c33dd8dcfc2cedd8a00591c6809676cafb8e0da44b6dbc9aed8525b560e8"
+        }
+      ]
+    }
+  ],
+  "descriptor": {
+    "name": "docker-scout",
+    "version": "1.10.0",
+    "sbom_version": "11"
+  }
+}

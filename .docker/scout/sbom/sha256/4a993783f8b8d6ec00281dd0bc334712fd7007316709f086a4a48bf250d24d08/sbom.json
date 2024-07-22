@@ -1,0 +1,3220 @@
+{
+  "source": {
+    "type": "image",
+    "image": {
+      "name": "registry.k8s.io/kube-proxy",
+      "digest": "sha256:4a993783f8b8d6ec00281dd0bc334712fd7007316709f086a4a48bf250d24d08",
+      "tags": [
+        "v1.29.2"
+      ],
+      "manifest": {
+        "schemaVersion": 2,
+        "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+        "config": {
+          "mediaType": "application/vnd.docker.container.image.v1+json",
+          "size": 642,
+          "digest": "sha256:9344fce2372f88fad811d9c6941271027abd5cc882d631630efbd2b8c268c547"
+        },
+        "layers": [
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 11466730,
+            "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 16896176,
+            "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58"
+          }
+        ]
+      },
+      "config": {
+        "architecture": "amd64",
+        "created": "2024-02-14T10:56:40.896947807Z",
+        "history": [
+          {
+            "created": "2024-02-08T10:55:24.862330778Z",
+            "created_by": "COPY / / # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          },
+          {
+            "created": "2024-02-14T10:56:40.896947807Z",
+            "created_by": "COPY  /usr/local/bin/ # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          }
+        ],
+        "os": "linux",
+        "rootfs": {
+          "type": "layers",
+          "diff_ids": [
+            "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc",
+            "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+          ]
+        },
+        "config": {
+          "Env": [
+            "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+          ],
+          "WorkingDir": "/"
+        }
+      },
+      "raw_manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo2NDIsImRpZ2VzdCI6InNoYTI1Njo5MzQ0ZmNlMjM3MmY4OGZhZDgxMWQ5YzY5NDEyNzEwMjdhYmQ1Y2M4ODJkNjMxNjMwZWZiZDJiOGMyNjhjNTQ3In0sImxheWVycyI6W3sibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjExNDY2NzMwLCJkaWdlc3QiOiJzaGEyNTY6OWYyOTg3ZjE0Y2UyYzNjN2RlZmUyZGMyNTJmZDNkNmViMzlmNjliMTkwMDdlZjQ2OTM0Y2ZjOGFhZmNhOGFkMyJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjE2ODk2MTc2LCJkaWdlc3QiOiJzaGEyNTY6ZjA4ZmZlNmRhNjMxNmFjMzcyZTBkODJmMjA1ZTA5Y2NhMDdiMTNjNzM1NjhhZmE4Mjc5OTIzYTI1Yjg4ZWE1OCJ9XX0=",
+      "raw_config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iXSwiV29ya2luZ0RpciI6Ii8iLCJPbkJ1aWxkIjpudWxsfSwiY3JlYXRlZCI6IjIwMjQtMDItMTRUMTA6NTY6NDAuODk2OTQ3ODA3WiIsImhpc3RvcnkiOlt7ImNyZWF0ZWQiOiIyMDI0LTAyLTA4VDEwOjU1OjI0Ljg2MjMzMDc3OFoiLCJjcmVhdGVkX2J5IjoiQ09QWSAvIC8gIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyNC0wMi0xNFQxMDo1Njo0MC44OTY5NDc4MDdaIiwiY3JlYXRlZF9ieSI6IkNPUFkgIC91c3IvbG9jYWwvYmluLyAjIGJ1aWxka2l0IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAifV0sIm9zIjoibGludXgiLCJyb290ZnMiOnsidHlwZSI6ImxheWVycyIsImRpZmZfaWRzIjpbInNoYTI1NjoxY2NlZTQyYTBmMmVjZGE2N2UyNTFjNWMzNTA0YmJjNzA5OTg3YzM3ZjcxMjJiMjExNTZiZWYzNTdiMzgyNGZjIiwic2hhMjU2OjRiNTVhMTQyN2QxNGQxYzY5MmY0YjJlOTc2MmI2YjVlY2U5NjA2MDA5MjBkODU3YTgwYjQ5MDBmMzgzNzY2N2YiXX19",
+      "distro": {
+        "os_name": "debian",
+        "os_version": "Debian"
+      },
+      "platform": {
+        "os": "linux",
+        "architecture": "amd64"
+      },
+      "size": 28362906
+    }
+  },
+  "attestations": [],
+  "artifacts": [
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "base-files",
+      "version": "12.4+deb12u4",
+      "purl": "pkg:deb/debian/base-files@12.4%2Bdeb12u4?os_name=debian&os_version=Debian",
+      "author": "Santiago Vila <sanvila@debian.org>",
+      "description": "Debian base system miscellaneous files\n This package contains the basic filesystem hierarchy of a Debian system, and\n several important miscellaneous files, such as /etc/debian_version,\n /etc/host.conf, /etc/issue, /etc/motd, /etc/profile, and others,\n and the text of several common licenses in use on Debian systems.",
+      "licenses": [
+        "GPL"
+      ],
+      "installed_size": 341,
+      "locations": [
+        {
+          "path": "/usr/share/doc/base-files/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/base-files",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "conntrack-tools",
+      "version": "1:1.4.7-1",
+      "purl": "pkg:deb/debian/conntrack-tools@1:1.4.7-1?os_name=debian&os_version=Debian",
+      "author": "Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>",
+      "description": "Program to modify the conntrack tables\n conntrack is a userspace command line program targeted at system\n administrators. It enables them to view and manage the in-kernel\n connection tracking state table.",
+      "licenses": [
+        "GPL-2",
+        "GPL-2+"
+      ],
+      "installed_size": 117,
+      "locations": [
+        {
+          "path": "/usr/share/doc/conntrack/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/conntrack",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "conntrack",
+      "version": "1:1.4.7-1+b2",
+      "purl": "pkg:deb/debian/conntrack@1:1.4.7-1%2Bb2?os_name=debian&os_version=Debian",
+      "author": "Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>",
+      "description": "Program to modify the conntrack tables\n conntrack is a userspace command line program targeted at system\n administrators. It enables them to view and manage the in-kernel\n connection tracking state table.",
+      "licenses": [
+        "GPL-2",
+        "GPL-2+"
+      ],
+      "installed_size": 117,
+      "locations": [
+        {
+          "path": "/usr/share/doc/conntrack/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/conntrack",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ],
+      "parent": "pkg:deb/debian/conntrack-tools@1:1.4.7-1?os_name=debian&os_version=Debian"
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "coreutils",
+      "version": "9.1-1",
+      "purl": "pkg:deb/debian/coreutils@9.1-1?os_name=debian&os_version=Debian",
+      "author": "Michael Stone <mstone@debian.org>",
+      "description": "GNU core utilities\n This package contains the basic file, shell and text manipulation\n utilities which are expected to exist on every operating system.\n .\n Specifically, this package includes:\n arch base64 basename cat chcon chgrp chmod chown chroot cksum comm cp\n csplit cut date dd df dir dircolors dirname du echo env expand expr\n factor false flock fmt fold groups head hostid id install join link ln\n logname ls md5sum mkdir mkfifo mknod mktemp mv nice nl nohup nproc numfmt\n od paste pathchk pinky pr printenv printf ptx pwd readlink realpath rm\n rmdir runcon sha*sum seq shred sleep sort split stat stty sum sync tac\n tail tee test timeout touch tr true truncate tsort tty uname unexpand\n uniq unlink users vdir wc who whoami yes",
+      "licenses": [
+        "BSD-4-clause-UC",
+        "FSFULLR",
+        "GFDL-1.3",
+        "GFDL-NIV-1.3",
+        "GPL-3",
+        "GPL-3+",
+        "ISC"
+      ],
+      "installed_size": 18062,
+      "locations": [
+        {
+          "path": "/usr/share/doc/coreutils/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/coreutils",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "ebtables",
+      "version": "2.0.11-5",
+      "purl": "pkg:deb/debian/ebtables@2.0.11-5?os_name=debian&os_version=Debian",
+      "author": "Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>",
+      "description": "Ethernet bridge frame table administration\n Ebtables is used to set up, maintain, and inspect the tables of\n Ethernet frame rules in the Linux kernel. It is analogous to iptables,\n but operates at the MAC layer rather than the IP layer.",
+      "licenses": [
+        "GPL-2"
+      ],
+      "installed_size": 264,
+      "locations": [
+        {
+          "path": "/usr/share/doc/ebtables/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/ebtables",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "glibc",
+      "version": "2.36-9+deb12u4",
+      "purl": "pkg:deb/debian/glibc@2.36-9%2Bdeb12u4?os_name=debian&os_version=Debian",
+      "author": "GNU Libc Maintainers <debian-glibc@lists.debian.org>",
+      "description": "GNU C Library: Shared libraries\n Contains the standard libraries that are used by nearly all programs on\n the system. This package includes shared versions of the standard C library\n and the standard math library, as well as many others.",
+      "licenses": [
+        "GPL-2",
+        "LGPL-2.1"
+      ],
+      "installed_size": 12986,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libc6/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libc6",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ],
+      "files": [
+        {
+          "path": "/etc/ld.so.conf.d/x86_64-linux-gnu.conf",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc",
+          "file_digests": {
+            "sha1": "74613698f745df3c5ae0a9c06fbb8ab3942c1446",
+            "sha256": "f03e4740e6922b4f4a1181cd696b52f62f9f10d003740a8940f7121795c59c98"
+          }
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "gmp",
+      "version": "2:6.2.1+dfsg1-1.1",
+      "purl": "pkg:deb/debian/gmp@2:6.2.1%2Bdfsg1-1.1?os_name=debian&os_version=Debian",
+      "author": "Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>",
+      "description": "Multiprecision arithmetic library\n GNU MP is a programmer's library for arbitrary precision\n arithmetic (ie, a bignum package).  It can operate on signed\n integer, rational, and floating point numeric types.\n .\n It has a rich set of functions, and the functions have a regular\n interface.",
+      "licenses": [
+        "GPL-2",
+        "GPL-2+",
+        "GPL-3",
+        "GPL-3+",
+        "LGPL-3",
+        "LGPL-3+"
+      ],
+      "installed_size": 855,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libgmp10/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libgmp10",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "ipset",
+      "version": "7.17-1",
+      "purl": "pkg:deb/debian/ipset@7.17-1?os_name=debian&os_version=Debian",
+      "author": "Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>",
+      "description": "administration tool for kernel IP sets\n IP sets are a framework inside the Linux 2.4.x and 2.6.x kernel which can be\n administered by the ipset(8) utility. Depending on the type, currently an\n IP set may store IP addresses, (TCP/UDP) port numbers or IP addresses with\n MAC addresses in a  way which ensures lightning speed when matching an\n entry against a set.\n .\n If you want to\n .\n * store multiple IP addresses or port numbers and match against the\n entire collection using a single iptables rule.\n * dynamically update iptables rules against IP addresses or ports without\n performance penalty.\n * express complex IP address and ports based rulesets with a single\n iptables rule and benefit from the speed of IP sets.\n .\n then IP sets may be the proper tool for you.",
+      "licenses": [
+        "Expat",
+        "FSFAP",
+        "FSFUL",
+        "FSFULLR",
+        "GPL-2",
+        "GPL-2+",
+        "GPL-3",
+        "GPL-3+",
+        "LGPL-2",
+        "LGPL-2+",
+        "public-domain"
+      ],
+      "installed_size": 138,
+      "locations": [
+        {
+          "path": "/usr/share/doc/ipset/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/ipset",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/usr/share/doc/libipset13/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libipset13",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "iptables",
+      "version": "1.8.9-2",
+      "purl": "pkg:deb/debian/iptables@1.8.9-2?os_name=debian&os_version=Debian",
+      "author": "Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>",
+      "description": "administration tools for packet filtering and NAT\n The iptables/xtables framework has been replaced by nftables. You should\n consider migrating now.\n .\n iptables is the userspace command line program used to configure\n the Linux packet filtering and NAT ruleset. It is targeted towards systems\n and networks administrators.\n .\n This package contains several different utilities, the most important ones:\n .\n iptables-nft, iptables-nft-save, iptables-nft-restore (nft-based version)\n .\n iptables-legacy, iptables-legacy-save, iptables-legacy-restore (legacy version)\n .\n ip6tables-nft, ip6tables-nft-save, ip6tables-nft-restore (nft-based version)\n .\n ip6tables-legacy, ip6tables-legacy-save, ip6tables-legacy-restore (legacy\n version)\n .\n arptables-nft, arptables-nft-save, arptables-nft-restore (nft-based version)\n .\n ebtables-nft, ebtables-nft-save, ebtables-nft-restore (nft-based version)",
+      "licenses": [
+        "Artistic",
+        "GPL-2",
+        "GPL-2+",
+        "custom"
+      ],
+      "installed_size": 2408,
+      "locations": [
+        {
+          "path": "/usr/share/doc/iptables/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/iptables",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/usr/share/doc/libip4tc2/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libip4tc2",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/usr/share/doc/libip6tc2/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libip6tc2",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/usr/share/doc/libxtables12/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libxtables12",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "jansson",
+      "version": "2.14-2",
+      "purl": "pkg:deb/debian/jansson@2.14-2?os_name=debian&os_version=Debian",
+      "author": "Alessandro Ghedini <ghedo@debian.org>",
+      "description": "C library for encoding, decoding and manipulating JSON data\n Jansson is a C library for encoding, decoding and manipulating JSON data.\n .\n It features:\n * Simple and intuitive API and data model\n * Comprehensive documentation\n * No dependencies on other libraries\n * Full Unicode support (UTF-8)\n * Extensive test suite",
+      "licenses": [
+        "Expat"
+      ],
+      "installed_size": 101,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libjansson4/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libjansson4",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "kmod",
+      "version": "30+20221128-1",
+      "purl": "pkg:deb/debian/kmod@30%2B20221128-1?os_name=debian&os_version=Debian",
+      "author": "Marco d'Itri <md@linux.it>",
+      "description": "tools for managing Linux kernel modules\n This package contains a set of programs for loading, inserting, and\n removing kernel modules for Linux.\n It replaces module-init-tools.",
+      "licenses": [
+        "GPL-2",
+        "GPL-2+",
+        "LGPL-2.1",
+        "LGPL-2.1+"
+      ],
+      "installed_size": 251,
+      "locations": [
+        {
+          "path": "/usr/share/doc/kmod/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/kmod",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/usr/share/doc/libkmod2/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libkmod2",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ],
+      "files": [
+        {
+          "path": "/etc/init.d/kmod",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc",
+          "file_digests": {
+            "sha1": "30fb1fc5a358be444bc21aa57b454a5d90099a46",
+            "sha256": "10424b9e13d2035514777ef76770cf6492aa4b2477a68073c9b3a07d26ab8cb7"
+          }
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libbsd0",
+      "version": "0.11.7-2",
+      "purl": "pkg:deb/debian/libbsd0@0.11.7-2?os_name=debian&os_version=Debian",
+      "author": "Guillem Jover <guillem@debian.org>",
+      "description": "utility functions from BSD systems - shared library\n This library provides some C functions such as strlcpy() that are commonly\n available on BSD systems but not on others like GNU systems.\n .\n For a detailed list of the provided functions, please see the libbsd-dev\n package description.",
+      "licenses": [
+        "BSD-2-clause",
+        "BSD-2-clause-NetBSD",
+        "BSD-2-clause-author",
+        "BSD-2-clause-verbatim",
+        "BSD-3-clause",
+        "BSD-3-clause-John-Birrell",
+        "BSD-3-clause-Regents",
+        "BSD-3-clause-author",
+        "BSD-4-clause-Niels-Provos",
+        "Beerware",
+        "Expat",
+        "ISC",
+        "ISC-Original",
+        "libutil-David-Nugent",
+        "public-domain"
+      ],
+      "installed_size": 202,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libbsd0/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libbsd0",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ],
+      "parent": "pkg:deb/debian/libbsd@0.11.7-2?os_name=debian&os_version=Debian"
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libbsd",
+      "version": "0.11.7-2",
+      "purl": "pkg:deb/debian/libbsd@0.11.7-2?os_name=debian&os_version=Debian",
+      "author": "Guillem Jover <guillem@debian.org>",
+      "description": "utility functions from BSD systems - shared library\n This library provides some C functions such as strlcpy() that are commonly\n available on BSD systems but not on others like GNU systems.\n .\n For a detailed list of the provided functions, please see the libbsd-dev\n package description.",
+      "licenses": [
+        "BSD-2-clause",
+        "BSD-2-clause-NetBSD",
+        "BSD-2-clause-author",
+        "BSD-2-clause-verbatim",
+        "BSD-3-clause",
+        "BSD-3-clause-John-Birrell",
+        "BSD-3-clause-Regents",
+        "BSD-3-clause-author",
+        "BSD-4-clause-Niels-Provos",
+        "Beerware",
+        "Expat",
+        "ISC",
+        "ISC-Original",
+        "libutil-David-Nugent",
+        "public-domain"
+      ],
+      "installed_size": 202,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libbsd0/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libbsd0",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libc6",
+      "version": "2.36-9+deb12u4",
+      "purl": "pkg:deb/debian/libc6@2.36-9%2Bdeb12u4?os_name=debian&os_version=Debian",
+      "author": "GNU Libc Maintainers <debian-glibc@lists.debian.org>",
+      "description": "GNU C Library: Shared libraries\n Contains the standard libraries that are used by nearly all programs on\n the system. This package includes shared versions of the standard C library\n and the standard math library, as well as many others.",
+      "licenses": [
+        "GPL-2",
+        "LGPL-2.1"
+      ],
+      "installed_size": 12986,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libc6/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libc6",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ],
+      "files": [
+        {
+          "path": "/etc/ld.so.conf.d/x86_64-linux-gnu.conf",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc",
+          "file_digests": {
+            "sha1": "74613698f745df3c5ae0a9c06fbb8ab3942c1446",
+            "sha256": "f03e4740e6922b4f4a1181cd696b52f62f9f10d003740a8940f7121795c59c98"
+          }
+        }
+      ],
+      "parent": "pkg:deb/debian/glibc@2.36-9%2Bdeb12u4?os_name=debian&os_version=Debian"
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libedit2",
+      "version": "3.1-20221030-2",
+      "purl": "pkg:deb/debian/libedit2@3.1-20221030-2?os_name=debian&os_version=Debian",
+      "author": "LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>",
+      "description": "BSD editline and history libraries\n Command line editor library provides generic line editing,\n history, and tokenization functions.\n .\n It slightly resembles GNU readline.",
+      "licenses": [
+        "BSD-3-clause"
+      ],
+      "installed_size": 258,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libedit2/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libedit2",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ],
+      "parent": "pkg:deb/debian/libedit@3.1-20221030-2?os_name=debian&os_version=Debian"
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libedit",
+      "version": "3.1-20221030-2",
+      "purl": "pkg:deb/debian/libedit@3.1-20221030-2?os_name=debian&os_version=Debian",
+      "author": "LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>",
+      "description": "BSD editline and history libraries\n Command line editor library provides generic line editing,\n history, and tokenization functions.\n .\n It slightly resembles GNU readline.",
+      "licenses": [
+        "BSD-3-clause"
+      ],
+      "installed_size": 258,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libedit2/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libedit2",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libgmp10",
+      "version": "2:6.2.1+dfsg1-1.1",
+      "purl": "pkg:deb/debian/libgmp10@2:6.2.1%2Bdfsg1-1.1?os_name=debian&os_version=Debian",
+      "author": "Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>",
+      "description": "Multiprecision arithmetic library\n GNU MP is a programmer's library for arbitrary precision\n arithmetic (ie, a bignum package).  It can operate on signed\n integer, rational, and floating point numeric types.\n .\n It has a rich set of functions, and the functions have a regular\n interface.",
+      "licenses": [
+        "GPL-2",
+        "GPL-2+",
+        "GPL-3",
+        "GPL-3+",
+        "LGPL-3",
+        "LGPL-3+"
+      ],
+      "installed_size": 855,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libgmp10/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libgmp10",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ],
+      "parent": "pkg:deb/debian/gmp@2:6.2.1%2Bdfsg1-1.1?os_name=debian&os_version=Debian"
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libip4tc2",
+      "version": "1.8.9-2",
+      "purl": "pkg:deb/debian/libip4tc2@1.8.9-2?os_name=debian&os_version=Debian",
+      "author": "Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>",
+      "description": "netfilter libip4tc library\n The iptables/xtables framework has been replaced by nftables. You should\n consider migrating now.\n .\n This package contains the user-space iptables (IPv4) C library from the\n Netfilter xtables framework.\n .\n iptables IPv4 ruleset ADT and kernel interface.\n .\n This library has been considered private for years (and still is), in the\n sense of changing symbols and backward compatibility not guaranteed.",
+      "licenses": [
+        "Artistic",
+        "GPL-2",
+        "GPL-2+",
+        "custom"
+      ],
+      "installed_size": 66,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libip4tc2/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libip4tc2",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ],
+      "parent": "pkg:deb/debian/iptables@1.8.9-2?os_name=debian&os_version=Debian"
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libip6tc2",
+      "version": "1.8.9-2",
+      "purl": "pkg:deb/debian/libip6tc2@1.8.9-2?os_name=debian&os_version=Debian",
+      "author": "Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>",
+      "description": "netfilter libip6tc library\n The iptables/xtables framework has been replaced by nftables. You should\n consider migrating now.\n .\n This package contains the user-space iptables (IPv6) C library from the\n Netfilter xtables framework.\n .\n iptables IPv6 ruleset ADT and kernel interface.\n .\n This library has been considered private for years (and still is), in the\n sense of changing symbols and backward compatibility not guaranteed.",
+      "licenses": [
+        "Artistic",
+        "GPL-2",
+        "GPL-2+",
+        "custom"
+      ],
+      "installed_size": 66,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libip6tc2/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libip6tc2",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ],
+      "parent": "pkg:deb/debian/iptables@1.8.9-2?os_name=debian&os_version=Debian"
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libipset13",
+      "version": "7.17-1",
+      "purl": "pkg:deb/debian/libipset13@7.17-1?os_name=debian&os_version=Debian",
+      "author": "Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>",
+      "description": "library for IP sets\n IP sets are a framework inside the Linux 2.4.x and 2.6.x kernel which can be\n administered by the ipset(8) utility. Depending on the type, currently an\n IP set may store IP addresses, (TCP/UDP) port numbers or IP addresses with\n MAC addresses in a  way which ensures lightning speed when matching an\n entry against a set.\n .\n If you want to\n .\n * store multiple IP addresses or port numbers and match against the\n entire collection using a single iptables rule.\n * dynamically update iptables rules against IP addresses or ports without\n performance penalty.\n * express complex IP address and ports based rulesets with a single\n iptables rule and benefit from the speed of IP sets.\n .\n then IP sets may be the proper tool for you.\n .\n This package contains the shared libraries needed to run programs that use\n the IP sets library.",
+      "licenses": [
+        "Expat",
+        "FSFAP",
+        "FSFUL",
+        "FSFULLR",
+        "GPL-2",
+        "GPL-2+",
+        "GPL-3",
+        "GPL-3+",
+        "LGPL-2",
+        "LGPL-2+",
+        "public-domain"
+      ],
+      "installed_size": 265,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libipset13/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libipset13",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ],
+      "parent": "pkg:deb/debian/ipset@7.17-1?os_name=debian&os_version=Debian"
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libjansson4",
+      "version": "2.14-2",
+      "purl": "pkg:deb/debian/libjansson4@2.14-2?os_name=debian&os_version=Debian",
+      "author": "Alessandro Ghedini <ghedo@debian.org>",
+      "description": "C library for encoding, decoding and manipulating JSON data\n Jansson is a C library for encoding, decoding and manipulating JSON data.\n .\n It features:\n * Simple and intuitive API and data model\n * Comprehensive documentation\n * No dependencies on other libraries\n * Full Unicode support (UTF-8)\n * Extensive test suite",
+      "licenses": [
+        "Expat"
+      ],
+      "installed_size": 101,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libjansson4/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libjansson4",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ],
+      "parent": "pkg:deb/debian/jansson@2.14-2?os_name=debian&os_version=Debian"
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libkmod2",
+      "version": "30+20221128-1",
+      "purl": "pkg:deb/debian/libkmod2@30%2B20221128-1?os_name=debian&os_version=Debian",
+      "author": "Marco d'Itri <md@linux.it>",
+      "description": "libkmod shared library\n This library provides an API for insertion, removal, configuration and\n listing of kernel modules.",
+      "licenses": [
+        "GPL-2",
+        "GPL-2+",
+        "LGPL-2.1",
+        "LGPL-2.1+"
+      ],
+      "installed_size": 141,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libkmod2/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libkmod2",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ],
+      "parent": "pkg:deb/debian/kmod@30%2B20221128-1?os_name=debian&os_version=Debian"
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libmd0",
+      "version": "1.0.4-2",
+      "purl": "pkg:deb/debian/libmd0@1.0.4-2?os_name=debian&os_version=Debian",
+      "author": "Guillem Jover <guillem@debian.org>",
+      "description": "message digest functions from BSD systems - shared library\n The libmd library provides various message digest (\"hash\") functions,\n as found on various BSDs on a library with the same name and with a\n compatible API.",
+      "licenses": [
+        "BSD-2-clause",
+        "BSD-2-clause-NetBSD",
+        "BSD-3-clause",
+        "BSD-3-clause-Aaron-D-Gifford",
+        "Beerware",
+        "ISC",
+        "public-domain-md4",
+        "public-domain-md5",
+        "public-domain-sha1"
+      ],
+      "installed_size": 79,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libmd0/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libmd0",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ],
+      "parent": "pkg:deb/debian/libmd@1.0.4-2?os_name=debian&os_version=Debian"
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libmd",
+      "version": "1.0.4-2",
+      "purl": "pkg:deb/debian/libmd@1.0.4-2?os_name=debian&os_version=Debian",
+      "author": "Guillem Jover <guillem@debian.org>",
+      "description": "message digest functions from BSD systems - shared library\n The libmd library provides various message digest (\"hash\") functions,\n as found on various BSDs on a library with the same name and with a\n compatible API.",
+      "licenses": [
+        "BSD-2-clause",
+        "BSD-2-clause-NetBSD",
+        "BSD-3-clause",
+        "BSD-3-clause-Aaron-D-Gifford",
+        "Beerware",
+        "ISC",
+        "public-domain-md4",
+        "public-domain-md5",
+        "public-domain-sha1"
+      ],
+      "installed_size": 79,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libmd0/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libmd0",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libmnl0",
+      "version": "1.0.4-3",
+      "purl": "pkg:deb/debian/libmnl0@1.0.4-3?os_name=debian&os_version=Debian",
+      "author": "Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>",
+      "description": "minimalistic Netlink communication library\n libmnl is a minimalistic user-space library oriented to Netlink developers.\n There are a lot of common tasks in parsing, validating, constructing of\n both the Netlink header and TLVs that are repetitive and easy to get wrong.\n This library aims to provide simple helpers that allows you to re-use code\n and to avoid re-inventing the wheel.\n .\n The main features of this library are:\n .\n Small: the shared library requires around 30KB for an x86-based computer.\n .\n Simple: this library avoids complexity and elaborated abstractions that\n tend to hide Netlink details.\n .\n Easy to use: the library simplifies the work for Netlink-wise developers.\n It provides functions to make socket handling, message building,\n validating, parsing and sequence tracking, easier.\n .\n Easy to re-use: you can use the library to build your own abstraction\n layer on top of this library.\n .\n Decoupling: the interdependency of the main bricks that compose the\n library is reduced, i.e. the library provides many helpers, but the\n programmer is not forced to use them.\n .\n This package contains the shared libraries needed to run programs that use\n the minimalistic Netlink communication library.",
+      "licenses": [
+        "GPL-2",
+        "GPL-2+",
+        "LGPL-2.1"
+      ],
+      "installed_size": 46,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libmnl0/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libmnl0",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ],
+      "parent": "pkg:deb/debian/libmnl@1.0.4-3?os_name=debian&os_version=Debian"
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libmnl",
+      "version": "1.0.4-3",
+      "purl": "pkg:deb/debian/libmnl@1.0.4-3?os_name=debian&os_version=Debian",
+      "author": "Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>",
+      "description": "minimalistic Netlink communication library\n libmnl is a minimalistic user-space library oriented to Netlink developers.\n There are a lot of common tasks in parsing, validating, constructing of\n both the Netlink header and TLVs that are repetitive and easy to get wrong.\n This library aims to provide simple helpers that allows you to re-use code\n and to avoid re-inventing the wheel.\n .\n The main features of this library are:\n .\n Small: the shared library requires around 30KB for an x86-based computer.\n .\n Simple: this library avoids complexity and elaborated abstractions that\n tend to hide Netlink details.\n .\n Easy to use: the library simplifies the work for Netlink-wise developers.\n It provides functions to make socket handling, message building,\n validating, parsing and sequence tracking, easier.\n .\n Easy to re-use: you can use the library to build your own abstraction\n layer on top of this library.\n .\n Decoupling: the interdependency of the main bricks that compose the\n library is reduced, i.e. the library provides many helpers, but the\n programmer is not forced to use them.\n .\n This package contains the shared libraries needed to run programs that use\n the minimalistic Netlink communication library.",
+      "licenses": [
+        "GPL-2",
+        "GPL-2+",
+        "LGPL-2.1"
+      ],
+      "installed_size": 46,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libmnl0/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libmnl0",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libnetfilter-conntrack3",
+      "version": "1.0.9-3",
+      "purl": "pkg:deb/debian/libnetfilter-conntrack3@1.0.9-3?os_name=debian&os_version=Debian",
+      "author": "Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>",
+      "description": "Netfilter netlink-conntrack library\n libnetfilter_conntrack is a userspace library providing a programming\n interface (API) to the in-kernel connection tracking state table.",
+      "licenses": [
+        "GPL-2",
+        "GPL-2+"
+      ],
+      "installed_size": 139,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libnetfilter-conntrack3/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libnetfilter-conntrack3",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ],
+      "parent": "pkg:deb/debian/libnetfilter-conntrack@1.0.9-3?os_name=debian&os_version=Debian"
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libnetfilter-conntrack",
+      "version": "1.0.9-3",
+      "purl": "pkg:deb/debian/libnetfilter-conntrack@1.0.9-3?os_name=debian&os_version=Debian",
+      "author": "Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>",
+      "description": "Netfilter netlink-conntrack library\n libnetfilter_conntrack is a userspace library providing a programming\n interface (API) to the in-kernel connection tracking state table.",
+      "licenses": [
+        "GPL-2",
+        "GPL-2+"
+      ],
+      "installed_size": 139,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libnetfilter-conntrack3/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libnetfilter-conntrack3",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libnfnetlink0",
+      "version": "1.0.2-2",
+      "purl": "pkg:deb/debian/libnfnetlink0@1.0.2-2?os_name=debian&os_version=Debian",
+      "author": "Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>",
+      "description": "Netfilter netlink library\n libnfnetlink is the low-level library for netfilter related\n kernel/userspace communication. It provides a generic messaging\n infrastructure for in-kernel netfilter subsystems (such as\n nfnetlink_log, nfnetlink_queue, nfnetlink_conntrack) and their\n respective users and/or management tools in userspace.",
+      "licenses": [
+        "GPL-2",
+        "GPL-2.0+"
+      ],
+      "installed_size": 51,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libnfnetlink0/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libnfnetlink0",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ],
+      "parent": "pkg:deb/debian/libnfnetlink@1.0.2-2?os_name=debian&os_version=Debian"
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libnfnetlink",
+      "version": "1.0.2-2",
+      "purl": "pkg:deb/debian/libnfnetlink@1.0.2-2?os_name=debian&os_version=Debian",
+      "author": "Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>",
+      "description": "Netfilter netlink library\n libnfnetlink is the low-level library for netfilter related\n kernel/userspace communication. It provides a generic messaging\n infrastructure for in-kernel netfilter subsystems (such as\n nfnetlink_log, nfnetlink_queue, nfnetlink_conntrack) and their\n respective users and/or management tools in userspace.",
+      "licenses": [
+        "GPL-2",
+        "GPL-2.0+"
+      ],
+      "installed_size": 51,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libnfnetlink0/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libnfnetlink0",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libnftables1",
+      "version": "1.0.6-2+deb12u2",
+      "purl": "pkg:deb/debian/libnftables1@1.0.6-2%2Bdeb12u2?os_name=debian&os_version=Debian",
+      "author": "Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>",
+      "description": "Netfilter nftables high level userspace API library\n This library provides high level semantics to interact with the nftables\n framework by Netfilter project.\n .\n nftables replaces the old popular iptables, ip6tables, arptables and ebtables.\n .\n Netfilter software and nftables in particular are used in applications such\n as Internet connection sharing, firewalls, IP accounting, transparent\n proxying, advanced routing and traffic control.\n .\n A Linux kernel >= 3.13 is required. However, >= 4.14 is recommended.\n .\n This package contains the libnftables library.",
+      "licenses": [
+        "CC-BY-SA-4.0",
+        "GPL-2",
+        "GPL-2+"
+      ],
+      "installed_size": 920,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libnftables1/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libnftables1",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ],
+      "parent": "pkg:deb/debian/nftables@1.0.6-2%2Bdeb12u2?os_name=debian&os_version=Debian"
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libnftnl11",
+      "version": "1.2.4-2",
+      "purl": "pkg:deb/debian/libnftnl11@1.2.4-2?os_name=debian&os_version=Debian",
+      "author": "Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>",
+      "description": "Netfilter nftables userspace API library\n libnftnl is the low-level library for Netfilter 4th generation\n framework nftables.\n .\n Is the user-space library for low-level interaction with\n nftables Netlink's API over libmnl.",
+      "licenses": [
+        "GPL-2",
+        "GPL-2+"
+      ],
+      "installed_size": 233,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libnftnl11/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libnftnl11",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ],
+      "parent": "pkg:deb/debian/libnftnl@1.2.4-2?os_name=debian&os_version=Debian"
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libnftnl",
+      "version": "1.2.4-2",
+      "purl": "pkg:deb/debian/libnftnl@1.2.4-2?os_name=debian&os_version=Debian",
+      "author": "Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>",
+      "description": "Netfilter nftables userspace API library\n libnftnl is the low-level library for Netfilter 4th generation\n framework nftables.\n .\n Is the user-space library for low-level interaction with\n nftables Netlink's API over libmnl.",
+      "licenses": [
+        "GPL-2",
+        "GPL-2+"
+      ],
+      "installed_size": 233,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libnftnl11/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libnftnl11",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libpcre2-8-0",
+      "version": "10.42-1",
+      "purl": "pkg:deb/debian/libpcre2-8-0@10.42-1?os_name=debian&os_version=Debian",
+      "author": "Matthew Vernon <matthew@debian.org>",
+      "description": "New Perl Compatible Regular Expression Library- 8 bit runtime files\n This is PCRE2, the new implementation of PCRE, a library of functions\n to support regular expressions whose syntax and semantics are as\n close as possible to those of the Perl 5 language. New projects\n should use this library in preference to the older library,\n confusingly called pcre3 in Debian.\n .\n This package contains the 8 bit runtime library, which operates on\n ASCII and UTF-8 input.",
+      "licenses": [
+        "BSD-2-clause",
+        "BSD-3-clause",
+        "BSD-3-clause-Cambridge",
+        "X11",
+        "public-domain"
+      ],
+      "installed_size": 685,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libpcre2-8-0/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libpcre2-8-0",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ],
+      "parent": "pkg:deb/debian/pcre2@10.42-1?os_name=debian&os_version=Debian"
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libssl3",
+      "version": "3.0.11-1~deb12u2",
+      "purl": "pkg:deb/debian/libssl3@3.0.11-1~deb12u2?os_name=debian&os_version=Debian",
+      "author": "Debian OpenSSL Team <pkg-openssl-devel@alioth-lists.debian.net>",
+      "description": "Secure Sockets Layer toolkit - shared libraries\n This package is part of the OpenSSL project's implementation of the SSL\n and TLS cryptographic protocols for secure communication over the\n Internet.\n .\n It provides the libssl and libcrypto shared libraries.",
+      "licenses": [
+        "Apache-2.0",
+        "Artistic",
+        "GPL-1",
+        "GPL-1+"
+      ],
+      "installed_size": 6010,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libssl3/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libssl3",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ],
+      "parent": "pkg:deb/debian/openssl@3.0.11-1~deb12u2?os_name=debian&os_version=Debian"
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libxtables12",
+      "version": "1.8.9-2",
+      "purl": "pkg:deb/debian/libxtables12@1.8.9-2?os_name=debian&os_version=Debian",
+      "author": "Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>",
+      "description": "netfilter xtables library\n The iptables/xtables framework has been replaced by nftables. You should\n consider migrating now.\n .\n However, even if a given system may be fully running on native nftables,\n there are other reasons why libxtables might be installed. For one, nftables\n itself uses it to be able to display old rulesets that were created using\n xtables extensions (to help folks migrate). Other third-party software might\n also be linked to this library.\n .\n This library being installed in the system should be harmless in any case.\n .\n This package contains the user-space interface to the Netfilter xtables\n kernel framework.",
+      "licenses": [
+        "Artistic",
+        "GPL-2",
+        "GPL-2+",
+        "custom"
+      ],
+      "installed_size": 101,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libxtables12/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libxtables12",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ],
+      "parent": "pkg:deb/debian/iptables@1.8.9-2?os_name=debian&os_version=Debian"
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libzstd1",
+      "version": "1.5.4+dfsg2-5",
+      "purl": "pkg:deb/debian/libzstd1@1.5.4%2Bdfsg2-5?os_name=debian&os_version=Debian",
+      "author": "RPM packaging team <team+pkg-rpm@tracker.debian.org>",
+      "description": "fast lossless compression algorithm\n Zstd, short for Zstandard, is a fast lossless compression algorithm, targeting\n real-time compression scenarios at zlib-level compression ratio.\n .\n This package contains the shared library.",
+      "licenses": [
+        "BSD-3-clause",
+        "Expat",
+        "GPL-2",
+        "zlib"
+      ],
+      "installed_size": 785,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libzstd1/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libzstd1",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ],
+      "parent": "pkg:deb/debian/libzstd@1.5.4%2Bdfsg2-5?os_name=debian&os_version=Debian"
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "libzstd",
+      "version": "1.5.4+dfsg2-5",
+      "purl": "pkg:deb/debian/libzstd@1.5.4%2Bdfsg2-5?os_name=debian&os_version=Debian",
+      "author": "RPM packaging team <team+pkg-rpm@tracker.debian.org>",
+      "description": "fast lossless compression algorithm\n Zstd, short for Zstandard, is a fast lossless compression algorithm, targeting\n real-time compression scenarios at zlib-level compression ratio.\n .\n This package contains the shared library.",
+      "licenses": [
+        "BSD-3-clause",
+        "Expat",
+        "GPL-2",
+        "zlib"
+      ],
+      "installed_size": 785,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libzstd1/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libzstd1",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "netbase",
+      "version": "6.4",
+      "purl": "pkg:deb/debian/netbase@6.4?os_name=debian&os_version=Debian",
+      "author": "Marco d'Itri <md@linux.it>",
+      "description": "Basic TCP/IP networking system\n This package provides the necessary infrastructure for basic TCP/IP based\n networking.\n .\n In particular, it supplies common name-to-number mappings in /etc/services,\n /etc/rpc, /etc/protocols and /etc/ethertypes.",
+      "licenses": [
+        "GPL-2"
+      ],
+      "installed_size": 36,
+      "locations": [
+        {
+          "path": "/usr/share/doc/netbase/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/netbase",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ],
+      "files": [
+        {
+          "path": "/etc/ethertypes",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc",
+          "file_digests": {
+            "sha1": "9595ba07aca1512054d29e5ba0b4c2edc4365111",
+            "sha256": "1e2811b43ba1fbaf0a04cf4ee794b8078c2ecc65caa1e99308feae127c761c1a"
+          }
+        },
+        {
+          "path": "/etc/protocols",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc",
+          "file_digests": {
+            "sha1": "d5f9654539089b96f1b1956848d783527da6fb47",
+            "sha256": "4959498abbadaa1e50894a266f8d0d94500101cfe5b5f09dcad82e9d5bdfab46"
+          }
+        },
+        {
+          "path": "/etc/rpc",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc",
+          "file_digests": {
+            "sha1": "79c492793e2a83a79215f05f14578859ed685efc",
+            "sha256": "21947aae2ea47a87606a95250a973e4a19414bab928c88765d2972d5a49d310e"
+          }
+        },
+        {
+          "path": "/etc/services",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc",
+          "file_digests": {
+            "sha1": "a0d7a229bf049f7fe17e8445226236e4024535d0",
+            "sha256": "f6183055fd949f9c53d49ee620f85d0150123ea691d25ed1bba0c641b4ee2f48"
+          }
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "nftables",
+      "version": "1.0.6-2+deb12u2",
+      "purl": "pkg:deb/debian/nftables@1.0.6-2%2Bdeb12u2?os_name=debian&os_version=Debian",
+      "author": "Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>",
+      "description": "Netfilter nftables high level userspace API library\n This library provides high level semantics to interact with the nftables\n framework by Netfilter project.\n .\n nftables replaces the old popular iptables, ip6tables, arptables and ebtables.\n .\n Netfilter software and nftables in particular are used in applications such\n as Internet connection sharing, firewalls, IP accounting, transparent\n proxying, advanced routing and traffic control.\n .\n A Linux kernel >= 3.13 is required. However, >= 4.14 is recommended.\n .\n This package contains the libnftables library.",
+      "licenses": [
+        "CC-BY-SA-4.0",
+        "GPL-2",
+        "GPL-2+"
+      ],
+      "installed_size": 920,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libnftables1/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libnftables1",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/usr/share/doc/nftables/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/nftables",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ],
+      "files": [
+        {
+          "path": "/etc/nftables.conf",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc",
+          "file_digests": {
+            "sha1": "cbd4586f9fc5c50e15d91dab4684374574e18059",
+            "sha256": "60dac93ffe0ea440fc4a8941a080b6fb8d2c8655d47baf856e97182a0d1ca29a"
+          }
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "openssl",
+      "version": "3.0.11-1~deb12u2",
+      "purl": "pkg:deb/debian/openssl@3.0.11-1~deb12u2?os_name=debian&os_version=Debian",
+      "author": "Debian OpenSSL Team <pkg-openssl-devel@alioth-lists.debian.net>",
+      "description": "Secure Sockets Layer toolkit - shared libraries\n This package is part of the OpenSSL project's implementation of the SSL\n and TLS cryptographic protocols for secure communication over the\n Internet.\n .\n It provides the libssl and libcrypto shared libraries.",
+      "licenses": [
+        "Apache-2.0",
+        "Artistic",
+        "GPL-1",
+        "GPL-1+"
+      ],
+      "installed_size": 6010,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libssl3/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libssl3",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "pcre2",
+      "version": "10.42-1",
+      "purl": "pkg:deb/debian/pcre2@10.42-1?os_name=debian&os_version=Debian",
+      "author": "Matthew Vernon <matthew@debian.org>",
+      "description": "New Perl Compatible Regular Expression Library- 8 bit runtime files\n This is PCRE2, the new implementation of PCRE, a library of functions\n to support regular expressions whose syntax and semantics are as\n close as possible to those of the Perl 5 language. New projects\n should use this library in preference to the older library,\n confusingly called pcre3 in Debian.\n .\n This package contains the 8 bit runtime library, which operates on\n ASCII and UTF-8 input.",
+      "licenses": [
+        "BSD-2-clause",
+        "BSD-3-clause",
+        "BSD-3-clause-Cambridge",
+        "X11",
+        "public-domain"
+      ],
+      "installed_size": 685,
+      "locations": [
+        {
+          "path": "/usr/share/doc/libpcre2-8-0/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/libpcre2-8-0",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ]
+    },
+    {
+      "type": "deb",
+      "namespace": "debian",
+      "name": "tzdata",
+      "version": "2023c-5+deb12u1",
+      "purl": "pkg:deb/debian/tzdata@2023c-5%2Bdeb12u1?os_name=debian&os_version=Debian",
+      "author": "GNU Libc Maintainers <debian-glibc@lists.debian.org>",
+      "description": "time zone and daylight-saving time data\n This package contains data required for the implementation of\n standard local time for many representative locations around the\n globe. It is updated periodically to reflect changes made by\n political bodies to time zone boundaries, UTC offsets, and\n daylight-saving rules.",
+      "licenses": [
+        "public-domain"
+      ],
+      "installed_size": 2550,
+      "locations": [
+        {
+          "path": "/usr/share/doc/tzdata/copyright",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/var/lib/dpkg/status.d/tzdata",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/api",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/apiextensions-apiserver",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/apimachinery",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/apiserver",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/client-go",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/cloud-provider",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/component-base",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/component-helpers",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/controller-manager",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/kms",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/kube-proxy",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/kubelet",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "./staging",
+      "name": "src",
+      "version": "(devel)",
+      "purl": "pkg:golang/./staging/src@(devel)#k8s.io/mount-utils",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/antlr",
+      "name": "antlr4",
+      "version": "4.0.0-20230305170008-8188dc5388df",
+      "purl": "pkg:golang/github.com/antlr/antlr4@4.0.0-20230305170008-8188dc5388df#runtime/Go/antlr/v4",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/asaskevich",
+      "name": "govalidator",
+      "version": "0.0.0-20190424111038-f61b66f89f4a",
+      "purl": "pkg:golang/github.com/asaskevich/govalidator@0.0.0-20190424111038-f61b66f89f4a",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/beorn7",
+      "name": "perks",
+      "version": "1.0.1",
+      "purl": "pkg:golang/github.com/beorn7/perks@1.0.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/blang",
+      "name": "semver",
+      "version": "4.0.0",
+      "purl": "pkg:golang/github.com/blang/semver@4.0.0#v4",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/cenkalti",
+      "name": "backoff",
+      "version": "4.2.1",
+      "purl": "pkg:golang/github.com/cenkalti/backoff@4.2.1#v4",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/cespare",
+      "name": "xxhash",
+      "version": "2.2.0",
+      "purl": "pkg:golang/github.com/cespare/xxhash@2.2.0#v2",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/coreos",
+      "name": "go-semver",
+      "version": "0.3.1",
+      "purl": "pkg:golang/github.com/coreos/go-semver@0.3.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/coreos",
+      "name": "go-systemd",
+      "version": "22.5.0",
+      "purl": "pkg:golang/github.com/coreos/go-systemd@22.5.0#v22",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/cyphar",
+      "name": "filepath-securejoin",
+      "version": "0.2.4",
+      "purl": "pkg:golang/github.com/cyphar/filepath-securejoin@0.2.4",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/danwinship",
+      "name": "knftables",
+      "version": "0.0.13",
+      "purl": "pkg:golang/github.com/danwinship/knftables@0.0.13",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/davecgh",
+      "name": "go-spew",
+      "version": "1.1.1",
+      "purl": "pkg:golang/github.com/davecgh/go-spew@1.1.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/distribution",
+      "name": "reference",
+      "version": "0.5.0",
+      "purl": "pkg:golang/github.com/distribution/reference@0.5.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/emicklei",
+      "name": "go-restful",
+      "version": "3.11.0",
+      "purl": "pkg:golang/github.com/emicklei/go-restful@3.11.0#v3",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/evanphx",
+      "name": "json-patch",
+      "version": "4.12.0+incompatible",
+      "purl": "pkg:golang/github.com/evanphx/json-patch@4.12.0%2Bincompatible",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/felixge",
+      "name": "httpsnoop",
+      "version": "1.0.3",
+      "purl": "pkg:golang/github.com/felixge/httpsnoop@1.0.3",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/fsnotify",
+      "name": "fsnotify",
+      "version": "1.7.0",
+      "purl": "pkg:golang/github.com/fsnotify/fsnotify@1.7.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/go-logr",
+      "name": "logr",
+      "version": "1.3.0",
+      "purl": "pkg:golang/github.com/go-logr/logr@1.3.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/go-logr",
+      "name": "stdr",
+      "version": "1.2.2",
+      "purl": "pkg:golang/github.com/go-logr/stdr@1.2.2",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/go-logr",
+      "name": "zapr",
+      "version": "1.2.3",
+      "purl": "pkg:golang/github.com/go-logr/zapr@1.2.3",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/go-openapi",
+      "name": "jsonpointer",
+      "version": "0.19.6",
+      "purl": "pkg:golang/github.com/go-openapi/jsonpointer@0.19.6",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/go-openapi",
+      "name": "jsonreference",
+      "version": "0.20.2",
+      "purl": "pkg:golang/github.com/go-openapi/jsonreference@0.20.2",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/go-openapi",
+      "name": "swag",
+      "version": "0.22.3",
+      "purl": "pkg:golang/github.com/go-openapi/swag@0.22.3",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/godbus",
+      "name": "dbus",
+      "version": "5.1.0",
+      "purl": "pkg:golang/github.com/godbus/dbus@5.1.0#v5",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/gogo",
+      "name": "protobuf",
+      "version": "1.3.2",
+      "purl": "pkg:golang/github.com/gogo/protobuf@1.3.2",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/golang",
+      "name": "groupcache",
+      "version": "0.0.0-20210331224755-41bb18bfe9da",
+      "purl": "pkg:golang/github.com/golang/groupcache@0.0.0-20210331224755-41bb18bfe9da",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/golang",
+      "name": "protobuf",
+      "version": "1.5.3",
+      "purl": "pkg:golang/github.com/golang/protobuf@1.5.3",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/google",
+      "name": "cadvisor",
+      "version": "0.48.1",
+      "purl": "pkg:golang/github.com/google/cadvisor@0.48.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/google",
+      "name": "cel-go",
+      "version": "0.17.7",
+      "purl": "pkg:golang/github.com/google/cel-go@0.17.7",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/google",
+      "name": "gnostic-models",
+      "version": "0.6.8",
+      "purl": "pkg:golang/github.com/google/gnostic-models@0.6.8",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/google",
+      "name": "go-cmp",
+      "version": "0.6.0",
+      "purl": "pkg:golang/github.com/google/go-cmp@0.6.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/google",
+      "name": "gofuzz",
+      "version": "1.2.0",
+      "purl": "pkg:golang/github.com/google/gofuzz@1.2.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/google",
+      "name": "uuid",
+      "version": "1.3.0",
+      "purl": "pkg:golang/github.com/google/uuid@1.3.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/grpc-ecosystem",
+      "name": "go-grpc-prometheus",
+      "version": "1.2.0",
+      "purl": "pkg:golang/github.com/grpc-ecosystem/go-grpc-prometheus@1.2.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/grpc-ecosystem",
+      "name": "grpc-gateway",
+      "version": "2.16.0",
+      "purl": "pkg:golang/github.com/grpc-ecosystem/grpc-gateway@2.16.0#v2",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/imdario",
+      "name": "mergo",
+      "version": "0.3.6",
+      "purl": "pkg:golang/github.com/imdario/mergo@0.3.6",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/josharian",
+      "name": "intern",
+      "version": "1.0.0",
+      "purl": "pkg:golang/github.com/josharian/intern@1.0.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/json-iterator",
+      "name": "go",
+      "version": "1.1.12",
+      "purl": "pkg:golang/github.com/json-iterator/go@1.1.12",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/lithammer",
+      "name": "dedent",
+      "version": "1.1.0",
+      "purl": "pkg:golang/github.com/lithammer/dedent@1.1.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/mailru",
+      "name": "easyjson",
+      "version": "0.7.7",
+      "purl": "pkg:golang/github.com/mailru/easyjson@0.7.7",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/matttproud",
+      "name": "golang_protobuf_extensions",
+      "version": "1.0.4",
+      "purl": "pkg:golang/github.com/matttproud/golang_protobuf_extensions@1.0.4",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/mistifyio",
+      "name": "go-zfs",
+      "version": "2.1.2-0.20190413222219-f784269be439+incompatible",
+      "purl": "pkg:golang/github.com/mistifyio/go-zfs@2.1.2-0.20190413222219-f784269be439%2Bincompatible",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/moby",
+      "name": "ipvs",
+      "version": "1.1.0",
+      "purl": "pkg:golang/github.com/moby/ipvs@1.1.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/moby",
+      "name": "sys",
+      "version": "0.6.2",
+      "purl": "pkg:golang/github.com/moby/sys@0.6.2#mountinfo",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/modern-go",
+      "name": "concurrent",
+      "version": "0.0.0-20180306012644-bacd9c7ef1dd",
+      "purl": "pkg:golang/github.com/modern-go/concurrent@0.0.0-20180306012644-bacd9c7ef1dd",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/modern-go",
+      "name": "reflect2",
+      "version": "1.0.2",
+      "purl": "pkg:golang/github.com/modern-go/reflect2@1.0.2",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/munnerz",
+      "name": "goautoneg",
+      "version": "0.0.0-20191010083416-a7dc8b61c822",
+      "purl": "pkg:golang/github.com/munnerz/goautoneg@0.0.0-20191010083416-a7dc8b61c822",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/nytimes",
+      "name": "gziphandler",
+      "version": "1.1.1",
+      "purl": "pkg:golang/github.com/nytimes/gziphandler@1.1.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/opencontainers",
+      "name": "go-digest",
+      "version": "1.0.0",
+      "purl": "pkg:golang/github.com/opencontainers/go-digest@1.0.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/opencontainers",
+      "name": "runc",
+      "version": "1.1.10",
+      "purl": "pkg:golang/github.com/opencontainers/runc@1.1.10",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/opencontainers",
+      "name": "runtime-spec",
+      "version": "1.0.3-0.20220909204839-494a5a6aca78",
+      "purl": "pkg:golang/github.com/opencontainers/runtime-spec@1.0.3-0.20220909204839-494a5a6aca78",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/pkg",
+      "name": "errors",
+      "version": "0.9.1",
+      "purl": "pkg:golang/github.com/pkg/errors@0.9.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/prometheus",
+      "name": "client_golang",
+      "version": "1.16.0",
+      "purl": "pkg:golang/github.com/prometheus/client_golang@1.16.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/prometheus",
+      "name": "client_model",
+      "version": "0.4.0",
+      "purl": "pkg:golang/github.com/prometheus/client_model@0.4.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/prometheus",
+      "name": "common",
+      "version": "0.44.0",
+      "purl": "pkg:golang/github.com/prometheus/common@0.44.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/prometheus",
+      "name": "procfs",
+      "version": "0.10.1",
+      "purl": "pkg:golang/github.com/prometheus/procfs@0.10.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/sirupsen",
+      "name": "logrus",
+      "version": "1.9.0",
+      "purl": "pkg:golang/github.com/sirupsen/logrus@1.9.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/spf13",
+      "name": "cobra",
+      "version": "1.7.0",
+      "purl": "pkg:golang/github.com/spf13/cobra@1.7.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/spf13",
+      "name": "pflag",
+      "version": "1.0.5",
+      "purl": "pkg:golang/github.com/spf13/pflag@1.0.5",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/stoewer",
+      "name": "go-strcase",
+      "version": "1.2.0",
+      "purl": "pkg:golang/github.com/stoewer/go-strcase@1.2.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/vishvananda",
+      "name": "netlink",
+      "version": "1.1.0",
+      "purl": "pkg:golang/github.com/vishvananda/netlink@1.1.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/vishvananda",
+      "name": "netns",
+      "version": "0.0.4",
+      "purl": "pkg:golang/github.com/vishvananda/netns@0.0.4",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.etcd.io/etcd",
+      "name": "api",
+      "version": "3.5.10",
+      "purl": "pkg:golang/go.etcd.io/etcd/api@3.5.10#v3",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.etcd.io/etcd",
+      "name": "client",
+      "version": "3.5.10",
+      "purl": "pkg:golang/go.etcd.io/etcd/client@3.5.10#pkg/v3",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.etcd.io/etcd",
+      "name": "client",
+      "version": "3.5.10",
+      "purl": "pkg:golang/go.etcd.io/etcd/client@3.5.10#v3",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/contrib",
+      "name": "instrumentation",
+      "version": "0.42.0",
+      "purl": "pkg:golang/go.opentelemetry.io/contrib/instrumentation@0.42.0#google.golang.org/grpc/otelgrpc",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/contrib",
+      "name": "instrumentation",
+      "version": "0.44.0",
+      "purl": "pkg:golang/go.opentelemetry.io/contrib/instrumentation@0.44.0#net/http/otelhttp",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/otel",
+      "name": "exporters",
+      "version": "1.19.0",
+      "purl": "pkg:golang/go.opentelemetry.io/otel/exporters@1.19.0#otlp/otlptrace",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/otel",
+      "name": "exporters",
+      "version": "1.19.0",
+      "purl": "pkg:golang/go.opentelemetry.io/otel/exporters@1.19.0#otlp/otlptrace/otlptracegrpc",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/otel",
+      "name": "metric",
+      "version": "1.19.0",
+      "purl": "pkg:golang/go.opentelemetry.io/otel/metric@1.19.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/otel",
+      "name": "sdk",
+      "version": "1.19.0",
+      "purl": "pkg:golang/go.opentelemetry.io/otel/sdk@1.19.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/otel",
+      "name": "trace",
+      "version": "1.19.0",
+      "purl": "pkg:golang/go.opentelemetry.io/otel/trace@1.19.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io",
+      "name": "otel",
+      "version": "1.19.0",
+      "purl": "pkg:golang/go.opentelemetry.io/otel@1.19.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/proto",
+      "name": "otlp",
+      "version": "1.0.0",
+      "purl": "pkg:golang/go.opentelemetry.io/proto/otlp@1.0.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.uber.org",
+      "name": "atomic",
+      "version": "1.10.0",
+      "purl": "pkg:golang/go.uber.org/atomic@1.10.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.uber.org",
+      "name": "multierr",
+      "version": "1.11.0",
+      "purl": "pkg:golang/go.uber.org/multierr@1.11.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.uber.org",
+      "name": "zap",
+      "version": "1.19.0",
+      "purl": "pkg:golang/go.uber.org/zap@1.19.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "crypto",
+      "version": "0.16.0",
+      "purl": "pkg:golang/golang.org/x/crypto@0.16.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "exp",
+      "version": "0.0.0-20220722155223-a9213eeb770e",
+      "purl": "pkg:golang/golang.org/x/exp@0.0.0-20220722155223-a9213eeb770e",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "net",
+      "version": "0.19.0",
+      "purl": "pkg:golang/golang.org/x/net@0.19.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "oauth2",
+      "version": "0.10.0",
+      "purl": "pkg:golang/golang.org/x/oauth2@0.10.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "sync",
+      "version": "0.5.0",
+      "purl": "pkg:golang/golang.org/x/sync@0.5.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "sys",
+      "version": "0.15.0",
+      "purl": "pkg:golang/golang.org/x/sys@0.15.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "term",
+      "version": "0.15.0",
+      "purl": "pkg:golang/golang.org/x/term@0.15.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "text",
+      "version": "0.14.0",
+      "purl": "pkg:golang/golang.org/x/text@0.14.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "time",
+      "version": "0.3.0",
+      "purl": "pkg:golang/golang.org/x/time@0.3.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "google.golang.org/genproto",
+      "name": "googleapis",
+      "version": "0.0.0-20230726155614-23370e0ffb3e",
+      "purl": "pkg:golang/google.golang.org/genproto/googleapis@0.0.0-20230726155614-23370e0ffb3e#api",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "google.golang.org/genproto",
+      "name": "googleapis",
+      "version": "0.0.0-20230822172742-b8732ec3820d",
+      "purl": "pkg:golang/google.golang.org/genproto/googleapis@0.0.0-20230822172742-b8732ec3820d#rpc",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "google.golang.org",
+      "name": "grpc",
+      "version": "1.58.3",
+      "purl": "pkg:golang/google.golang.org/grpc@1.58.3",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "google.golang.org",
+      "name": "protobuf",
+      "version": "1.31.0",
+      "purl": "pkg:golang/google.golang.org/protobuf@1.31.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "gopkg.in",
+      "name": "inf.v0",
+      "version": "0.9.1",
+      "purl": "pkg:golang/gopkg.in/inf.v0@0.9.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "gopkg.in/natefinch",
+      "name": "lumberjack.v2",
+      "version": "2.2.1",
+      "purl": "pkg:golang/gopkg.in/natefinch/lumberjack.v2@2.2.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "gopkg.in",
+      "name": "yaml.v2",
+      "version": "2.4.0",
+      "purl": "pkg:golang/gopkg.in/yaml.v2@2.4.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "gopkg.in",
+      "name": "yaml.v3",
+      "version": "3.0.1",
+      "purl": "pkg:golang/gopkg.in/yaml.v3@3.0.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "k8s.io/klog",
+      "name": "v2",
+      "version": "2.110.1",
+      "purl": "pkg:golang/k8s.io/klog/v2@2.110.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "k8s.io",
+      "name": "kube-openapi",
+      "version": "0.0.0-20231010175941-2dd684a91f00",
+      "purl": "pkg:golang/k8s.io/kube-openapi@0.0.0-20231010175941-2dd684a91f00",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "k8s.io",
+      "name": "kubernetes",
+      "version": "(devel)",
+      "purl": "pkg:golang/k8s.io/kubernetes@(devel)",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "k8s.io/release",
+      "name": "images",
+      "version": "(devel)",
+      "purl": "pkg:golang/k8s.io/release/images@(devel)#build/go-runner",
+      "locations": [
+        {
+          "path": "/go-runner",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "k8s.io",
+      "name": "utils",
+      "version": "0.0.0-20230726121419-3b25d923346b",
+      "purl": "pkg:golang/k8s.io/utils@0.0.0-20230726121419-3b25d923346b",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "sigs.k8s.io/apiserver-network-proxy",
+      "name": "konnectivity-client",
+      "version": "0.28.0",
+      "purl": "pkg:golang/sigs.k8s.io/apiserver-network-proxy/konnectivity-client@0.28.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "sigs.k8s.io",
+      "name": "json",
+      "version": "0.0.0-20221116044647-bc3834ca7abd",
+      "purl": "pkg:golang/sigs.k8s.io/json@0.0.0-20221116044647-bc3834ca7abd",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "sigs.k8s.io/structured-merge-diff",
+      "name": "v4",
+      "version": "4.4.1",
+      "purl": "pkg:golang/sigs.k8s.io/structured-merge-diff/v4@4.4.1",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "sigs.k8s.io",
+      "name": "yaml",
+      "version": "1.3.0",
+      "purl": "pkg:golang/sigs.k8s.io/yaml@1.3.0",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "name": "stdlib",
+      "version": "1.21.7",
+      "purl": "pkg:golang/stdlib@1.21.7",
+      "locations": [
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        },
+        {
+          "path": "/go-runner",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "name": "stdlib",
+      "version": "go1.21.7",
+      "purl": "pkg:golang/stdlib@go1.21.7",
+      "licenses": [
+        "BSD-3-Clause"
+      ],
+      "locations": [
+        {
+          "path": "/go-runner",
+          "digest": "sha256:9f2987f14ce2c3c7defe2dc252fd3d6eb39f69b19007ef46934cfc8aafca8ad3",
+          "diff_id": "sha256:1ccee42a0f2ecda67e251c5c3504bbc709987c37f7122b21156bef357b3824fc"
+        },
+        {
+          "path": "/usr/local/bin/kube-proxy",
+          "ordinal": 1,
+          "digest": "sha256:f08ffe6da6316ac372e0d82f205e09cca07b13c73568afa8279923a25b88ea58",
+          "diff_id": "sha256:4b55a1427d14d1c692f4b2e9762b6b5ece960600920d857a80b4900f3837667f"
+        }
+      ]
+    }
+  ],
+  "descriptor": {
+    "name": "docker-scout",
+    "version": "1.10.0",
+    "sbom_version": "11"
+  }
+}

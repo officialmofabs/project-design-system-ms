@@ -1,3 +1,8 @@
 {
-    "cmake.sourceDirectory": "C:/Users/abymo/containers/officialmofabs/projects.git/microsoft-cloud-development/src/cpp/test-project"
+    "cmake.sourceDirectory": "C:/Users/abymo/containers/officialmofabs/projects.git/microsoft-cloud-development/src/cpp/test-project",
+    "azureFunctions.deploySubpath": "src\\azure-static-web-apps\\test-project\\api",
+    "azureFunctions.postDeployTask": "npm install (functions)",
+    "azureFunctions.projectLanguage": "JavaScript",
+    "azureFunctions.projectRuntime": "~4",
+    "azureFunctions.preDeployTask": "npm prune (functions)"
 }
