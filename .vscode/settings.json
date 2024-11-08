@@ -1,5 +1,5 @@
 {
-    "cmake.sourceDirectory": "C:/Users/abymo/containers/officialmofabs/projects.git/microsoft-cloud-development/src/cpp/test-project",
+    "cmake.sourceDirectory": "/home/ecampusdev/project-design-system-ms/src/cpp-mariadb/test-project",
     "azureFunctions.deploySubpath": "src\\azure-static-web-apps\\test-project\\api",
     "azureFunctions.postDeployTask": "npm install (functions)",
     "azureFunctions.projectLanguage": "JavaScript",
@@ -11,5 +11,31 @@
         "activityBar.background": "#2D3004",
         "titleBar.activeBackground": "#3F4306",
         "titleBar.activeForeground": "#FAFCDD"
-    }
+    },
+    "workspace-manager.advanced.deep": 2,
+    "workspace-manager.views.favorites.compact": true,
+    "workspace-manager.views.groups.compact": true,
+    "workspace-manager.views.workspaces.compact": true,
+    "accessibility.signalOptions.debouncePositionChanges": false,
+    "workbench.view.alwaysShowHeaderActions": true,
+    "workbench.editor.alwaysShowEditorActions": true,
+    "workbench.editor.autoLockGroups": {
+        "workbench.editors.gettingStartedInput": true,
+        "mainThreadWebview-markdown.preview": true,
+        "default": true
+    },
+    "workbench.editor.enablePreviewFromCodeNavigation": true,
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.settings.openDefaultKeybindings": true,
+    "workbench.settings.openDefaultSettings": true,
+    "workbench.settings.useSplitJSON": true,
+    "screencastMode.keyboardOptions": {
+        "showCommandGroups": true
+    },
+    "workbench.preferredDarkColorTheme": "Solarized Dark",
+    "application.experimental.rendererProfiling": true,
+    "ipynb.experimental.serialization": true,
+    "dotnetAcquisitionExtension.enablePreviewFeatures": true,
+    "dotnetAcquisitionExtension.allowInvalidPaths": true
 }

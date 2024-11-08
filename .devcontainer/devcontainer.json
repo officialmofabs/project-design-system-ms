@@ -19,6 +19,7 @@
 			"extensions": [
 				"ms-azuretools.vscode-docker",
 				"dbaeumer.vscode-eslint",
+				"ms-azuretools.vscode-azurefunctions"
 				"rogalmic.bash-debug",
 				"mads-hartmann.bash-ide-vscode",
 				"streetsidesoftware.code-spell-checker",
@@ -27,7 +28,24 @@
 				"EditorConfig.EditorConfig",
 				"chrisdias.vscode-opennewinstance",
 				"bobmagicii.dashyeah",
-				"ms-dotnettools.vscode-dotnet-runtime"
+				"ms-dotnettools.vscode-dotnet-runtime",
+				"design4pro.workspace-manager",
+				"ms-vscode.vscode-node-azure-pack",
+				"ms-vscode.cpptools-extension-pack",
+				"ms-vscode.cpptools",
+				"twxs.cmake",
+				"LeoJhonSong.ccpp-extension-pack",
+				"ms-dotnettools.csharp",
+				"PowerTech.powercpp",
+				"ms-dotnettools.vscodeintellicode-csharp",
+				"ms-dotnettools.csdevkit",
+				"adrianwilczynski.csharp-to-typescript",
+				"mintlify.document",
+				"fireside21.cshtml-tm",
+				"ms-vscode.vscode-typescript-next",
+				"loiane.ts-extension-pack",
+				"Vue.volar",
+				"tfenster.remote-dev-shortcut"
 			]
 		}
 	},

@@ -1,0 +1,43 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {
+			"editor.lineHighlightBackground": "#1073cf2d",
+			"editor.lineHighlightBorder": "#9fced11f",
+			"activityBar.background": "#2D3004",
+			"titleBar.activeBackground": "#3F4306",
+			"titleBar.activeForeground": "#FAFCDD"
+		},
+		"workspace-manager.advanced.deep": 2,
+		"workspace-manager.views.favorites.compact": true,
+		"workspace-manager.views.groups.compact": true,
+		"workspace-manager.views.workspaces.compact": true,
+		"workbench.view.alwaysShowHeaderActions": true,
+		"workbench.editor.alwaysShowEditorActions": true,
+		"workbench.editor.autoLockGroups": {
+			"workbench.editors.gettingStartedInput": true,
+			"mainThreadWebview-markdown.preview": true,
+			"default": true
+		},
+		"workbench.editor.enablePreviewFromCodeNavigation": true,
+		"workbench.editor.enablePreviewFromQuickOpen": true,
+		"workbench.editor.highlightModifiedTabs": true,
+		"workbench.settings.openDefaultKeybindings": true,
+		"workbench.settings.openDefaultSettings": true,
+		"workbench.settings.useSplitJSON": true,
+		"screencastMode.keyboardOptions": {
+			"showCommandGroups": true
+		},
+		"workbench.preferredDarkColorTheme": "Solarized Dark",
+		"application.experimental.rendererProfiling": true,
+		"dotnetAcquisitionExtension.enablePreviewFeatures": true,
+		"dotnetAcquisitionExtension.allowInvalidPaths": true,
+		"marquee.widgets.npm-stats.packageNames": [
+			"remote-containers"
+		]
+	}
+}
