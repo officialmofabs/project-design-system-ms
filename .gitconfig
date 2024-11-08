@@ -9,8 +9,7 @@
 # accidentally gets checked in
 [include]
   path = /home/officialmofabs/.gitconfig.local
-  path = D:\project-design-system-ms\.gitconfig.local
-
+  path = .gitconfig.
 # Colour settings across all (colour) reporting
 [color]
 	ui = auto

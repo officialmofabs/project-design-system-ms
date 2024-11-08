@@ -26,7 +26,8 @@
 				"bierner.github-markdown-preview",
 				"EditorConfig.EditorConfig",
 				"chrisdias.vscode-opennewinstance",
-				"bobmagicii.dashyeah"
+				"bobmagicii.dashyeah",
+				"ms-dotnettools.vscode-dotnet-runtime"
 			]
 		}
 	},
